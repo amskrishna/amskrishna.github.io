@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content editor — keep this file private</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+[data-theme="indigo"]{--brand:#2F3D8F;--tint:#EEF0FA}
+[data-theme="forest"]{--brand:#1F5D45;--tint:#EAF3EE}
+[data-theme="plum"]{--brand:#6B2D5B;--tint:#F5EDF3}
+[data-theme="slate"]{--brand:#374357;--tint:#EEF0F4}
+[data-theme="ember"]{--brand:#9C3A22;--tint:#FAEEE9}
+[data-theme="teal"]{--brand:#125E6B;--tint:#E8F2F4}
+:root{--ink:#16181D;--body:#4C5461;--rule:#E1E4EA;--bg:#F7F8FA;--r:9px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.6 Inter,system-ui,sans-serif}
+header{background:#fff;border-bottom:1px solid var(--rule);padding:16px 26px;position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+header h1{font:700 1.15rem Fraunces,serif;margin:0;flex:1}
+.warn{background:#FFF7E6;border:1px solid #F0D9A0;color:#7A5A12;padding:11px 16px;border-radius:var(--r);font-size:.85rem;margin:20px 26px 0}
+.tabs{display:flex;gap:5px;flex-wrap:wrap;padding:16px 26px 0}
+.tab{padding:8px 15px;border:1px solid var(--rule);background:#fff;border-radius:7px;font-size:.86rem;cursor:pointer;color:var(--body)}
+.tab.on{background:var(--brand);color:#fff;border-color:var(--brand);font-weight:500}
+main{padding:20px 26px 70px;max-width:960px}
+.pane{display:none}.pane.on{display:block}
+.card{background:#fff;border:1px solid var(--rule);border-radius:var(--r);padding:20px;margin-bottom:14px}
+.card h3{font:600 .95rem Inter;margin:0 0 14px;display:flex;justify-content:space-between;align-items:center}
+label{display:block;font-size:.78rem;color:var(--body);margin:11px 0 4px;font-weight:500}
+input,textarea,select{width:100%;padding:9px 11px;border:1px solid var(--rule);border-radius:6px;font:400 .89rem Inter;background:#fff;color:var(--ink)}
+textarea{min-height:80px;resize:vertical;line-height:1.6}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--brand);outline-offset:-1px;border-color:var(--brand)}
+.f{min-width:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:start}
+button{font:500 .86rem Inter;cursor:pointer;border-radius:6px;border:1px solid var(--rule);background:#fff;padding:8px 15px;color:var(--ink)}
+button:hover{background:var(--tint)}
+.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.primary:hover{background:var(--ink);color:#fff}
+.del{color:#B4342A;border-color:#F0CFCC;padding:5px 11px;font-size:.79rem}
+.del:hover{background:#FDF0EF}
+.add{width:100%;padding:12px;border-style:dashed;color:var(--brand);margin-bottom:22px}
+.pv{display:flex;align-items:center;gap:16px;margin-bottom:8px}
+.pv img{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid var(--tint)}
+.ph{width:76px;height:76px;border-radius:50%;background:var(--tint);display:grid;place-items:center;color:var(--brand);font:600 24px Fraunces,serif}
+.dots{display:flex;gap:9px;margin-top:8px}
+.dot{width:34px;height:34px;border-radius:50%;border:3px solid transparent;padding:0}
+.dot.on{border-color:var(--ink)}
+.hint{font-size:.78rem;color:var(--body);margin:4px 0 0}
+.mat-row{display:grid;grid-template-columns:1fr 1.4fr auto;gap:9px;align-items:end;margin-bottom:9px}
+.chk{display:flex;align-items:center;gap:8px;margin-top:13px}
+.chk input{width:auto}
+.chk label{margin:0}
+#out{position:fixed;bottom:0;left:0;right:0;background:var(--brand);color:#fff;padding:13px 26px;display:flex;gap:14px;align-items:center;font-size:.86rem;z-index:30}
+#out button{background:#fff;color:var(--brand);border:none;font-weight:600}
+#out span{flex:1}
+</style>
+</head>
+<body data-theme="indigo">
+
+<header>
+  <h1>Content editor</h1>
+  <button onclick="preview()">Preview site</button>
+  <button class="primary" onclick="save()">Download data.js</button>
+</header>
+
+<div class="warn">
+  This editor runs entirely in your browser. Nothing is sent anywhere. Make your changes, click
+  <b>Download data.js</b>, then upload that file to your GitHub repository to publish. Keep this
+  file out of your public repo if you'd rather visitors not see it.
+</div>
+
+<div class="tabs" id="tabs"></div>
+<main id="panes"></main>
+
+<div id="out"><span>Changes are held in this browser only until you download the file.</span>
+<button onclick="save()">Download data.js</button></div>
+
+<script src="data.js"></script>
+<script>
+let D = JSON.parse(JSON.stringify(window.SITE));
+document.body.dataset.theme = D.theme || "indigo";
+const THEMES = {indigo:"#2F3D8F",forest:"#1F5D45",plum:"#6B2D5B",slate:"#374357",ember:"#9C3A22",teal:"#125E6B"};
+const $ = s => document.querySelector(s);
+const esc = s => String(s??"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* field helpers — bind directly to the data object */
+function fld(obj,key,label,type){
+  const id = "f"+Math.random().toString(36).slice(2,9);
+  const v = esc(obj[key]);
+  const el = type==="area" ? `<textarea id="${id}">${v}</textarea>`
+    : `<input id="${id}" type="${type||"text"}" value="${v}">`;
+  setTimeout(()=>{ const n=document.getElementById(id); if(n) n.oninput = e => obj[key] = e.target.value; },0);
+  return `<div class="f"><label for="${id}">${label}</label>${el}</div>`;
+}
+function chk(obj,key,label){
+  const id="c"+Math.random().toString(36).slice(2,9);
+  setTimeout(()=>{const n=document.getElementById(id); if(n) n.onchange=e=>obj[key]=e.target.checked;},0);
+  return `<div class="chk"><input type="checkbox" id="${id}" ${obj[key]?"checked":""}><label for="${id}">${label}</label></div>`;
+}
+function sel(obj,key,label,opts){
+  const id="s"+Math.random().toString(36).slice(2,9);
+  setTimeout(()=>{const n=document.getElementById(id); if(n) n.onchange=e=>obj[key]=e.target.value;},0);
+  return `<div class="f"><label for="${id}">${label}</label><select id="${id}">${opts.map(o=>`<option${o===obj[key]?" selected":""}>${o}</option>`).join("")}</select></div>`;
+}
+const head = (t,arr,i) => `<h3>${t} <button class="del" onclick="rm('${arr}',${i})">Remove</button></h3>`;
+window.rm = (arr,i) => { D[arr].splice(i,1); render(); };
+window.addTo = (arr,tpl) => { D[arr].push(JSON.parse(tpl)); render(); };
+
+/* ---------- panes ---------- */
+const PANES = {
+
+"Profile": () => `
+  <div class="card">
+    <h3>Photo and identity</h3>
+    <div class="pv">
+      <div id="pvbox">${D.profile.photo?`<img src="${esc(D.profile.photo)}" alt="">`:`<div class="ph">${esc((D.profile.name||"?").replace(/^Dr\.?\s*/i,"").split(/\s+/).slice(0,2).map(w=>w[0]).join(""))}</div>`}</div>
+      <div>
+        <button onclick="document.getElementById('up').click()">Upload a photo</button>
+        ${D.profile.photo?`<button onclick="D.profile.photo='';render()">Remove</button>`:""}
+        <p class="hint">A square image works best. It is embedded straight into data.js.</p>
+      </div>
+    </div>
+    <input type="file" id="up" accept="image/*" hidden onchange="pic(this)">
+    ${fld(D.profile,"name","Full name")}
+    <div class="row3">${fld(D.profile,"title","Position")}${fld(D.profile,"dept","Department")}${fld(D.profile,"org","Institution")}</div>
+    ${fld(D.profile,"headline","Headline shown at the top of the site")}
+    ${fld(D.profile,"bio","Short biography","area")}
+  </div>
+  <div class="card">
+    <h3>Contact and links</h3>
+    <div class="row">${fld(D.profile,"email","Email","email")}${fld(D.profile,"phone","Phone")}</div>
+    <div class="row">${fld(D.profile,"orcid","ORCID iD")}${fld(D.profile,"cv","CV filename in your repo")}</div>
+    <div class="row3">${fld(D.profile,"scholar","Google Scholar URL")}${fld(D.profile,"linkedin","LinkedIn URL")}${fld(D.profile,"github","GitHub URL")}</div>
+  </div>
+  <div class="card">
+    <h3>Colour theme</h3>
+    <div class="dots">${Object.entries(THEMES).map(([k,c])=>
+      `<button class="dot${D.theme===k?" on":""}" style="background:${c}" onclick="D.theme='${k}';document.body.dataset.theme='${k}';render()" title="${k}"></button>`).join("")}</div>
+    <p class="hint">This sets the default. Visitors can still switch themes from the sidebar.</p>
+  </div>
+  <div class="card">
+    <h3>Headline numbers</h3>
+    ${D.stats.map((s,i)=>`<div class="row">${fld(s,"n","Number")}${fld(s,"label","Label")}</div>`).join("")}
+  </div>
+  <div class="card">
+    <h3>Research interests</h3>
+    ${fld({get v(){return D.interests.join("\\n")},set v(x){D.interests=x.split("\\n").filter(Boolean)}},"v","One per line","area")}
+  </div>`,
+
+"Announcements": () => D.announcements.map((a,i)=>`
+  <div class="card">
+    ${head("Announcement "+(i+1),"announcements",i)}
+    ${sel(a,"kind","Type",["Internship","Call for proposals","Opening","Notice"])}
+    ${fld(a,"title","Title")}
+    ${fld(a,"body","Description","area")}
+    <div class="row3">${fld(a,"date","Posted on","date")}${fld(a,"deadline","Deadline","date")}${fld(a,"link","Application form URL")}</div>
+    ${chk(a,"open","Currently open — shows an apply button")}
+  </div>`).join("") +
+  `<button class="add" onclick='addTo("announcements",${JSON.stringify(JSON.stringify({kind:"Internship",title:"",date:new Date().toISOString().slice(0,10),deadline:"",open:true,body:"",link:""}))})'>+ Add an announcement</button>`,
+
+"Blog": () => D.posts.map((b,i)=>`
+  <div class="card">
+    ${head("Post "+(i+1),"posts",i)}
+    ${fld(b,"title","Title")}
+    <div class="row">${fld(b,"date","Date","date")}
+    ${fld({get v(){return (b.tags||[]).join(", ")},set v(x){b.tags=x.split(",").map(s=>s.trim()).filter(Boolean)}},"v","Tags, comma separated")}</div>
+    ${fld(b,"summary","Summary shown in the list","area")}
+    ${fld(b,"body","Full post — leave a blank line between paragraphs","area")}
+  </div>`).join("") +
+  `<button class="add" onclick='addTo("posts",${JSON.stringify(JSON.stringify({title:"",date:new Date().toISOString().slice(0,10),tags:[],summary:"",body:""}))})'>+ Add a blog post</button>`,
+
+"Courses": () => D.courses.map((c,i)=>`
+  <div class="card">
+    ${head("Course "+(i+1),"courses",i)}
+    <div class="row">${fld(c,"code","Course code")}${fld(c,"term","Institution and term")}</div>
+    ${fld(c,"name","Course name")}
+    ${fld(c,"note","One-line description")}
+    <label>Materials</label>
+    ${(c.materials||[]).map((m,j)=>`<div class="mat-row">
+      ${fld(m,"label","Label")}
+      ${fld(m,"url","Link or filename")}
+      <button class="del" onclick="D.courses[${i}].materials.splice(${j},1);render()">Remove</button>
+    </div>`).join("")}
+    <button onclick="D.courses[${i}].materials.push({label:'',url:''});render()">+ Add material</button>
+    <p class="hint">Upload PDFs to your repo and put the filename here, e.g. <code>unit1.pdf</code>. Leave the link blank to show "coming soon".</p>
+  </div>`).join("") +
+  `<button class="add" onclick='addTo("courses",${JSON.stringify(JSON.stringify({code:"",name:"",term:"",note:"",materials:[]}))})'>+ Add a course</button>`,
+
+"Publications": () => `
+  <div class="card"><h3>Journal articles</h3>
+  ${D.journals.map((j,i)=>`<div style="padding:14px 0;border-bottom:1px solid var(--rule)">
+    ${head("","journals",i)}
+    <div class="row">${fld(j,"id","Reference (J1, J2…)")}${fld(j,"doi","DOI")}</div>
+    ${fld(j,"title","Title")}
+    <div class="row">${fld(j,"venue","Journal, volume and year")}${fld(j,"meta","Indexing and impact factor")}</div>
+  </div>`).join("")}
+  <button class="add" style="margin-top:14px" onclick='addTo("journals",${JSON.stringify(JSON.stringify({id:"",title:"",venue:"",meta:"",doi:""}))})'>+ Add journal article</button>
+  ${fld(D,"journalsNote","Closing note")}
+  </div>
+  <div class="card"><h3>Conference papers</h3>
+  ${D.conferences.map((c,i)=>`<div style="padding:14px 0;border-bottom:1px solid var(--rule)">
+    ${head("","conferences",i)}
+    ${fld(c,"id","Reference (C1, C2…)")}
+    ${fld(c,"title","Title")}
+    <div class="row">${fld(c,"venue","Conference and venue")}${fld(c,"meta","Status")}</div>
+  </div>`).join("")}
+  <button class="add" style="margin-top:14px" onclick='addTo("conferences",${JSON.stringify(JSON.stringify({id:"",title:"",venue:"",meta:"",doi:""}))})'>+ Add conference paper</button>
+  ${fld(D,"conferencesNote","Closing note")}
+  </div>`,
+
+"Experience": () => `
+  <div class="card"><h3>Teaching positions</h3>
+  ${D.teaching.map((t,i)=>`<div style="padding:14px 0;border-bottom:1px solid var(--rule)">
+    ${head("","teaching",i)}
+    <div class="row">${fld(t,"role","Role")}${fld(t,"when","Period")}</div>
+    ${fld(t,"org","Department and institution")}
+    ${fld(t,"detail","Courses handled")}
+  </div>`).join("")}
+  <button class="add" style="margin-top:14px" onclick='addTo("teaching",${JSON.stringify(JSON.stringify({role:"",org:"",when:"",detail:""}))})'>+ Add a position</button>
+  </div>
+  <div class="card"><h3>Supervision and administration</h3>
+  ${fld({get v(){return D.admin.join("\\n")},set v(x){D.admin=x.split("\\n").filter(Boolean)}},"v","One per line","area")}
+  </div>
+  <div class="card"><h3>Education</h3>
+  ${D.education.map((e,i)=>`<div style="padding:12px 0;border-bottom:1px solid var(--rule)">
+    ${head("","education",i)}
+    ${fld(e,"deg","Degree")}
+    <div class="row3">${fld(e,"inst","Institution")}${fld(e,"score","Result")}${fld(e,"year","Year")}</div>
+  </div>`).join("")}
+  <button class="add" style="margin-top:14px" onclick='addTo("education",${JSON.stringify(JSON.stringify({deg:"",inst:"",score:"",year:""}))})'>+ Add a qualification</button>
+  </div>
+  <div class="card"><h3>Theses</h3>
+  ${D.theses.map((t,i)=>`<div style="padding:12px 0;border-bottom:1px solid var(--rule)">
+    ${head("","theses",i)}
+    ${fld(t,"title","Title")}
+    <div class="row">${fld(t,"sub","Degree and area")}${fld(t,"when","Period")}</div>
+  </div>`).join("")}
+  </div>`,
+
+"Service & more": () => {
+  const grp = (key,label) => `<div class="card"><h3>${label}</h3>
+    ${D[key].map((x,i)=>`<div class="row" style="align-items:end">
+      ${fld(x,"name","Name")}
+      <div style="display:grid;grid-template-columns:1fr auto;gap:9px;align-items:end">
+        ${fld(x,"meta","Details")}
+        <button class="del" onclick="rm('${key}',${i})">Remove</button>
+      </div></div>`).join("")}
+    <button class="add" style="margin-top:14px" onclick='addTo("${key}",${JSON.stringify(JSON.stringify({name:"",meta:""}))})'>+ Add</button>
+  </div>`;
+  return grp("reviewJournals","Journal reviewing")
+    + grp("reviewConfs","Conference reviewing and committees")
+    + grp("memberships","Professional memberships")
+    + `<div class="card"><h3>Technical skills</h3>
+      ${D.skills.map((s,i)=>`<div class="row" style="align-items:end">
+        ${fld(s,"k","Category")}
+        <div style="display:grid;grid-template-columns:1fr auto;gap:9px;align-items:end">
+          ${fld(s,"v","Details")}
+          <button class="del" onclick="rm('skills',${i})">Remove</button>
+        </div></div>`).join("")}
+      <button class="add" style="margin-top:14px" onclick='addTo("skills",${JSON.stringify(JSON.stringify({k:"",v:""}))})'>+ Add</button>
+    </div>`
+    + grp("fdpDelivered","Workshops delivered")
+    + grp("fdpAttended","Workshops attended")
+    + grp("awards","Awards and recognition")
+    + `<div class="card"><h3>References</h3>
+      ${D.references.map((r,i)=>`<div style="padding:12px 0;border-bottom:1px solid var(--rule)">
+        ${head("","references",i)}
+        <div class="row3">${fld(r,"name","Name")}${fld(r,"meta","Position")}${fld(r,"email","Email","email")}</div>
+      </div>`).join("")}
+      <button class="add" style="margin-top:14px" onclick='addTo("references",${JSON.stringify(JSON.stringify({name:"",meta:"",email:""}))})'>+ Add</button>
+    </div>`;
+}
+};
+
+/* ---------- render ---------- */
+let cur = "Profile";
+function render(){
+  $("#tabs").innerHTML = Object.keys(PANES).map(k=>
+    `<button class="tab${k===cur?" on":""}" onclick="cur='${k}';render()">${k}</button>`).join("");
+  $("#panes").innerHTML = `<div class="pane on">${PANES[cur]()}</div>`;
+}
+window.cur = cur;
+Object.defineProperty(window,"cur",{get:()=>cur,set:v=>{cur=v}});
+
+function pic(inp){
+  const f = inp.files[0]; if(!f) return;
+  if(f.size > 900000){ alert("Please use an image under 900 KB. Resize it first — a 400×400 photo is plenty."); return; }
+  const r = new FileReader();
+  r.onload = e => { D.profile.photo = e.target.result; render(); };
+  r.readAsDataURL(f);
+}
+window.pic = pic;
+
+function build(){
+  return "// Generated by admin.html on " + new Date().toISOString().slice(0,10) +
+    "\n// Upload this file to your GitHub repository to publish the changes.\n\nwindow.SITE = " +
+    JSON.stringify(D,null,2) + ";\n";
+}
+function save(){
+  const b = new Blob([build()],{type:"text/javascript"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(b); a.download = "data.js"; a.click();
+  URL.revokeObjectURL(a.href);
+}
+function preview(){
+  const w = window.open("","_blank");
+  fetch("index.html").then(r=>r.text()).then(h=>{
+    w.document.write(h.replace('<script src="data.js"><\/script>', "<script>window.SITE="+JSON.stringify(D)+"<\/script>"));
+    w.document.close();
+  }).catch(()=>{ w.close(); alert("Preview needs the site served over http. Open the folder with a local server, or just download data.js and check the live site."); });
+}
+window.save = save; window.preview = preview; window.D = D;
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Ambairam Muthu Sivakrishna</title>
+<meta name="description" content="Insider threat detection, confidential computing and trustworthy AI research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ================= THEMES ================= */
+[data-theme="indigo"]{--brand:#2F3D8F;--brand2:#5A6BC4;--accent:#B4711F;--tint:#EEF0FA;--deep:#171E3F}
+[data-theme="forest"]{--brand:#1F5D45;--brand2:#3F8A6C;--accent:#A96A1E;--tint:#EAF3EE;--deep:#12301F}
+[data-theme="plum"]{--brand:#6B2D5B;--brand2:#96578A;--accent:#A5722B;--tint:#F5EDF3;--deep:#331428}
+[data-theme="slate"]{--brand:#374357;--brand2:#5B6B84;--accent:#95713C;--tint:#EEF0F4;--deep:#1A212C}
+[data-theme="ember"]{--brand:#9C3A22;--brand2:#C4643F;--accent:#7A6220;--tint:#FAEEE9;--deep:#3D1A0F}
+[data-theme="teal"]{--brand:#125E6B;--brand2:#3A8B96;--accent:#A06B24;--tint:#E8F2F4;--deep:#0A3038}
+
+:root{
+  --ink:#16181D;--body:#4C5461;--rule:#E1E4EA;--bg:#FCFCFD;--card:#FFFFFF;
+  --r:10px;--shadow:0 1px 2px rgba(20,25,40,.05),0 6px 20px rgba(20,25,40,.05);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--brand)}
+img{max-width:100%;display:block}
+.shell{display:grid;grid-template-columns:264px 1fr;max-width:1240px;margin:0 auto}
+
+/* ---------- SIDEBAR ---------- */
+aside{position:sticky;top:0;height:100vh;overflow-y:auto;padding:34px 26px 26px;border-right:1px solid var(--rule);background:var(--card);display:flex;flex-direction:column}
+.avatar{width:92px;height:92px;border-radius:50%;object-fit:cover;border:3px solid var(--tint);margin-bottom:16px}
+.avatar-ph{width:92px;height:92px;border-radius:50%;background:linear-gradient(140deg,var(--brand),var(--brand2));color:#fff;display:grid;place-items:center;font:600 30px Fraunces,serif;margin-bottom:16px}
+.nm{font:700 1.18rem/1.3 Fraunces,Georgia,serif;letter-spacing:-.015em}
+.rl{margin-top:7px;font-size:.8rem;color:var(--body);line-height:1.55}
+nav{margin-top:26px;display:flex;flex-direction:column;gap:1px}
+nav a{font-size:.86rem;color:var(--body);text-decoration:none;padding:8px 11px;border-radius:7px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+nav a:hover{background:var(--tint);color:var(--brand)}
+nav a.on{background:var(--tint);color:var(--brand);font-weight:600}
+nav .ct{font-size:.7rem;background:var(--brand);color:#fff;border-radius:20px;padding:1px 7px;font-weight:600}
+.side-links{margin-top:auto;padding-top:22px;font-size:.79rem;line-height:1.9}
+.side-links a{color:var(--body);text-decoration:none;display:block}
+.side-links a:hover{color:var(--brand)}
+
+/* theme picker */
+.themer{margin-top:18px;padding-top:16px;border-top:1px solid var(--rule)}
+.themer span{font-size:.72rem;color:var(--body)}
+.dots{display:flex;gap:7px;margin-top:9px;flex-wrap:wrap}
+.dot{width:22px;height:22px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
+.dot.on{border-color:var(--ink)}
+.dot:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- MAIN ---------- */
+main{padding:0 0 80px;min-width:0}
+section{padding:44px 52px;scroll-margin-top:0;border-bottom:1px solid var(--rule)}
+section:last-child{border-bottom:none}
+h1{font:700 2.5rem/1.14 Fraunces,Georgia,serif;letter-spacing:-.025em;margin:0 0 18px;max-width:17ch}
+h2{font:600 1.35rem/1.3 Fraunces,Georgia,serif;margin:0 0 6px;display:flex;align-items:center;gap:11px}
+h2::before{content:"";width:4px;height:20px;background:var(--brand);border-radius:3px}
+.sec-sub{font-size:.87rem;color:var(--body);margin:0 0 22px;padding-left:15px}
+h3{font-size:.97rem;font-weight:600;margin:0 0 3px}
+p{margin:0 0 14px;max-width:70ch}
+
+/* hero */
+#home{background:linear-gradient(165deg,var(--tint) 0%,var(--bg) 78%);padding-top:58px}
+.lede{font-size:1.06rem;color:var(--body);max-width:64ch;line-height:1.75}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{font-size:.8rem;padding:6px 13px;background:var(--card);border:1px solid var(--rule);border-radius:100px;color:var(--brand);font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px;max-width:600px}
+.stat{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:15px 16px}
+.stat b{display:block;font:700 1.7rem/1 Fraunces,serif;color:var(--brand)}
+.stat span{font-size:.76rem;color:var(--body)}
+
+/* announcements */
+.ann{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--brand);border-radius:var(--r);padding:20px 22px;margin-bottom:14px;box-shadow:var(--shadow)}
+.ann.closed{border-left-color:var(--rule);opacity:.62}
+.ann-top{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:9px}
+.kind{font-size:.72rem;font-weight:600;background:var(--brand);color:#fff;padding:3px 10px;border-radius:5px}
+.ann.closed .kind{background:var(--body)}
+.dl{font-size:.76rem;color:var(--accent);font-weight:600}
+.ann h3{font:600 1.05rem/1.4 Fraunces,serif;margin-bottom:8px}
+.ann p{font-size:.9rem;color:var(--body);margin:0}
+.apply{display:inline-block;margin-top:14px;padding:8px 17px;background:var(--brand);color:#fff;text-decoration:none;border-radius:6px;font-size:.85rem;font-weight:500}
+.apply:hover{background:var(--deep)}
+
+/* posts */
+.post{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);margin-bottom:13px;overflow:hidden;box-shadow:var(--shadow)}
+.post summary{padding:19px 22px;cursor:pointer;list-style:none}
+.post summary::-webkit-details-marker{display:none}
+.post summary h3{font:600 1.06rem/1.4 Fraunces,serif;margin-bottom:6px}
+.pmeta{font-size:.76rem;color:var(--body);display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:9px}
+.tg{background:var(--tint);color:var(--brand);padding:2px 9px;border-radius:4px;font-weight:500}
+.psum{font-size:.89rem;color:var(--body);margin:0}
+.more{font-size:.8rem;color:var(--brand);font-weight:600;margin-top:10px;display:inline-block}
+.post[open] .more{display:none}
+.pbody{padding:0 22px 22px;border-top:1px solid var(--rule);margin-top:4px}
+.pbody p{font-size:.93rem;color:var(--body);margin:15px 0 0;max-width:68ch}
+
+/* courses */
+.course{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:19px 22px;margin-bottom:13px;box-shadow:var(--shadow)}
+.code{display:inline-block;font-size:.72rem;font-weight:600;background:var(--tint);color:var(--brand);padding:3px 9px;border-radius:5px;margin-bottom:9px}
+.course h3{font:600 1.04rem/1.35 Fraunces,serif}
+.cnote{font-size:.86rem;color:var(--body);margin:6px 0 13px}
+.mats{display:flex;flex-wrap:wrap;gap:8px}
+.mat{font-size:.82rem;padding:6px 13px;border:1px solid var(--rule);border-radius:6px;text-decoration:none;color:var(--brand);background:var(--bg)}
+.mat:hover{background:var(--tint)}
+.mat.na{color:var(--body);opacity:.55;pointer-events:none}
+
+/* publications */
+.pub{display:grid;grid-template-columns:40px 1fr;gap:13px;padding:15px 0;border-bottom:1px solid var(--rule)}
+.pub:last-of-type{border-bottom:none}
+.pid{font:600 .78rem Fraunces,serif;color:var(--accent);padding-top:2px}
+.pub .t{font-size:.94rem;font-weight:500;line-height:1.5;margin-bottom:4px}
+.pub .v{font-size:.83rem;color:var(--body);line-height:1.55}
+.badge{display:inline-block;font-size:.71rem;background:var(--tint);color:var(--brand);padding:2px 8px;border-radius:4px;margin-left:6px;font-weight:500}
+.note{font-size:.85rem;color:var(--body);font-style:italic;padding-top:13px}
+.sub{font:600 .82rem Inter;color:var(--body);margin:28px 0 6px}
+.sub:first-of-type{margin-top:0}
+
+/* entries / lists / table */
+.entry{padding:16px 0;border-bottom:1px solid var(--rule)}
+.entry:last-child{border-bottom:none}
+.etop{display:flex;justify-content:space-between;gap:18px;align-items:baseline}
+.where{font-size:.86rem;color:var(--body);font-style:italic}
+.when{font-size:.78rem;color:var(--body);white-space:nowrap;font-variant-numeric:tabular-nums}
+.detail{font-size:.86rem;color:var(--body);margin-top:7px}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{padding:10px 0 10px 15px;border-bottom:1px solid var(--rule);font-size:.88rem;position:relative}
+ul.plain li:last-child{border-bottom:none}
+ul.plain li::before{content:"";position:absolute;left:0;top:19px;width:6px;height:2px;background:var(--brand);border-radius:2px}
+ul.plain b{font-weight:600}
+ul.plain em{font-style:normal;color:var(--body);font-size:.85rem}
+.two{columns:2;column-gap:38px}
+.two li{break-inside:avoid}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{text-align:left;font-size:.77rem;font-weight:600;color:var(--body);padding:0 12px 9px 0;border-bottom:2px solid var(--rule)}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule)}
+td:last-child,th:last-child{text-align:right;padding-right:0;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:none}
+.skill{display:grid;grid-template-columns:190px 1fr;gap:16px;padding:11px 0;border-bottom:1px solid var(--rule);font-size:.88rem}
+.skill:last-child{border-bottom:none}
+.skill dt{font-weight:600}
+.skill dd{margin:0;color:var(--body)}
+
+/* contact */
+.contact{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:24px 26px;box-shadow:var(--shadow);max-width:620px}
+.contact dl{display:grid;grid-template-columns:80px 1fr;gap:10px 16px;margin:0;font-size:.89rem}
+.contact dt{color:var(--body)}
+.contact dd{margin:0}
+.btn{display:inline-block;margin-top:20px;padding:10px 20px;background:var(--brand);color:#fff;text-decoration:none;border-radius:6px;font-size:.87rem;font-weight:500}
+.btn:hover{background:var(--deep)}
+a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  aside{position:static;height:auto;border-right:none;border-bottom:1px solid var(--rule);padding:28px 22px}
+  nav{flex-flow:row wrap;gap:5px;margin-top:20px}
+  nav a{padding:6px 11px;background:var(--tint)}
+  .side-links{margin-top:20px}
+  section{padding:34px 22px}
+  h1{font-size:1.9rem}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .two{columns:1}
+  .skill{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body data-theme="indigo">
+<div class="shell">
+  <aside>
+    <div id="pic"></div>
+    <div class="nm" id="nm"></div>
+    <div class="rl" id="rl"></div>
+    <nav id="nav"></nav>
+    <div class="themer">
+      <span>Colour theme</span>
+      <div class="dots" id="dots"></div>
+    </div>
+    <div class="side-links" id="links"></div>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<script src="data.js"></script>
+<script>
+const S = window.SITE, E = s => String(s??"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const THEMES = {indigo:"#2F3D8F",forest:"#1F5D45",plum:"#6B2D5B",slate:"#374357",ember:"#9C3A22",teal:"#125E6B"};
+const fmt = d => d ? new Date(d+"T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}) : "";
+const initials = n => n.replace(/^Dr\.?\s*/i,"").split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase();
+
+/* sidebar */
+const p = S.profile;
+document.body.dataset.theme = localStorage.getItem("th") || S.theme || "indigo";
+document.getElementById("pic").innerHTML = p.photo
+  ? `<img class="avatar" src="${E(p.photo)}" alt="${E(p.name)}">`
+  : `<div class="avatar-ph">${E(initials(p.name))}</div>`;
+document.getElementById("nm").textContent = p.name;
+document.getElementById("rl").innerHTML = [p.title,p.dept,p.org].filter(Boolean).map(E).join("<br>");
+
+document.getElementById("dots").innerHTML = Object.entries(THEMES).map(([k,c])=>
+  `<button class="dot${document.body.dataset.theme===k?" on":""}" data-t="${k}" style="background:${c}" title="${k}" aria-label="${k} theme"></button>`).join("");
+document.getElementById("dots").onclick = e => {
+  const b = e.target.closest(".dot"); if(!b) return;
+  document.body.dataset.theme = b.dataset.t;
+  localStorage.setItem("th", b.dataset.t);
+  document.querySelectorAll(".dot").forEach(d=>d.classList.toggle("on", d===b));
+};
+
+document.getElementById("links").innerHTML = [
+  p.email && `<a href="mailto:${E(p.email)}">${E(p.email)}</a>`,
+  p.orcid && `<a href="https://orcid.org/${E(p.orcid)}">ORCID ${E(p.orcid)}</a>`,
+  p.scholar && `<a href="${E(p.scholar)}">Google Scholar</a>`,
+  p.linkedin && `<a href="${E(p.linkedin)}">LinkedIn</a>`,
+  p.github && `<a href="${E(p.github)}">GitHub</a>`
+].filter(Boolean).join("");
+
+/* helpers */
+const listOf = a => `<ul class="plain">${a.map(x=>`<li><b>${E(x.name)}</b> <em>— ${E(x.meta)}</em></li>`).join("")}</ul>`;
+const openAnn = S.announcements.filter(a=>a.open).length;
+
+/* sections */
+const SEC = [];
+const add = (id,label,count,html) => SEC.push({id,label,count,html});
+
+add("home","Overview",0,`
+  <h1>${E(p.headline)}</h1>
+  <p class="lede">${E(p.bio)}</p>
+  <div class="chips">${S.interests.map(i=>`<span class="chip">${E(i)}</span>`).join("")}</div>
+  <div class="stats">${S.stats.map(s=>`<div class="stat"><b>${E(s.n)}</b><span>${E(s.label)}</span></div>`).join("")}</div>`);
+
+add("announcements","Announcements",openAnn,`
+  <h2>Announcements</h2>
+  <p class="sec-sub">Open calls, internships and student opportunities.</p>
+  ${S.announcements.map(a=>`
+    <article class="ann${a.open?"":" closed"}">
+      <div class="ann-top">
+        <span class="kind">${E(a.kind)}</span>
+        ${a.deadline?`<span class="dl">${a.open?"Applications close":"Closed"} ${fmt(a.deadline)}</span>`:""}
+        <span class="when">Posted ${fmt(a.date)}</span>
+      </div>
+      <h3>${E(a.title)}</h3>
+      <p>${E(a.body)}</p>
+      ${a.open&&a.link?`<a class="apply" href="${E(a.link)}">Apply now</a>`
+        :a.open?`<a class="apply" href="mailto:${E(p.email)}?subject=${encodeURIComponent(a.title)}">Enquire by email</a>`:""}
+    </article>`).join("")}`);
+
+add("research","Publications",S.journals.length+S.conferences.length,`
+  <h2>Publications</h2>
+  <p class="sec-sub">Peer-reviewed journal articles and conference papers.</p>
+  <p class="sub">Journal articles</p>
+  ${S.journals.map(j=>`<div class="pub"><div class="pid">${E(j.id)}</div><div>
+    <div class="t">${E(j.title)}</div>
+    <div class="v">${E(j.venue)}${j.doi?` · DOI <a href="https://doi.org/${E(j.doi)}">${E(j.doi)}</a>`:""}<span class="badge">${E(j.meta)}</span></div>
+  </div></div>`).join("")}
+  <p class="note">${E(S.journalsNote)}</p>
+  <p class="sub">Conference papers</p>
+  ${S.conferences.map(c=>`<div class="pub"><div class="pid">${E(c.id)}</div><div>
+    <div class="t">${E(c.title)}</div>
+    <div class="v">${E(c.venue)}<span class="badge">${E(c.meta)}</span></div>
+  </div></div>`).join("")}
+  <p class="note">${E(S.conferencesNote)}</p>`);
+
+add("blog","Blog",S.posts.length,`
+  <h2>Blog</h2>
+  <p class="sec-sub">Research notes, teaching thoughts and advice for students.</p>
+  ${S.posts.map(b=>`
+    <details class="post">
+      <summary>
+        <h3>${E(b.title)}</h3>
+        <div class="pmeta"><span>${fmt(b.date)}</span>${(b.tags||[]).map(t=>`<span class="tg">${E(t)}</span>`).join("")}</div>
+        <p class="psum">${E(b.summary)}</p>
+        <span class="more">Read the full post</span>
+      </summary>
+      <div class="pbody">${b.body.split("\n").filter(Boolean).map(x=>`<p>${E(x)}</p>`).join("")}</div>
+    </details>`).join("")}`);
+
+add("courses","Teaching materials",S.courses.length,`
+  <h2>Teaching materials</h2>
+  <p class="sec-sub">Slides, notes and problem sets for current courses.</p>
+  ${S.courses.map(c=>`
+    <div class="course">
+      <span class="code">${E(c.code)}</span>
+      <h3>${E(c.name)}</h3>
+      <div class="cnote">${E(c.term)} — ${E(c.note)}</div>
+      <div class="mats">${(c.materials||[]).map(m=>m.url
+        ?`<a class="mat" href="${E(m.url)}">${E(m.label)}</a>`
+        :`<span class="mat na">${E(m.label)} · coming soon</span>`).join("")}</div>
+    </div>`).join("")}`);
+
+add("teaching","Experience",0,`
+  <h2>Teaching experience</h2>
+  <p class="sec-sub">Faculty appointments and courses handled.</p>
+  ${S.teaching.map(t=>`<div class="entry"><div class="etop"><div>
+    <h3>${E(t.role)}</h3><div class="where">${E(t.org)}</div></div>
+    <div class="when">${E(t.when)}</div></div>
+    <div class="detail">${E(t.detail)}</div></div>`).join("")}
+  <p class="sub">Supervision &amp; administration</p>
+  <ul class="plain">${S.admin.map(a=>`<li>${E(a)}</li>`).join("")}</ul>`);
+
+add("education","Education",0,`
+  <h2>Education</h2>
+  <p class="sec-sub">Degrees and academic theses.</p>
+  <table><thead><tr><th>Degree</th><th>Institution</th><th>Result</th><th>Year</th></tr></thead>
+  <tbody>${S.education.map(e=>`<tr><td>${E(e.deg)}</td><td>${E(e.inst)}</td><td>${E(e.score)}</td><td>${E(e.year)}</td></tr>`).join("")}</tbody></table>
+  <p class="sub">Theses</p>
+  ${S.theses.map(t=>`<div class="entry"><div class="etop"><div>
+    <h3>${E(t.title)}</h3><div class="where">${E(t.sub)}</div></div>
+    <div class="when">${E(t.when)}</div></div></div>`).join("")}`);
+
+add("service","Service",S.reviewJournals.length+S.reviewConfs.length,`
+  <h2>Professional service</h2>
+  <p class="sec-sub">Reviewing, committee work and memberships.</p>
+  <p class="sub">Journal reviewing</p>${listOf(S.reviewJournals)}
+  <p class="sub">Conference reviewing &amp; committees</p>${listOf(S.reviewConfs)}
+  <p class="sub">Memberships</p>${listOf(S.memberships)}`);
+
+add("skills","Skills &amp; training",0,`
+  <h2>Skills and training</h2>
+  <p class="sec-sub">Technical competencies and faculty development.</p>
+  <dl>${S.skills.map(s=>`<div class="skill"><dt>${E(s.k)}</dt><dd>${E(s.v)}</dd></div>`).join("")}</dl>
+  <p class="sub">Workshops delivered</p>${listOf(S.fdpDelivered)}
+  <p class="sub">Workshops attended</p>${listOf(S.fdpAttended)}`);
+
+add("awards","Awards",0,`
+  <h2>Awards and recognition</h2>
+  <p class="sec-sub">Medals, qualifications and honours.</p>
+  <ul class="plain two">${S.awards.map(a=>`<li><b>${E(a.name)}</b> <em>— ${E(a.meta)}</em></li>`).join("")}</ul>`);
+
+add("contact","Contact",0,`
+  <h2>Contact</h2>
+  <p class="sec-sub">Collaboration, review invitations and student enquiries.</p>
+  <div class="contact">
+    <dl>
+      <dt>Email</dt><dd><a href="mailto:${E(p.email)}">${E(p.email)}</a></dd>
+      <dt>Phone</dt><dd>${E(p.phone)}</dd>
+      <dt>ORCID</dt><dd><a href="https://orcid.org/${E(p.orcid)}">${E(p.orcid)}</a></dd>
+      <dt>Office</dt><dd>${E(p.dept)}, ${E(p.org)}</dd>
+    </dl>
+    ${p.cv?`<a class="btn" href="${E(p.cv)}">Download full CV (PDF)</a>`:""}
+  </div>
+  <p class="sub">References</p>
+  <ul class="plain">${S.references.map(r=>`<li><b>${E(r.name)}</b> <em>— ${E(r.meta)} · <a href="mailto:${E(r.email)}">${E(r.email)}</a></em></li>`).join("")}</ul>`);
+
+document.getElementById("main").innerHTML = SEC.map(s=>`<section id="${s.id}">${s.html}</section>`).join("");
+document.getElementById("nav").innerHTML = SEC.map(s=>
+  `<a href="#${s.id}">${s.label}${s.count?`<span class="ct">${s.count}</span>`:""}</a>`).join("");
+
+/* highlight current section */
+const nav = [...document.querySelectorAll("#nav a")];
+new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting) nav.forEach(a=>a.classList.toggle("on", a.hash==="#"+e.target.id)); });
+},{rootMargin:"-15% 0px -75% 0px"}).observe && document.querySelectorAll("section").forEach(s=>{
+  new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting) nav.forEach(a=>a.classList.toggle("on", a.hash==="#"+e.target.id));
+  }),{rootMargin:"-10% 0px -80% 0px"}).observe(s);
+});
+</script>
+</body>
+</html>
