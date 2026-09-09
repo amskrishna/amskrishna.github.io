@@ -1,267 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="sapphire">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#071b2f">
-<title>Dr. Ambairam Muthu Sivakrishna | Trustworthy AI & Cybersecurity</title>
-<meta name="description" content="Academic website of Dr. Ambairam Muthu Sivakrishna — Assistant Professor and researcher in trustworthy AI, insider threat detection, causal AI, graph learning and quantum machine learning.">
-<meta name="keywords" content="Ambairam Muthu Sivakrishna, Trustworthy AI, Insider Threat Detection, Cybersecurity, Causal AI, Quantum Machine Learning, Graph Neural Networks, Alliance University, NIT Trichy">
+<meta name="theme-color" content="#1d4ed8">
+<title>Dr. Ambairam Muthu Sivakrishna | Academic & Research Profile</title>
+<meta name="description" content="Academic and research website of Dr. Ambairam Muthu Sivakrishna, Assistant Professor and researcher in trustworthy AI, insider threat detection, causal AI, graph learning and quantum machine learning.">
 <meta name="author" content="Dr. Ambairam Muthu Sivakrishna">
 <meta property="og:title" content="Dr. Ambairam Muthu Sivakrishna | Academic & Research Profile">
-<meta property="og:description" content="Research in trustworthy AI, behavioural cybersecurity, causal intelligence and quantum machine learning.">
+<meta property="og:description" content="Trustworthy AI · Behavioural Cybersecurity · Causal Intelligence · Quantum Machine Learning">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23071b2f'/%3E%3Cpath d='M16 44L27 17h10l11 27h-9l-2-6H27l-2 6h-9zm14-13h5l-2.5-8z' fill='%236ee7d8'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d4ed8'/%3E%3Cpath d='M14 45L27 16h10l13 29h-9l-2.7-6.3H25.7L23 45h-9zm14.3-13.7h7.4L32 22.5z' fill='white'/%3E%3C/svg%3E">
 <style>
 :root{
-  --navy:#071b2f; --navy2:#0b2842; --ink:#112235; --muted:#627184;
-  --bg:#f6f9fc; --surface:#ffffff; --surface2:#eef5f8; --line:#dce7ee;
-  --teal:#0f8f86; --teal2:#6ee7d8; --cyan:#1da1b5; --gold:#d59c46;
-  --shadow:0 18px 55px rgba(7,27,47,.10); --radius:22px; --max:1180px;
+  --primary:#1d4ed8;--primary-2:#2563eb;--primary-dark:#0f2f75;--accent:#06b6d4;
+  --accent-2:#7c3aed;--soft:#eef6ff;--soft-2:#f7fbff;--wash:#e8f2ff;
+  --ink:#12213a;--muted:#637086;--line:#dbe5f2;--surface:#fff;--bg:#f8fbff;
+  --shadow:0 18px 55px rgba(26,63,117,.10);--shadow-sm:0 9px 28px rgba(26,63,117,.07);
+  --radius:24px;--radius-sm:16px;--max:1180px;
 }
-[data-mode="dark"]{
-  --ink:#eef8fb; --muted:#9cb0bf; --bg:#061521; --surface:#0b2031;
-  --surface2:#102b3e; --line:#193a50; --navy:#03101b; --navy2:#092136;
-  --shadow:0 20px 60px rgba(0,0,0,.28);
+html[data-theme="maroon"]{
+  --primary:#8a1538;--primary-2:#b4235a;--primary-dark:#551026;--accent:#d79b17;
+  --accent-2:#7c2d55;--soft:#fff2f5;--soft-2:#fffafb;--wash:#fde7ed;
+  --line:#ead9df;--bg:#fffafb;--shadow:0 18px 55px rgba(102,19,48,.10);--shadow-sm:0 9px 28px rgba(102,19,48,.07)
 }
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased} body.no-scroll{overflow:hidden}
-a{color:inherit} img{display:block;max-width:100%} button{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:2000;background:#fff;padding:10px 14px;border-radius:10px}
+html[data-theme="teal"]{
+  --primary:#0f766e;--primary-2:#0d9488;--primary-dark:#115e59;--accent:#4f46e5;
+  --accent-2:#0ea5e9;--soft:#edfffb;--soft-2:#f7fffd;--wash:#dff9f4;
+  --line:#d5e8e4;--bg:#f8fffd;--shadow:0 18px 55px rgba(15,118,110,.10);--shadow-sm:0 9px 28px rgba(15,118,110,.07)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}
+a{color:inherit}img{display:block;max-width:100%}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:3000;background:#fff;padding:10px 14px;border:1px solid var(--line);border-radius:10px}.icon{width:19px;height:19px;display:inline-block;vertical-align:middle}.icon-lg{width:25px;height:25px}.muted{color:var(--muted)}
+.scrollProgress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--primary),var(--accent));z-index:2500;transition:width .08s linear}
 
-/* Navigation */
-.topbar{position:sticky;top:0;z-index:1000;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid color-mix(in srgb,var(--line) 75%,transparent)}
-.navrow{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:max-content}.brandmark{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,var(--navy),#0e3b56);display:grid;place-items:center;color:var(--teal2);font:800 15px/1 Manrope;box-shadow:0 8px 24px rgba(7,27,47,.18)}.brandtext strong{font:700 14px/1.2 Manrope;display:block}.brandtext span{font-size:11px;color:var(--muted)}
-.navlinks{display:flex;align-items:center;gap:6px}.navlinks a{font-size:13px;font-weight:600;text-decoration:none;color:var(--muted);padding:9px 11px;border-radius:10px;transition:.2s}.navlinks a:hover,.navlinks a.active{color:var(--ink);background:var(--surface)}
-.navtools{display:flex;align-items:center;gap:8px}.iconbtn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer}.iconbtn svg{width:18px;height:18px}.menuBtn{display:none}
+/* Header */
+.topbar{position:sticky;top:0;z-index:1500;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid color-mix(in srgb,var(--line) 75%,transparent)}
+.navrow{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:max-content}.brandMark{width:42px;height:42px;border-radius:13px;background:linear-gradient(145deg,var(--primary),var(--primary-dark));display:grid;place-items:center;color:white;font:800 15px/1 Manrope;box-shadow:0 8px 20px color-mix(in srgb,var(--primary) 20%,transparent)}.brandText strong{font:800 13px/1.25 Manrope;display:block;letter-spacing:-.015em}.brandText span{font-size:10.5px;color:var(--muted)}
+.navlinks{display:flex;align-items:center;gap:2px}.navlinks a,.navMoreBtn{font-size:12.5px;font-weight:700;text-decoration:none;color:var(--muted);padding:9px 8px;border-radius:10px;border:0;background:transparent;cursor:pointer;transition:.2s}.navlinks a:hover,.navlinks a.active,.navMoreBtn:hover{color:var(--primary);background:var(--soft)}.navMore{position:relative}.navMoreMenu{display:none;position:absolute;top:calc(100% + 10px);right:0;min-width:190px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.navMore:hover .navMoreMenu,.navMore:focus-within .navMoreMenu{display:grid}.navMoreMenu a{padding:10px 11px}
+.navTools{display:flex;align-items:center;gap:8px}.palette{display:flex;align-items:center;gap:6px;padding:5px;border:1px solid var(--line);border-radius:999px;background:white}.swatch{width:23px;height:23px;border-radius:50%;border:2px solid white;box-shadow:0 0 0 1px var(--line);cursor:pointer;transition:.2s}.swatch:hover{transform:scale(1.08)}.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--primary)}.swatch.blue{background:#1d4ed8}.swatch.maroon{background:#8a1538}.swatch.teal{background:#0f766e}.iconBtn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:white;color:var(--ink);display:grid;place-items:center;cursor:pointer}.menuBtn{display:none}.mobileNav{display:none}
 
 /* Hero */
-.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,var(--navy) 0%,#0a2943 53%,#0b3c4d 100%);color:white;padding:82px 0 72px}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 16% 20%,rgba(110,231,216,.15),transparent 28%),radial-gradient(circle at 85% 30%,rgba(29,161,181,.16),transparent 25%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:auto,auto,44px 44px,44px 44px;mask-image:linear-gradient(to bottom,#000,transparent 94%)}
-.heroGrid{position:relative;display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:72px}.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#c7f8f1}.eyebrow::before{content:"";width:30px;height:1px;background:var(--teal2)}
-.hero h1{font:800 clamp(3rem,6vw,5.6rem)/.98 Manrope;margin:17px 0 20px;letter-spacing:-.055em;max-width:820px}.hero h1 span{color:var(--teal2)}.heroLead{font-size:clamp(1rem,1.5vw,1.18rem);color:#c6d5df;max-width:720px;margin:0}.heroRole{margin-top:18px;font-weight:600;color:#fff}.heroActions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border-radius:12px;font-weight:700;font-size:14px;text-decoration:none;border:1px solid transparent;transition:.2s}.btn.primary{background:var(--teal2);color:#04202a}.btn.primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(110,231,216,.18)}.btn.ghost{border-color:rgba(255,255,255,.22);color:white;background:rgba(255,255,255,.05)}.btn.ghost:hover{background:rgba(255,255,255,.1)}
-.socials{display:flex;gap:14px;align-items:center;margin-top:25px}.socials a{color:#b8cad5;font-size:13px;text-decoration:none;border-bottom:1px solid transparent}.socials a:hover{color:white;border-color:#7edfd7}
-.photoStage{position:relative;display:grid;place-items:center;min-height:410px}.orbit{position:absolute;width:390px;height:390px;border:1px solid rgba(110,231,216,.22);border-radius:50%;animation:spin 28s linear infinite}.orbit::before,.orbit::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--teal2);box-shadow:0 0 18px var(--teal2)}.orbit::before{top:39px;left:77px}.orbit::after{right:38px;bottom:88px;background:#8bc7ff;box-shadow:0 0 18px #8bc7ff}.orbit.o2{width:315px;height:315px;animation-direction:reverse;animation-duration:22s;border-style:dashed;opacity:.65}@keyframes spin{to{transform:rotate(360deg)}}
-.photoCard{position:relative;width:290px;aspect-ratio:1/1.13;border-radius:34px;overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 30px 80px rgba(0,0,0,.34);background:#17384b}.photoCard img{width:100%;height:100%;object-fit:cover}.photoCard::after{content:"";position:absolute;inset:auto 0 0;height:38%;background:linear-gradient(transparent,rgba(4,20,31,.72))}.photoTag{position:absolute;z-index:2;bottom:18px;left:18px;right:18px;padding:11px 13px;background:rgba(5,24,37,.74);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);border-radius:14px;font-size:12px;color:#dcebf0}.photoTag b{display:block;color:white;font-size:13px}
+.hero{position:relative;overflow:hidden;padding:82px 0 62px;background:linear-gradient(180deg,#fff 0%,var(--soft-2) 100%);border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 83% 15%,color-mix(in srgb,var(--accent) 14%,transparent),transparent 22%),radial-gradient(circle at 8% 75%,color-mix(in srgb,var(--primary) 9%,transparent),transparent 28%),radial-gradient(circle,color-mix(in srgb,var(--primary) 16%,transparent) 1.2px,transparent 1.2px);background-size:auto,auto,28px 28px;mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.55) 55%,transparent 100%);opacity:.85}
+.heroBlob{position:absolute;border-radius:999px;filter:blur(2px);pointer-events:none;animation:float 8s ease-in-out infinite}.blob1{width:190px;height:190px;right:6%;top:8%;background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 12%,white),color-mix(in srgb,var(--accent) 16%,white));opacity:.65}.blob2{width:110px;height:110px;right:31%;bottom:2%;background:color-mix(in srgb,var(--accent-2) 11%,white);animation-delay:-3s}@keyframes float{50%{transform:translateY(-12px) translateX(8px)}}
+.heroGrid{position:relative;display:grid;grid-template-columns:1.18fr .82fr;align-items:center;gap:68px}.heroBadge{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid color-mix(in srgb,var(--primary) 20%,var(--line));background:color-mix(in srgb,var(--soft) 72%,white);border-radius:999px;color:var(--primary);font-size:12px;font-weight:800;letter-spacing:.035em}.heroBadge .dot{width:8px;height:8px;border-radius:50%;background:#22a06b;box-shadow:0 0 0 5px rgba(34,160,107,.11)}
+.hero h1{font:800 clamp(2.8rem,5.2vw,5rem)/1.01 Manrope;margin:20px 0 16px;letter-spacing:-.058em;max-width:760px}.hero h1 span{color:var(--primary)}.heroHeadline{font:700 clamp(1.08rem,1.8vw,1.35rem)/1.4 Manrope;color:var(--ink);max-width:760px;margin:0}.heroLead{font-size:15.5px;color:var(--muted);max-width:720px;margin:15px 0 0}.heroRole{margin-top:16px;font-size:13.5px;font-weight:700;color:var(--primary-dark);display:flex;align-items:center;gap:8px}.heroActions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border-radius:12px;font-size:13.5px;font-weight:800;text-decoration:none;border:1px solid transparent;transition:.22s}.btn.primary{background:var(--primary);color:#fff;box-shadow:0 10px 24px color-mix(in srgb,var(--primary) 18%,transparent)}.btn.primary:hover{transform:translateY(-2px);background:var(--primary-dark)}.btn.secondary{background:white;border-color:var(--line);color:var(--ink)}.btn.secondary:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--primary) 28%,var(--line));color:var(--primary)}.btn.soft{background:var(--soft);color:var(--primary);border-color:color-mix(in srgb,var(--primary) 12%,var(--line))}
+.socialRow{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.socialLink{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:10px;transition:.2s}.socialLink:hover{background:var(--soft);color:var(--primary)}
+.photoStage{position:relative;min-height:435px;display:grid;place-items:center;perspective:900px}.photoFrameBack{position:absolute;width:322px;height:376px;border-radius:32px;background:linear-gradient(145deg,var(--primary),var(--accent));transform:translate(27px,-16px) rotate(4deg);opacity:.96;box-shadow:0 26px 60px color-mix(in srgb,var(--primary) 17%,transparent)}.photoFrameMid{position:absolute;width:318px;height:372px;border-radius:32px;border:2px solid color-mix(in srgb,var(--primary) 24%,white);transform:translate(-24px,19px) rotate(-3deg);background:var(--soft)}.photoCard{position:relative;width:316px;height:372px;border-radius:30px;overflow:hidden;background:#eaf0f7;border:6px solid white;box-shadow:0 28px 70px rgba(25,53,96,.18);transition:transform .18s ease;transform-style:preserve-3d}.photoCard img{width:100%;height:100%;object-fit:cover}.photoOverlay{position:absolute;left:18px;right:18px;bottom:18px;padding:11px 13px;border-radius:14px;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.75);box-shadow:0 8px 24px rgba(20,46,85,.10)}.photoOverlay b{display:block;font:800 12.5px Manrope;color:var(--ink)}.photoOverlay span{display:block;font-size:10.5px;color:var(--muted);margin-top:2px}.miniFloat{position:absolute;display:flex;align-items:center;gap:8px;padding:9px 11px;border-radius:13px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);font-size:11px;font-weight:800;color:var(--primary);animation:float 7s ease-in-out infinite}.miniFloat.one{top:56px;left:8px}.miniFloat.two{right:-2px;bottom:65px;animation-delay:-2s}
+.statsFrame{position:relative;margin-top:-1px;background:#fff;border-bottom:1px solid var(--line)}.statsGrid{display:grid;grid-template-columns:1.2fr repeat(4,.55fr);align-items:stretch}.statsIntro{padding:22px 24px 22px 0;display:flex;align-items:center;gap:12px}.statsIntroIcon{width:42px;height:42px;border-radius:13px;background:var(--soft);color:var(--primary);display:grid;place-items:center}.statsIntro b{font:800 13px Manrope;display:block}.statsIntro span{font-size:11px;color:var(--muted)}.stat{padding:20px 18px;border-left:1px solid var(--line)}.stat strong{font:800 25px/1 Manrope;color:var(--primary);display:block}.stat span{font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);display:block;margin-top:5px}
 
-/* Signal strip + generic section */
-.signal{margin-top:-28px;position:relative;z-index:3}.signalBox{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.25fr repeat(4,.6fr);overflow:hidden}.signalIntro{padding:20px 24px;display:flex;align-items:center;gap:14px}.pulse{width:10px;height:10px;border-radius:50%;background:#23b26d;box-shadow:0 0 0 7px rgba(35,178,109,.1)}.signalIntro strong{font:700 14px Manrope}.signalIntro span{display:block;color:var(--muted);font-size:12px}.metric{padding:19px 20px;border-left:1px solid var(--line)}.metric b{font:800 24px/1 Manrope;color:var(--teal)}.metric span{display:block;color:var(--muted);font-size:11px;margin-top:5px;text-transform:uppercase;letter-spacing:.05em}
-.section{padding:92px 0;scroll-margin-top:76px}.section.alt{background:var(--surface)}.sectionHead{display:grid;grid-template-columns:.65fr 1.35fr;gap:40px;align-items:end;margin-bottom:42px}.kicker{color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.section h2{font:800 clamp(2rem,4vw,3.1rem)/1.08 Manrope;letter-spacing:-.04em;margin:9px 0 0}.sectionIntro{color:var(--muted);font-size:16px;max-width:680px;margin:0}
+/* Sections */
+.section{padding:88px 0;scroll-margin-top:82px}.section.frame{background:white}.section.softFrame{background:linear-gradient(180deg,var(--soft-2),var(--soft));border-top:1px solid color-mix(in srgb,var(--primary) 7%,var(--line));border-bottom:1px solid color-mix(in srgb,var(--primary) 7%,var(--line))}.sectionHead{display:grid;grid-template-columns:.62fr 1.38fr;gap:44px;align-items:end;margin-bottom:38px}.kicker{display:flex;align-items:center;gap:8px;color:var(--primary);font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.kicker::before{content:"";width:26px;height:2px;border-radius:99px;background:linear-gradient(90deg,var(--primary),var(--accent))}.section h2{font:800 clamp(2rem,3.8vw,3rem)/1.08 Manrope;letter-spacing:-.045em;margin:9px 0 0}.sectionIntro{color:var(--muted);font-size:15.5px;max-width:690px;margin:0}.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}.sectionNumber{font:800 11px Manrope;color:var(--primary);padding:5px 9px;border-radius:999px;background:var(--soft);border:1px solid color-mix(in srgb,var(--primary) 12%,var(--line))}
 
-/* About */
-.aboutGrid{display:grid;grid-template-columns:1.3fr .7fr;gap:26px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 28px rgba(7,27,47,.05)}.aboutText{padding:32px}.aboutText p{margin:0;color:var(--muted);font-size:16px}.aboutText p+p{margin-top:15px}.focusPanel{padding:28px;background:linear-gradient(160deg,var(--navy),#0d344a);color:#fff;border:none}.focusPanel h3{font:700 18px Manrope;margin:0 0 18px}.focusList{display:grid;gap:12px}.focusItem{display:flex;gap:11px;align-items:flex-start;color:#c7d9e3;font-size:13px}.focusItem i{width:8px;height:8px;background:var(--teal2);border-radius:50%;margin-top:7px;box-shadow:0 0 0 5px rgba(110,231,216,.08);flex:0 0 auto}
+/* Profile */
+.profileGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px}.bioPanel{padding:31px}.bioPanel p{font-size:15.5px;color:var(--muted);margin:0}.bioPanel p+p{margin-top:14px}.identityPanel{padding:27px;background:linear-gradient(145deg,var(--primary-dark),var(--primary));color:white;border:none;position:relative;overflow:hidden}.identityPanel::after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-60px;bottom:-80px;background:rgba(255,255,255,.08)}.identityPanel h3{font:800 17px Manrope;margin:0 0 17px}.identityRows{display:grid;gap:13px}.identityRow{display:flex;gap:11px;align-items:flex-start}.identityRow .ic{width:34px;height:34px;flex:0 0 auto;border-radius:10px;background:rgba(255,255,255,.12);display:grid;place-items:center}.identityRow b{font-size:12px;display:block}.identityRow span{font-size:11px;color:rgba(255,255,255,.76);display:block;margin-top:1px}.affiliationStrip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.affiliation{padding:14px 16px;border-radius:15px;background:var(--soft);border:1px solid color-mix(in srgb,var(--primary) 12%,var(--line));display:flex;align-items:center;gap:10px}.affiliation .seal{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--primary);border:1px solid var(--line)}.affiliation b{font:800 11.5px Manrope;display:block}.affiliation span{font-size:10.5px;color:var(--muted)}
+
+/* Education */
+.eduGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.eduCard{position:relative;padding:25px 24px 22px;overflow:hidden;transition:.25s}.eduCard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.eduTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.eduIcon{width:45px;height:45px;border-radius:14px;background:var(--soft);color:var(--primary);display:grid;place-items:center}.eduYear{font:800 11px Manrope;color:var(--primary);background:var(--soft);padding:6px 9px;border-radius:999px}.eduCard h3{font:800 17px/1.25 Manrope;margin:19px 0 7px}.eduInst{font-size:12.5px;color:var(--muted);min-height:42px}.eduScore{margin-top:14px;padding-top:13px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}.eduScore b{font:800 15px Manrope;color:var(--primary)}.eduBadge{font-size:10px;font-weight:800;color:var(--primary);padding:5px 8px;background:var(--soft);border-radius:999px}.eduBadge.gold{color:#8a5d00;background:#fff7d6;border:1px solid #f5e4a4}.earlierEdu{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}.earlierEdu .miniEdu{flex:1;min-width:260px;padding:16px 18px;border:1px dashed color-mix(in srgb,var(--primary) 26%,var(--line));border-radius:16px;background:rgba(255,255,255,.64)}.miniEdu b{font-size:12.5px}.miniEdu span{font-size:11px;color:var(--muted);display:block;margin-top:2px}
 
 /* Research */
-.researchGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.researchCard{position:relative;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;min-height:235px;transition:.25s}.researchCard:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--teal) 35%,var(--line))}.researchCard::before{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-40px;top:-50px;background:radial-gradient(circle,var(--surface2),transparent 68%)}.rIcon{width:44px;height:44px;border-radius:13px;background:var(--surface2);display:grid;place-items:center;color:var(--teal);font:800 15px Manrope;margin-bottom:22px}.researchCard h3{font:700 18px/1.25 Manrope;margin:0 0 10px}.researchCard p{font-size:13.5px;color:var(--muted);margin:0}.researchCard .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}.tiny{font-size:10px;font-weight:700;color:var(--teal);background:color-mix(in srgb,var(--teal) 8%,transparent);padding:5px 8px;border-radius:999px}
+.researchLayout{display:grid;grid-template-columns:.78fr 1.22fr;gap:22px;align-items:stretch}.researchMap{min-height:520px;padding:28px;position:relative;overflow:hidden;background:linear-gradient(145deg,var(--primary-dark),var(--primary));color:#fff;border:none}.researchMap h3{font:800 20px Manrope;margin:0}.researchMap p{font-size:12.5px;color:rgba(255,255,255,.74);margin:8px 0 0;max-width:420px}.constellation{position:relative;height:360px;margin-top:22px}.coreNode{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:142px;height:142px;border-radius:50%;display:grid;place-items:center;text-align:center;padding:18px;background:#fff;color:var(--primary-dark);font:800 15px/1.25 Manrope;box-shadow:0 0 0 12px rgba(255,255,255,.07),0 14px 35px rgba(0,0,0,.16);z-index:3}.orbitRing{position:absolute;left:50%;top:50%;width:320px;height:320px;border:1px dashed rgba(255,255,255,.26);border-radius:50%;transform:translate(-50%,-50%);animation:spin 34s linear infinite}.orbitRing.two{width:240px;height:240px;animation-direction:reverse;animation-duration:28s}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}.rNode{position:absolute;padding:8px 10px;border-radius:11px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);font-size:10.5px;font-weight:800;color:#fff;white-space:nowrap}.rn1{top:18px;left:32px}.rn2{top:44px;right:13px}.rn3{left:4px;top:170px}.rn4{right:4px;top:190px}.rn5{left:48px;bottom:12px}.rn6{right:38px;bottom:9px}.researchCards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.researchCard{padding:21px;border-radius:19px;background:#fff;border:1px solid var(--line);transition:.24s;position:relative;overflow:hidden}.researchCard::before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:linear-gradient(var(--primary),var(--accent));transform:scaleY(0);transform-origin:top;transition:.25s}.researchCard:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}.researchCard:hover::before{transform:scaleY(1)}.rTop{display:flex;align-items:center;justify-content:space-between;gap:10px}.rIcon{width:40px;height:40px;border-radius:12px;background:var(--soft);color:var(--primary);display:grid;place-items:center}.rNum{font:800 10px Manrope;color:var(--primary)}.researchCard h3{font:800 15.5px/1.28 Manrope;margin:14px 0 7px}.researchCard p{font-size:12.3px;line-height:1.58;color:var(--muted);margin:0}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}.tag{font-size:9.7px;font-weight:800;color:var(--primary);background:var(--soft);padding:5px 7px;border-radius:999px}
 
 /* Publications */
-.pubFeature{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;margin-bottom:22px}.pubHero{padding:30px;background:linear-gradient(145deg,#09213a,#0a3d4b);color:white;border:none}.pubHero .label{font-size:11px;color:#9ee8df;text-transform:uppercase;letter-spacing:.1em;font-weight:700}.pubHero h3{font:700 23px/1.28 Manrope;margin:14px 0}.pubHero p{color:#bcd0da;font-size:13.5px}.pubHero a{color:#8cf0e4;text-decoration:none;font-size:13px;font-weight:700}.pubStats{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pubMini{padding:24px}.pubMini b{font:800 34px Manrope;color:var(--teal)}.pubMini span{display:block;color:var(--muted);font-size:12px}.tabs{display:flex;gap:8px;margin:30px 0 12px}.tab{border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:9px 14px;border-radius:11px;font-weight:700;font-size:12px;cursor:pointer}.tab.on{background:var(--navy);color:white;border-color:var(--navy)}.pubList{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}.pubItem{display:grid;grid-template-columns:50px 1fr auto;gap:16px;padding:20px 22px;border-bottom:1px solid var(--line);align-items:start}.pubItem:last-child{border-bottom:0}.pubId{font:800 12px Manrope;color:var(--teal);background:var(--surface2);border-radius:8px;padding:6px 7px;text-align:center}.pubTitle{font-weight:700;font-size:14px;line-height:1.45}.pubVenue{font-size:12.5px;color:var(--muted);margin-top:5px}.pubMeta{font-size:10px;padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);white-space:nowrap}.pubTitle a{color:inherit;text-decoration:none}.pubTitle a:hover{color:var(--teal)}
+.pubTop{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-bottom:18px}.featuredPub{padding:27px;background:linear-gradient(145deg,var(--primary-dark),var(--primary));color:white;border:none;position:relative;overflow:hidden}.featuredPub::after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;right:-80px;top:-80px;background:rgba(255,255,255,.07)}.featuredPub .label{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.66)}.featuredPub h3{font:800 19px/1.32 Manrope;margin:12px 0 10px;max-width:640px}.featuredPub p{font-size:12px;color:rgba(255,255,255,.75);margin:0}.featuredPub a{display:inline-flex;margin-top:16px;color:white;font-size:11.5px;font-weight:800;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.36)}.pubMetrics{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.pubMetric{padding:20px}.pubMetric strong{font:800 27px/1 Manrope;color:var(--primary);display:block}.pubMetric span{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;display:block;margin-top:6px}.pubTabs{display:flex;gap:8px;margin:18px 0 12px}.tab{border:1px solid var(--line);background:white;color:var(--muted);padding:8px 12px;border-radius:10px;font-size:11.5px;font-weight:800;cursor:pointer}.tab.on{background:var(--primary);border-color:var(--primary);color:white}.pubList{display:grid;gap:10px}.pubItem{display:grid;grid-template-columns:48px 1fr auto;gap:14px;align-items:start;padding:17px 18px;background:#fff;border:1px solid var(--line);border-radius:15px;transition:.2s}.pubItem:hover{border-color:color-mix(in srgb,var(--primary) 30%,var(--line));box-shadow:var(--shadow-sm)}.pubId{width:42px;height:42px;border-radius:12px;background:var(--soft);display:grid;place-items:center;color:var(--primary);font:800 10.5px Manrope}.pubTitle{font:800 13px/1.45 Manrope}.pubTitle a{text-decoration:none}.pubTitle a:hover{color:var(--primary)}.pubVenue{font-size:11px;color:var(--muted);margin-top:4px}.pubMeta{font-size:10px;font-weight:800;color:var(--primary);background:var(--soft);padding:6px 8px;border-radius:9px;text-align:right;max-width:170px}
+
+/* Achievements */
+.achievementGrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}.achCategory{padding:23px}.achHead{display:flex;align-items:center;gap:11px;margin-bottom:15px}.achIcon{width:42px;height:42px;border-radius:13px;background:var(--soft);color:var(--primary);display:grid;place-items:center}.achHead h3{font:800 15.5px Manrope;margin:0}.achList{display:grid;gap:10px}.achItem{padding:12px 13px;border-radius:13px;background:var(--soft-2);border:1px solid color-mix(in srgb,var(--primary) 7%,var(--line))}.achItem b{font-size:11.5px;display:block}.achItem span{font-size:10.5px;color:var(--muted);display:block;margin-top:2px}.goldAccent{background:linear-gradient(145deg,#fffdf6,#fff7dc);border-color:#f3e4ad}.goldAccent b{color:#7b5900}
 
 /* Teaching */
-.courseGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.courseCard{padding:28px}.courseTop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.courseCode{font-size:10px;font-weight:800;letter-spacing:.08em;background:var(--surface2);color:var(--teal);padding:6px 8px;border-radius:8px}.term{font-size:11px;color:var(--muted)}.courseCard h3{font:700 21px/1.25 Manrope;margin:0 0 12px}.courseCard p{font-size:13.5px;color:var(--muted);margin:0}.materials{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.material{padding:8px 10px;border-radius:9px;background:var(--surface2);font-size:11px;font-weight:700;text-decoration:none;color:var(--teal)}.material:hover{background:color-mix(in srgb,var(--teal) 12%,var(--surface2))}
+.teachLead{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;margin-bottom:18px}.teachPhilosophy{padding:26px;background:linear-gradient(145deg,var(--primary),var(--primary-dark));color:white;border:none}.teachPhilosophy h3{font:800 17px Manrope;margin:0 0 9px}.teachPhilosophy p{font-size:12.5px;color:rgba(255,255,255,.76);margin:0}.teachPrinciples{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.teachPrinciple{padding:18px;background:#fff;border:1px solid var(--line);border-radius:17px}.teachPrinciple .ic{width:36px;height:36px;border-radius:11px;background:var(--soft);color:var(--primary);display:grid;place-items:center;margin-bottom:12px}.teachPrinciple b{font-size:11.5px;display:block}.teachPrinciple span{font-size:10.5px;color:var(--muted);display:block;margin-top:3px}.courseGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.courseCard{padding:23px}.courseTop{display:flex;justify-content:space-between;gap:10px;align-items:center}.courseCode{font:800 10.5px Manrope;color:white;background:var(--primary);padding:6px 8px;border-radius:8px}.term{font-size:10.5px;color:var(--muted)}.courseCard h3{font:800 18px Manrope;margin:16px 0 8px}.courseCard p{font-size:12.2px;color:var(--muted);margin:0;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}.materials{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}.material{font-size:10.5px;font-weight:800;text-decoration:none;padding:7px 9px;border-radius:9px;background:var(--soft);color:var(--primary)}
 
 /* Opportunities */
-.oppWrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px}.oppPitch{padding:32px;background:linear-gradient(145deg,var(--navy),#0b3a4a);color:white;border:none;position:relative;overflow:hidden}.oppPitch::after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(110,231,216,.18);border-radius:50%;right:-80px;bottom:-90px}.oppPitch h3{font:700 26px/1.2 Manrope;margin:12px 0}.oppPitch p{font-size:13.5px;color:#c5d6de}.oppPitch .btn{margin-top:13px}.problemGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.problem{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:16px}.problem b{font:700 13px Manrope}.problem span{display:block;font-size:11.5px;color:var(--muted);margin-top:6px}
+.oppFrame{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;overflow:hidden}.oppPitch{padding:30px;background:linear-gradient(145deg,var(--primary-dark),var(--primary));color:white}.oppPitch .kicker{color:white}.oppPitch .kicker::before{background:white}.oppPitch h3{font:800 24px/1.18 Manrope;margin:14px 0 11px}.oppPitch p{font-size:12.5px;color:rgba(255,255,255,.76);margin:0 0 20px}.oppMeta{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 21px}.oppChip{font-size:10px;font-weight:800;padding:6px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.20);background:rgba(255,255,255,.08)}.problemGrid{padding:25px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px;background:#fff}.problem{padding:13px;border-radius:13px;background:var(--soft-2);border:1px solid var(--line);transition:.2s}.problem:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--primary) 24%,var(--line))}.problem b{font-size:11px;display:block}.problem span{font-size:10px;color:var(--muted);display:block;margin-top:3px}
 
-/* Timeline and credentials */
-.timeline{position:relative;margin-left:10px}.timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--line)}.timeItem{position:relative;padding:0 0 28px 34px}.timeItem:last-child{padding-bottom:0}.timeItem::before{content:"";position:absolute;left:0;top:6px;width:13px;height:13px;border-radius:50%;background:var(--surface);border:3px solid var(--teal)}.timeItem h3{font:700 15px Manrope;margin:0}.timeItem .where{font-size:12px;color:var(--muted);margin-top:3px}.timeItem .when{font-size:11px;color:var(--teal);font-weight:700;margin-top:6px}.timeItem p{font-size:12px;color:var(--muted);margin:6px 0 0}.journeyGrid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.subhead{font:700 18px Manrope;margin:0 0 24px;display:flex;align-items:center;gap:10px}.subhead::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
+/* Experience */
+.expGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:18px}.timelinePanel,.leadershipPanel{padding:25px}.subhead{font:800 16px Manrope;margin:0 0 19px}.timeline{position:relative;display:grid;gap:18px}.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--primary),var(--wash))}.timeItem{position:relative;padding-left:31px}.timeItem::before{content:"";position:absolute;left:2px;top:7px;width:14px;height:14px;border-radius:50%;background:white;border:4px solid var(--primary);box-shadow:0 0 0 4px var(--soft)}.timeItem h3{font:800 13px Manrope;margin:0}.timeItem .where{font-size:11px;color:var(--primary);font-weight:700;margin-top:2px}.timeItem .when{font-size:10px;color:var(--muted);margin-top:2px}.timeItem p{font-size:10.7px;color:var(--muted);margin:5px 0 0}.leadershipList{display:grid;gap:10px}.leadershipItem{display:flex;gap:11px;padding:12px;border:1px solid var(--line);border-radius:13px;background:var(--soft-2)}.leadershipItem .ic{width:35px;height:35px;border-radius:10px;background:var(--soft);color:var(--primary);display:grid;place-items:center;flex:0 0 auto}.leadershipItem span{font-size:10.8px;color:var(--muted)}
 
-/* service */
-.serviceGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.listCard{padding:26px}.listCard h3{font:700 17px Manrope;margin:0 0 16px}.cleanList{list-style:none;padding:0;margin:0}.cleanList li{padding:11px 0;border-bottom:1px solid var(--line);font-size:12.5px}.cleanList li:last-child{border-bottom:0}.cleanList b{font-weight:700}.cleanList span{display:block;color:var(--muted);margin-top:2px}.awardGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.award{background:var(--surface2);border-radius:13px;padding:13px}.award b{font-size:12px}.award span{font-size:10.5px;color:var(--muted);display:block;margin-top:3px}
+/* Service */
+.serviceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.servicePanel{padding:24px}.cleanList{list-style:none;padding:0;margin:0;display:grid;gap:9px}.cleanList li{padding:11px 12px;border-radius:12px;background:var(--soft-2);border:1px solid var(--line)}.cleanList b{font-size:11.2px;display:block}.cleanList span{font-size:10.2px;color:var(--muted);display:block;margin-top:2px}.membershipRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.memberChip{display:flex;align-items:center;gap:7px;padding:8px 10px;border-radius:10px;background:var(--soft);color:var(--primary);font-size:10.5px;font-weight:800}.fdpList{display:grid;gap:9px}.fdpItem{padding:11px 12px;border:1px solid var(--line);border-radius:12px}.fdpItem b{font-size:11.2px;display:block}.fdpItem span{font-size:10.2px;color:var(--muted);display:block;margin-top:2px}
 
 /* Contact */
-.contactBox{background:linear-gradient(120deg,var(--navy),#0a3b4b);color:#fff;border-radius:28px;padding:42px;display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:center;box-shadow:var(--shadow)}.contactBox h2{margin:8px 0 14px;font-size:clamp(2rem,4vw,3rem)}.contactBox p{color:#bed1da;max-width:600px}.contactLinks{display:grid;gap:10px}.contactLinks a,.contactLinks div{display:flex;justify-content:space-between;gap:20px;text-decoration:none;color:#d8e8ed;font-size:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.12)}.contactLinks span{color:#83ddd3}.footer{padding:28px 0 38px;color:var(--muted);font-size:11px}.footerRow{display:flex;justify-content:space-between;gap:20px;align-items:center}.backTop{text-decoration:none;color:var(--teal);font-weight:700}
+.contactFrame{display:grid;grid-template-columns:1.08fr .92fr;overflow:hidden}.contactPitch{padding:35px;background:linear-gradient(145deg,var(--primary-dark),var(--primary));color:white}.contactPitch .kicker{color:white}.contactPitch .kicker::before{background:white}.contactPitch h2{color:white;margin-top:14px}.contactPitch p{font-size:12.5px;color:rgba(255,255,255,.76);max-width:610px}.contactPitch .btn.secondary{background:white;color:var(--primary);border-color:white}.contactLinks{padding:26px;display:grid;gap:9px;background:#fff}.contactLink{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 13px;border-radius:12px;background:var(--soft-2);border:1px solid var(--line);text-decoration:none;transition:.2s}.contactLink:hover{border-color:color-mix(in srgb,var(--primary) 24%,var(--line));transform:translateX(2px)}.contactLink .left{display:flex;align-items:center;gap:10px}.contactLink .ic{width:34px;height:34px;border-radius:10px;background:var(--soft);color:var(--primary);display:grid;place-items:center}.contactLink b{font-size:11.5px}.contactLink span{font-size:10px;color:var(--muted)}
+footer{padding:25px 0;background:white;border-top:1px solid var(--line);color:var(--muted);font-size:10.5px}.foot{display:flex;justify-content:space-between;gap:18px;align-items:center}.foot a{color:var(--primary);text-decoration:none;font-weight:800}
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}.reveal.in{opacity:1;transform:none}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .62s ease,transform .62s ease}.reveal.in{opacity:1;transform:none}.stagger>*{opacity:0;transform:translateY(14px);transition:opacity .52s ease,transform .52s ease}.stagger.in>*{opacity:1;transform:none}.stagger.in>*:nth-child(2){transition-delay:.06s}.stagger.in>*:nth-child(3){transition-delay:.12s}.stagger.in>*:nth-child(4){transition-delay:.18s}.stagger.in>*:nth-child(5){transition-delay:.24s}.stagger.in>*:nth-child(6){transition-delay:.30s}
 
-@media (max-width:1020px){.navlinks{display:none}.menuBtn{display:grid}.heroGrid{grid-template-columns:1fr .72fr;gap:35px}.signalBox{grid-template-columns:1fr repeat(2,.5fr)}.metric:nth-last-child(-n+2){display:none}.researchGrid{grid-template-columns:repeat(2,1fr)}.sectionHead{grid-template-columns:1fr}.pubFeature,.oppWrap,.journeyGrid,.serviceGrid,.contactBox{grid-template-columns:1fr}}
-@media (max-width:760px){.wrap{width:min(100% - 26px,var(--max))}.topbar{background:var(--bg)}.navrow{height:66px}.brandtext{display:none}.mobileNav{position:fixed;inset:66px 0 auto;background:var(--surface);border-bottom:1px solid var(--line);padding:15px 18px 20px;display:none;z-index:999;box-shadow:var(--shadow)}.mobileNav.open{display:grid}.mobileNav a{text-decoration:none;padding:11px 5px;border-bottom:1px solid var(--line);font-weight:700;font-size:13px}.hero{padding:58px 0 54px}.heroGrid{grid-template-columns:1fr}.hero h1{font-size:clamp(2.7rem,14vw,4.3rem)}.photoStage{min-height:330px;order:-1}.orbit{width:300px;height:300px}.orbit.o2{width:250px;height:250px}.photoCard{width:220px}.heroLead{font-size:15px}.signal{margin-top:-18px}.signalBox{grid-template-columns:1fr 1fr}.signalIntro{grid-column:1/-1;border-bottom:1px solid var(--line)}.metric{border-left:0}.metric:nth-last-child(-n+2){display:block}.metric:nth-child(even){border-right:1px solid var(--line)}.section{padding:68px 0}.sectionHead{gap:14px;margin-bottom:28px}.aboutGrid,.courseGrid,.researchGrid,.pubStats,.problemGrid,.awardGrid{grid-template-columns:1fr}.pubFeature{grid-template-columns:1fr}.pubItem{grid-template-columns:42px 1fr}.pubMeta{grid-column:2;justify-self:start}.contactBox{padding:28px 22px}.footerRow{align-items:flex-start;flex-direction:column}.navtools .cvNav{display:none}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.orbit{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+
+
+/* Institutional branding & academic visual storytelling */
+.heroAffiliation{display:inline-flex;align-items:center;gap:11px;margin-top:15px;padding:9px 12px;border-radius:14px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.heroAffiliation img{width:38px;height:38px;object-fit:contain;border-radius:9px;background:#fff}.heroAffiliation b{display:block;font:800 11.5px Manrope}.heroAffiliation span{display:block;font-size:10.2px;color:var(--muted);margin-top:1px}
+.affiliation.logoAff{background:#fff}.affiliation .seal.logoSeal{width:48px;height:48px;border-radius:13px;padding:5px}.affiliation .seal.logoSeal img{width:100%;height:100%;object-fit:contain}
+.academicGallery{display:grid;grid-template-columns:1.05fr .95fr .8fr;gap:14px;margin-top:18px}.academicShot{position:relative;min-height:220px;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);background:var(--surface)}.academicShot:first-child{min-height:270px}.academicShot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .6s ease}.academicShot:hover img{transform:scale(1.035)}.academicShot::after{content:"";position:absolute;inset:auto 0 0;height:48%;background:linear-gradient(transparent,rgba(9,20,40,.78))}.academicShot .caption{position:absolute;left:17px;right:17px;bottom:15px;z-index:2;color:#fff}.academicShot .caption b{display:block;font:800 12px Manrope}.academicShot .caption span{display:block;font-size:10px;color:rgba(255,255,255,.78);margin-top:2px}
+.eduLogo{width:50px;height:50px;border-radius:14px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;padding:5px;box-shadow:0 7px 20px rgba(20,45,90,.06)}.eduLogo img{width:100%;height:100%;object-fit:contain}.eduLogo.textLogo{font:800 12px Manrope;color:var(--primary);background:var(--soft)}
+.achievementShowcase{display:grid;grid-template-columns:.72fr 1.28fr;gap:18px;align-items:stretch;margin-bottom:18px}.milestonePhoto{position:relative;min-height:355px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);background:#fff}.milestonePhoto img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.milestonePhoto::after{content:"";position:absolute;inset:auto 0 0;height:48%;background:linear-gradient(transparent,rgba(15,20,32,.84))}.milestoneCaption{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;color:#fff}.milestoneCaption .eyebrow{font:800 9.5px Manrope;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.72)}.milestoneCaption h3{font:800 18px/1.2 Manrope;margin:6px 0 4px}.milestoneCaption p{font-size:10.7px;color:rgba(255,255,255,.78);margin:0}.achievementGrid.compact{grid-template-columns:repeat(2,1fr)}.achievementGrid.compact .achCategory:last-child{grid-column:1/-1}.achievementGrid.compact .achCategory:last-child .achList{grid-template-columns:repeat(3,1fr)}
+.teachingVisual{position:relative;min-height:330px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);margin-bottom:18px}.teachingVisual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 43%}.teachingVisual::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,31,58,.78) 0%,rgba(13,31,58,.46) 45%,rgba(13,31,58,.08) 75%)}.teachingVisualText{position:absolute;left:28px;top:50%;transform:translateY(-50%);z-index:2;color:#fff;max-width:490px}.teachingVisualText .kicker{color:#fff}.teachingVisualText .kicker::before{background:#fff}.teachingVisualText h3{font:800 clamp(1.55rem,3vw,2.3rem)/1.08 Manrope;margin:12px 0 10px;letter-spacing:-.035em}.teachingVisualText p{font-size:12.5px;color:rgba(255,255,255,.80);margin:0}
+.timeItem.withLogo{display:grid;grid-template-columns:44px 1fr;padding-left:31px}.timeItem.withLogo .timeLogo{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:#fff;padding:4px;display:grid;place-items:center}.timeItem.withLogo .timeLogo img{width:100%;height:100%;object-fit:contain}.timeItem.withLogo::before{top:12px}.timeItem.withLogo .timeBody{min-width:0}
+.brandInstitution{display:none}
+
+@media(max-width:1080px){.academicGallery{grid-template-columns:1fr 1fr}.academicShot:first-child{grid-column:1/-1;min-height:320px}.achievementShowcase{grid-template-columns:1fr}.milestonePhoto{min-height:430px}.navlinks{display:none}.menuBtn{display:grid}.heroGrid{grid-template-columns:1.08fr .92fr;gap:30px}.statsGrid{grid-template-columns:1.2fr repeat(2,.6fr)}.stat:nth-last-child(-n+2){display:none}.researchLayout,.profileGrid,.pubTop,.teachLead,.oppFrame,.expGrid,.serviceGrid,.contactFrame{grid-template-columns:1fr}.achievementGrid{grid-template-columns:repeat(2,1fr)}.sectionHead{grid-template-columns:1fr;gap:14px}.affiliationStrip{grid-template-columns:1fr}.mobileNav{position:fixed;inset:78px 0 auto;background:white;border-bottom:1px solid var(--line);padding:15px 20px 22px;box-shadow:var(--shadow);display:none;grid-template-columns:repeat(2,1fr);gap:7px;z-index:1400}.mobileNav.open{display:grid}.mobileNav a{padding:10px 11px;border-radius:10px;background:var(--soft-2);text-decoration:none;font-size:12px;font-weight:800;color:var(--muted)}}
+@media(max-width:760px){.academicGallery{grid-template-columns:1fr}.academicShot,.academicShot:first-child{min-height:270px}.achievementGrid.compact{grid-template-columns:1fr}.achievementGrid.compact .achCategory:last-child{grid-column:auto}.achievementGrid.compact .achCategory:last-child .achList{grid-template-columns:1fr}.teachingVisual{min-height:410px}.teachingVisual::after{background:linear-gradient(0deg,rgba(13,31,58,.82) 0%,rgba(13,31,58,.30) 62%,rgba(13,31,58,.06) 100%)}.teachingVisualText{left:22px;right:22px;top:auto;bottom:24px;transform:none}.wrap{width:min(var(--max),calc(100% - 28px))}.brandText span{display:none}.palette{display:none}.hero{padding:60px 0 48px}.heroGrid{grid-template-columns:1fr}.hero h1{font-size:clamp(2.55rem,14vw,4.2rem)}.photoStage{min-height:390px;margin-top:8px}.photoCard{width:280px;height:330px}.photoFrameBack,.photoFrameMid{width:284px;height:334px}.miniFloat.one{left:0}.miniFloat.two{right:0}.statsGrid{grid-template-columns:1fr 1fr}.statsIntro{grid-column:1/-1;padding-left:0}.stat{border-top:1px solid var(--line);border-left:0}.section{padding:68px 0}.eduGrid,.researchCards,.achievementGrid,.courseGrid,.teachPrinciples,.problemGrid{grid-template-columns:1fr}.researchMap{min-height:500px}.pubItem{grid-template-columns:42px 1fr}.pubMeta{grid-column:2}.pubMetrics{grid-template-columns:1fr 1fr}.foot{flex-direction:column;align-items:flex-start}.contactPitch{padding:28px}.mobileNav{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.photoCard{width:250px;height:300px}.photoFrameBack,.photoFrameMid{width:254px;height:304px}.photoStage{min-height:355px}.miniFloat{display:none}.statsGrid{grid-template-columns:1fr 1fr}.pubMetrics{grid-template-columns:1fr}.pubItem{grid-template-columns:1fr}.pubId{display:none}.pubMeta{grid-column:1}.heroActions .btn{width:100%}.researchMap{padding:22px}.constellation{height:340px}.orbitRing{width:270px;height:270px}.orbitRing.two{width:200px;height:200px}.rNode{font-size:9px}.rn1{left:2px}.rn2{right:0}.rn5{left:10px}.rn6{right:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.heroBlob,.miniFloat,.orbitRing{animation:none}.reveal,.stagger>*{opacity:1!important;transform:none!important;transition:none!important}.photoCard{transition:none}}
 </style>
 </head>
 <body>
+<div class="scrollProgress" id="scrollProgress"></div>
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar">
   <div class="wrap navrow">
-    <a class="brand" href="#home" aria-label="Home"><span class="brandmark">AMS</span><span class="brandtext"><strong id="brandName">Dr. Sivakrishna</strong><span>Academic & Research Profile</span></span></a>
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brandMark">AMS</span>
+      <span class="brandText"><strong>Dr. Ambairam M. Sivakrishna</strong><span>Academic · Researcher · Educator</span></span>
+    </a>
     <nav class="navlinks" aria-label="Primary navigation">
-      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#opportunities">Opportunities</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+      <a href="#profile">Profile</a><a href="#education">Education</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#achievements">Achievements</a><a href="#teaching">Teaching</a><a href="#opportunities">Opportunities</a>
+      <div class="navMore"><button class="navMoreBtn" aria-haspopup="true">More ▾</button><div class="navMoreMenu"><a href="#experience">Experience</a><a href="#service">Service</a><a href="#contact">Contact</a></div></div>
     </nav>
-    <div class="navtools">
-      <a class="btn cvNav" id="cvNav" href="#" style="padding:9px 12px;background:var(--navy);color:white">CV</a>
-      <button class="iconbtn" id="modeBtn" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
-      <button class="iconbtn menuBtn" id="menuBtn" aria-label="Open navigation" title="Menu"></button>
+    <div class="navTools">
+      <div class="palette" aria-label="Colour theme">
+        <button class="swatch blue" data-theme="sapphire" aria-label="Blue theme" aria-pressed="true"></button>
+        <button class="swatch maroon" data-theme="maroon" aria-label="Maroon theme" aria-pressed="false"></button>
+        <button class="swatch teal" data-theme="teal" aria-label="Teal theme" aria-pressed="false"></button>
+      </div>
+      <a class="iconBtn" id="cvNav" href="#" title="Download CV" aria-label="Download CV"></a>
+      <button class="iconBtn menuBtn" id="menuBtn" aria-label="Open menu"></button>
     </div>
   </div>
-  <nav class="mobileNav" id="mobileNav" aria-label="Mobile navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#opportunities">Opportunities</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav>
 </header>
+<nav class="mobileNav" id="mobileNav" aria-label="Mobile navigation"><a href="#profile">Profile</a><a href="#education">Education</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#achievements">Achievements</a><a href="#teaching">Teaching</a><a href="#opportunities">Opportunities</a><a href="#experience">Experience</a><a href="#service">Service</a><a href="#contact">Contact</a></nav>
+
 <main id="main">
 <section class="hero" id="home">
+  <span class="heroBlob blob1"></span><span class="heroBlob blob2"></span>
   <div class="wrap heroGrid">
-    <div class="heroCopy">
-      <div class="eyebrow">Trustworthy Intelligence · Secure Systems</div>
-      <h1 id="heroName">Ambairam Muthu <span>Sivakrishna.</span></h1>
-      <p class="heroLead" id="heroHeadline"></p>
-      <div class="heroRole" id="heroRole"></div>
-      <div class="heroActions"><a class="btn primary" href="#research">Explore my research →</a><a class="btn ghost" id="heroCv" href="#">Download CV</a></div>
-      <div class="socials" id="socials"></div>
+    <div>
+      <div class="heroBadge"><span class="dot"></span> Academic & Research Profile</div>
+      <h1 id="heroName">Dr. Ambairam <span>Muthu Sivakrishna</span></h1>
+      <p class="heroHeadline" id="heroHeadline"></p>
+      <p class="heroLead">Building trustworthy, explainable and security-aware intelligent systems with emphasis on behavioural cybersecurity, causal reasoning and emerging quantum learning.</p>
+      <div class="heroRole" id="heroRole"></div><div class="heroAffiliation"><img src="assets/alliance-university.png" alt="Alliance University logo"><div><b>Alliance University, Bengaluru</b><span>School of Advanced Computing · Current faculty appointment</span></div></div>
+      <div class="heroActions"><a class="btn primary" href="#research" id="researchBtn"></a><a class="btn secondary" id="heroCv" href="#"></a><a class="btn soft" href="#opportunities" id="oppBtn"></a></div>
+      <div class="socialRow" id="socials"></div>
     </div>
-    <div class="photoStage" aria-label="Profile photograph">
-      <div class="orbit"></div><div class="orbit o2"></div>
-      <div class="photoCard" id="photoCard"><div class="photoTag"><b>Research · Teach · Build</b>Trustworthy AI for real-world security</div></div>
-    </div>
-  </div>
-</section>
-<div class="signal"><div class="wrap"><div class="signalBox" id="signalBox"></div></div></div>
-
-<section class="section" id="about">
-  <div class="wrap">
-    <div class="sectionHead reveal"><div><div class="kicker">Profile</div><h2>Research with a reliability-first mindset.</h2></div><p class="sectionIntro">My work sits at the intersection of behavioural cybersecurity and trustworthy machine intelligence, with emphasis on models that are not only accurate, but interpretable, calibrated, robust and practically useful.</p></div>
-    <div class="aboutGrid">
-      <article class="panel aboutText reveal"><p id="bio"></p></article>
-      <aside class="panel focusPanel reveal"><h3>Research identity</h3><div class="focusList" id="focusList"></div></aside>
+    <div class="photoStage" id="photoStage">
+      <div class="photoFrameBack"></div><div class="photoFrameMid"></div>
+      <div class="photoCard" id="photoCard"><div class="photoOverlay"><b>Trustworthy AI · Cybersecurity</b><span>Research · Teaching · Academic Collaboration</span></div></div>
+      <div class="miniFloat one" id="miniEdu"></div><div class="miniFloat two" id="miniResearch"></div>
     </div>
   </div>
 </section>
+<div class="statsFrame"><div class="wrap statsGrid" id="statsGrid"></div></div>
 
-<section class="section alt" id="research">
+<section class="section frame" id="profile">
   <div class="wrap">
-    <div class="sectionHead reveal"><div><div class="kicker">Research</div><h2>Focused problems, not broad labels.</h2></div><p class="sectionIntro">I study how intelligent systems can detect risky behaviour while remaining trustworthy under uncertainty, distribution shift, sparse attacks and changing user context.</p></div>
-    <div class="researchGrid" id="researchGrid"></div>
-  </div>
-</section>
-
-<section class="section" id="publications">
-  <div class="wrap">
-    <div class="sectionHead reveal"><div><div class="kicker">Scholarship</div><h2>Selected publications & research output.</h2></div><p class="sectionIntro">Peer-reviewed work across insider threat detection, trustworthy AI, behavioural representation learning and quantum-inspired security analytics.</p></div>
-    <div class="pubFeature reveal" id="pubFeature"></div>
-    <div class="tabs reveal"><button class="tab on" data-pub="journals">Journal articles</button><button class="tab" data-pub="conferences">Conference papers</button></div>
-    <div class="pubList reveal" id="pubList"></div>
-  </div>
-</section>
-
-<section class="section alt" id="teaching">
-  <div class="wrap">
-    <div class="sectionHead reveal"><div><div class="kicker">Teaching</div><h2>Courses and learning resources.</h2></div><p class="sectionIntro">Teaching is structured around conceptual clarity, worked examples, problem solving and links between mathematical foundations and computing practice.</p></div>
-    <div class="courseGrid" id="courseGrid"></div>
-  </div>
-</section>
-
-<section class="section" id="opportunities">
-  <div class="wrap">
-    <div class="sectionHead reveal"><div><div class="kicker">Students</div><h2>Research internships & student opportunities.</h2></div><p class="sectionIntro">Open to motivated undergraduate and master’s students who want to work on a well-defined research problem and learn rigorous experimentation, evaluation and scientific writing.</p></div>
-    <div class="oppWrap">
-      <article class="panel oppPitch reveal" id="oppPitch"></article>
-      <div class="problemGrid reveal" id="problemGrid"></div>
+    <div class="sectionHead"><div><span class="sectionNumber">01</span><div class="kicker">Academic profile</div><h2>Researcher, educator & academic.</h2></div><p class="sectionIntro">A concise view of my academic identity, research direction and professional affiliations before moving into detailed education, research and publications.</p></div>
+    <div class="profileGrid"><article class="panel bioPanel reveal"><div id="bio"></div></article><aside class="panel identityPanel reveal" id="identityPanel"></aside></div>
+    <div class="affiliationStrip stagger" id="affiliationStrip"></div>
+    <div class="academicGallery stagger" aria-label="Academic photographs">
+      <figure class="academicShot"><img src="assets/academic-life.webp" alt="Dr. Ambairam Muthu Sivakrishna on an academic campus"><figcaption class="caption"><b>Academic life</b><span>Teaching, research and campus engagement</span></figcaption></figure>
+      <figure class="academicShot"><img src="assets/teaching.webp" alt="Dr. Ambairam Muthu Sivakrishna delivering an academic presentation"><figcaption class="caption"><b>Teaching & academic presentation</b><span>Conceptual clarity · discussion · mentoring</span></figcaption></figure>
+      <figure class="academicShot"><img src="assets/campus-profile.webp" alt="Dr. Ambairam Muthu Sivakrishna on an academic campus"><figcaption class="caption"><b>Academic journey</b><span>Research · mentoring · institutional engagement</span></figcaption></figure>
     </div>
   </div>
 </section>
 
-<section class="section alt" id="journey">
+<section class="section softFrame" id="education">
   <div class="wrap">
-    <div class="sectionHead reveal"><div><div class="kicker">Academic journey</div><h2>Education and faculty experience.</h2></div><p class="sectionIntro">A progression from software engineering and computing foundations to behavioural cybersecurity, trustworthy AI and emerging quantum directions.</p></div>
-    <div class="journeyGrid"><div class="panel listCard reveal"><h3 class="subhead">Academic appointments</h3><div class="timeline" id="experienceTimeline"></div></div><div class="panel listCard reveal"><h3 class="subhead">Education</h3><div class="timeline" id="educationTimeline"></div></div></div>
+    <div class="sectionHead"><div><span class="sectionNumber">02</span><div class="kicker">Education</div><h2>Academic foundation.</h2></div><p class="sectionIntro">Higher education is shown separately and prominently, including degree, institution, completion year, academic performance and distinctions.</p></div>
+    <div class="eduGrid stagger" id="eduGrid"></div><div class="earlierEdu reveal" id="earlierEdu"></div>
   </div>
 </section>
 
-<section class="section" id="service">
+<section class="section frame" id="research">
   <div class="wrap">
-    <div class="sectionHead reveal"><div><div class="kicker">Academic service</div><h2>Reviewing, memberships & recognition.</h2></div><p class="sectionIntro">Professional engagement through peer review, technical committees, scholarly societies and academic recognition.</p></div>
-    <div class="serviceGrid"><div class="panel listCard reveal"><h3>Peer review & professional service</h3><ul class="cleanList" id="serviceList"></ul></div><div class="panel listCard reveal"><h3>Awards & recognition</h3><div class="awardGrid" id="awardGrid"></div></div></div>
+    <div class="sectionHead"><div><span class="sectionNumber">03</span><div class="kicker">Research</div><h2>Focused research problems.</h2></div><p class="sectionIntro">My work centres on dependable AI for behavioural cybersecurity, with connected directions in calibration, causality, graph learning, neuro-symbolic reasoning and quantum machine learning.</p></div>
+    <div class="researchLayout">
+      <article class="panel researchMap reveal"><h3>Research signature</h3><p>A connected view of the core themes that define my current and future research programme.</p><div class="constellation"><div class="orbitRing"></div><div class="orbitRing two"></div><div class="coreNode">Trustworthy AI<br>for Security</div><span class="rNode rn1">Insider Threats</span><span class="rNode rn2">Calibration</span><span class="rNode rn3">Causal AI</span><span class="rNode rn4">Graph Learning</span><span class="rNode rn5">Quantum ML</span><span class="rNode rn6">Neuro-Symbolic</span></div></article>
+      <div class="researchCards stagger" id="researchCards"></div>
+    </div>
   </div>
 </section>
 
-<section class="section" id="contact">
-  <div class="wrap"><div class="contactBox reveal"><div><div class="kicker" style="color:var(--teal2)">Collaboration</div><h2>Let’s work on a meaningful research problem.</h2><p>For research collaboration, student supervision, peer-review invitations or academic discussions, you can reach me through the channels listed here.</p><div class="heroActions"><a class="btn primary" id="emailBtn" href="#">Send email</a><a class="btn ghost" id="contactCv" href="#">Download CV</a></div></div><div class="contactLinks" id="contactLinks"></div></div></div>
+<section class="section softFrame" id="publications">
+  <div class="wrap">
+    <div class="sectionHead"><div><span class="sectionNumber">04</span><div class="kicker">Publications</div><h2>Selected & complete research output.</h2></div><p class="sectionIntro">Peer-reviewed journal articles and conference papers, with direct DOI links where available. Use the tabs to switch publication type.</p></div>
+    <div class="pubTop" id="pubTop"></div><div class="pubTabs"><button class="tab on" data-pub="journals">Journal articles</button><button class="tab" data-pub="conferences">Conference papers</button></div><div class="pubList" id="pubList"></div>
+  </div>
+</section>
+
+<section class="section frame" id="achievements">
+  <div class="wrap">
+    <div class="sectionHead"><div><span class="sectionNumber">05</span><div class="kicker">Achievements</div><h2>Academic distinctions & recognition.</h2></div><p class="sectionIntro">Academic medals, national eligibility qualifications, research recognition and leadership achievements are separated from service so the distinctions remain visible.</p></div>
+    <div class="achievementShowcase">
+      <figure class="milestonePhoto reveal"><img src="assets/doctoral-milestone.webp" alt="Ph.D. graduation milestone at NIT Tiruchirappalli"><figcaption class="milestoneCaption"><span class="eyebrow">Academic milestone</span><h3>Doctor of Philosophy · 2026</h3><p>Computer Science & Engineering · National Institute of Technology Tiruchirappalli</p></figcaption></figure>
+      <div class="achievementGrid compact stagger" id="achievementGrid"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section softFrame" id="teaching">
+  <div class="wrap">
+    <div class="sectionHead"><div><span class="sectionNumber">06</span><div class="kicker">Teaching</div><h2>Teaching & course resources.</h2></div><p class="sectionIntro">Current courses and learning materials, supported by a teaching approach that combines conceptual foundations, worked examples and hands-on problem solving.</p></div>
+    <div class="teachingVisual reveal"><img src="assets/teaching.webp" alt="Academic teaching and presentation"><div class="teachingVisualText"><div class="kicker">Teaching in practice</div><h3>From foundations to research-aware problem solving.</h3><p>My classroom approach combines concept-first explanations, worked examples, computational exercises and links to real research questions in security and intelligent systems.</p></div></div>
+    <div class="teachLead"><article class="panel teachPhilosophy reveal"><h3>Teaching approach</h3><p>I emphasize conceptual clarity, step-by-step reasoning, computational practice and research awareness so that students can connect mathematical or security foundations to real systems.</p></article><div class="teachPrinciples stagger" id="teachPrinciples"></div></div>
+    <div class="courseGrid stagger" id="courseGrid"></div>
+  </div>
+</section>
+
+<section class="section frame" id="opportunities">
+  <div class="wrap">
+    <div class="sectionHead"><div><span class="sectionNumber">07</span><div class="kicker">Student research</div><h2>Research internship opportunities.</h2></div><p class="sectionIntro">For motivated Undergraduate and Master’s students who want to work on a defined research question rather than a generic project topic.</p></div>
+    <div class="panel oppFrame reveal"><div class="oppPitch" id="oppPitch"></div><div class="problemGrid" id="problemGrid"></div></div>
+  </div>
+</section>
+
+<section class="section softFrame" id="experience">
+  <div class="wrap">
+    <div class="sectionHead"><div><span class="sectionNumber">08</span><div class="kicker">Experience & leadership</div><h2>Academic appointments & responsibilities.</h2></div><p class="sectionIntro">Teaching appointments are presented chronologically, with academic administration and student-facing responsibilities shown separately.</p></div>
+    <div class="expGrid"><article class="panel timelinePanel reveal"><h3 class="subhead">Academic appointments</h3><div class="timeline" id="experienceTimeline"></div></article><article class="panel leadershipPanel reveal"><h3 class="subhead">Academic leadership & responsibilities</h3><div class="leadershipList" id="leadershipList"></div></article></div>
+  </div>
+</section>
+
+<section class="section frame" id="service">
+  <div class="wrap">
+    <div class="sectionHead"><div><span class="sectionNumber">09</span><div class="kicker">Professional service</div><h2>Peer review, memberships & academic outreach.</h2></div><p class="sectionIntro">Professional service is kept distinct from achievements: reviewing, technical committees, society memberships and invited/resource-person activities are grouped here.</p></div>
+    <div class="serviceGrid"><article class="panel servicePanel reveal"><h3 class="subhead">Peer review & professional memberships</h3><ul class="cleanList" id="serviceList"></ul><div class="membershipRow" id="membershipRow"></div></article><article class="panel servicePanel reveal"><h3 class="subhead">Academic outreach & resource-person activities</h3><div class="fdpList" id="fdpList"></div></article></div>
+  </div>
+</section>
+
+<section class="section softFrame" id="contact">
+  <div class="wrap">
+    <div class="panel contactFrame reveal"><div class="contactPitch"><div class="kicker">Contact & collaboration</div><h2>Let’s work on a meaningful research problem.</h2><p>For research collaboration, student supervision, peer-review invitations, academic events or research discussions, please use the channels listed here.</p><div class="heroActions"><a class="btn secondary" id="emailBtn" href="#"></a><a class="btn soft" id="contactCv" href="#"></a></div></div><div class="contactLinks" id="contactLinks"></div></div>
+  </div>
 </section>
 </main>
-<footer class="footer"><div class="wrap footerRow"><span id="copyright"></span><span>Built for GitHub Pages · <a class="backTop" href="#home">Back to top ↑</a></span></div></footer>
+<footer><div class="wrap foot"><span id="copyright"></span><span>Built for academic visibility · <a href="#home">Back to top ↑</a></span></div></footer>
+
 <script src="data.js"></script>
 <script>
-(() => {
-  const S=window.SITE||{}, p=S.profile||{};
-  const esc=s=>String(s??"").replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  const icon=(name)=>({sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>',moon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>',menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',close:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>'}[name]);
+(()=>{
+  const S=window.SITE||{},p=S.profile||{};
+  const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const icon=(name,cls='icon')=>{const common=`class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"`;const P={
+    cv:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 12v6m0 0-3-3m3 3 3-3"/>',
+    menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',close:'<path d="m6 6 12 12M18 6 6 18"/>',arrow:'<path d="M5 12h14m-5-5 5 5-5 5"/>',
+    school:'<path d="m3 10 9-5 9 5-9 5-9-5z"/><path d="M7 12v5c3 2 7 2 10 0v-5"/>',building:'<path d="M4 21V7l8-4 8 4v14"/><path d="M8 9h2m4 0h2M8 13h2m4 0h2M8 17h2m4 0h2"/>',
+    research:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1v.1h-4v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1-.4h-.1v-4H3a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1v-.1h4V3a1.7 1.7 0 0 0 1.1 1.6 1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9c.14.36.36.7.6 1 .27.28.62.41 1 .4h.1v4H21c-.39 0-.73.14-1 .4-.25.3-.46.64-.6 1z"/>',
+    shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',graph:'<circle cx="5" cy="19" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="15" r="2"/><path d="m6.5 17.5 4.4-10.6m2.7-.4 4 6.7M7 18l10-2"/>',spark:'<path d="m12 3 1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3z"/><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/>',
+    trophy:'<path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/>',medal:'<circle cx="12" cy="14" r="5"/><path d="m8 2 4 7 4-7M9 19l-1 3 4-2 4 2-1-3"/>',check:'<path d="m5 12 4 4L19 6"/>',
+    book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13z"/><path d="M8 7h8M8 11h6"/>',users:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',briefcase:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/>',
+    mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',link:'<path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.1-1.1"/>',
+    code:'<path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/>',target:'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2"/>',external:'<path d="M14 3h7v7M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/>'
+  };return `<svg ${common}>${P[name]||P.link}</svg>`};
 
-  document.getElementById('brandName').textContent=p.name?.replace('Dr. Ambairam Muthu ','Dr. ')||'Academic Profile';
+  // Header and hero
+  document.getElementById('cvNav').innerHTML=icon('cv');
+  document.getElementById('menuBtn').innerHTML=icon('menu');
+  document.getElementById('researchBtn').innerHTML=`${icon('research')} Explore research`;
+  document.getElementById('heroCv').innerHTML=`${icon('cv')} Download CV`;
+  document.getElementById('oppBtn').innerHTML=`${icon('users')} Student opportunities`;
+  document.getElementById('heroName').innerHTML=`${esc(p.name||'Dr. Ambairam Muthu Sivakrishna').replace('Dr. Ambairam ','Dr. Ambairam <span>').replace(' Muthu Sivakrishna',' Muthu Sivakrishna</span>')}`;
   document.getElementById('heroHeadline').textContent=p.headline||'';
-  document.getElementById('heroRole').textContent=[p.title,p.dept,p.org].filter(Boolean).join(' · ');
-  document.getElementById('bio').textContent=p.bio||'';
+  document.getElementById('heroRole').innerHTML=`${icon('building')} ${[p.title,p.dept,p.org].filter(Boolean).map(esc).join(' · ')}`;
   ['cvNav','heroCv','contactCv'].forEach(id=>{const a=document.getElementById(id);if(p.cv)a.href=p.cv;else a.style.display='none'});
-  if(p.photo) document.getElementById('photoCard').insertAdjacentHTML('afterbegin',`<img src="${p.photo}" alt="${esc(p.name)}">`);
+  if(p.photo){const im=document.createElement('img');im.src=p.photo;im.alt=esc(p.name||'Profile photograph');document.getElementById('photoCard').prepend(im)}
+  document.getElementById('miniEdu').innerHTML=`${icon('school')} Ph.D. · NIT Trichy`;
+  document.getElementById('miniResearch').innerHTML=`${icon('shield')} Trustworthy AI`;
+  const socials=[['Scholar',p.scholar,'school'],['ORCID',p.orcid?`https://orcid.org/${p.orcid}`:'','link'],['LinkedIn',p.linkedin,'external'],['GitHub',p.github,'code']].filter(x=>x[1]);
+  document.getElementById('socials').innerHTML=socials.map(([n,u,i])=>`<a class="socialLink" href="${esc(u)}" target="_blank" rel="noopener">${icon(i)} ${esc(n)}</a>`).join('');
 
-  const socials=[['Google Scholar',p.scholar],['ORCID',p.orcid?`https://orcid.org/${p.orcid}`:''],['LinkedIn',p.linkedin],['GitHub',p.github]].filter(x=>x[1]);
-  document.getElementById('socials').innerHTML=socials.map(([n,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>`).join('');
+  // Stats
+  const stats=S.stats||[];document.getElementById('statsGrid').innerHTML=`<div class="statsIntro"><div class="statsIntroIcon">${icon('spark')}</div><div><b>Academic snapshot</b><span>Research, teaching and academic recognition</span></div></div>`+stats.slice(0,4).map(s=>`<div class="stat"><strong data-count="${esc(s.n)}">0</strong><span>${esc(s.label)}</span></div>`).join('');
 
-  const open=(S.announcements||[]).filter(a=>a.open).length;
-  document.getElementById('signalBox').innerHTML=`<div class="signalIntro"><span class="pulse"></span><div><strong>${open?'Research internship applications open':'Research & collaboration'}</strong><span>${open?'UG & Master’s students · focused research problems':'Open to meaningful academic collaboration'}</span></div></div>`+(S.stats||[]).slice(0,4).map(s=>`<div class="metric"><b>${esc(s.n)}</b><span>${esc(s.label)}</span></div>`).join('');
+  // Profile
+  const bio=(p.bio||'').split(/(?<=\.)\s+(?=[A-Z])/);const midpoint=Math.ceil(bio.length/2);const paragraphs=[bio.slice(0,midpoint).join(' '),bio.slice(midpoint).join(' ')].filter(Boolean);document.getElementById('bio').innerHTML=paragraphs.map(x=>`<p>${esc(x)}</p>`).join('');
+  document.getElementById('identityPanel').innerHTML=`<h3>Academic identity</h3><div class="identityRows"><div class="identityRow"><div class="ic">${icon('briefcase')}</div><div><b>${esc(p.title||'Assistant Professor')}</b><span>${esc(p.org||'Alliance University, Bengaluru')}</span></div></div><div class="identityRow"><div class="ic">${icon('research')}</div><div><b>Core research</b><span>Trustworthy AI · Insider Threat Detection · Causal AI · Graph Learning · Quantum ML</span></div></div><div class="identityRow"><div class="ic">${icon('users')}</div><div><b>Professional societies</b><span>IEEE · ACM · Computer Society of India</span></div></div></div>`;
+  const aff=[['Alliance University','Current faculty appointment','assets/alliance-university.png'],['NIT Tiruchirappalli','Ph.D. · Computer Science & Engineering','assets/nit-trichy.png'],['IIIT Tiruchirappalli','M.Tech. · Software Engineering','assets/iiit-trichy.png']];document.getElementById('affiliationStrip').innerHTML=aff.map(x=>`<div class="affiliation logoAff"><span class="seal logoSeal"><img src="${x[2]}" alt="${esc(x[0])} logo"></span><div><b>${x[0]}</b><span>${x[1]}</span></div></div>`).join('');
 
-  const focus=['Behavioural cybersecurity & insider threat detection','Trustworthy, calibrated and explainable AI','Causal, temporal and graph-based learning','Quantum-inspired and neuro-symbolic intelligence','Formal reasoning for dependable AI systems'];
-  document.getElementById('focusList').innerHTML=focus.map(x=>`<div class="focusItem"><i></i><span>${x}</span></div>`).join('');
+  // Education
+  const ed=S.education||[];const eduLogos=['assets/nit-trichy.png','assets/iiit-trichy.png',null];document.getElementById('eduGrid').innerHTML=ed.slice(0,3).map((x,i)=>{const badge=i===1?'Institute Gold Medal':i===2?'University Gold Medal · First Rank':'';const mark=eduLogos[i]?`<div class="eduLogo"><img src="${eduLogos[i]}" alt="${esc(x.inst)} logo"></div>`:`<div class="eduLogo textLogo">MITS</div>`;return `<article class="panel eduCard"><div class="eduTop">${mark}<span class="eduYear">${esc(x.year)}</span></div><h3>${esc(x.deg)}</h3><div class="eduInst">${esc(x.inst)}</div><div class="eduScore"><b>${i<2?'CGPA ':''}${esc(x.score)}</b>${badge?`<span class="eduBadge gold">${badge}</span>`:''}</div></article>`}).join('');
+  document.getElementById('earlierEdu').innerHTML=ed.slice(3).map(x=>`<div class="miniEdu"><b>${esc(x.deg)} · ${esc(x.score)}</b><span>${esc(x.inst)} · ${esc(x.year)}</span></div>`).join('');
 
+  // Research
   const research=[
-    ['01','Trustworthy Insider Threat Detection','Detecting malicious behavioural shifts in enterprise activity while controlling false alarms and preserving user-level interpretability.',['User risk','Early warning','Generalisation']],
-    ['02','Calibration & Uncertainty for Security AI','Studying whether model confidence is reliable enough for high-stakes security decisions, especially under class imbalance and distribution shift.',['Calibration','Uncertainty','Reliability']],
-    ['03','Causal Behaviour Analysis','Separating genuine behavioural drivers from spurious correlation using interventions, counterfactuals and robustness checks.',['Causal AI','Counterfactuals','Robustness']],
-    ['04','Temporal & Graph Intelligence','Representing users, devices, files and events as dynamic relational structures for sequence-aware and graph-based risk modelling.',['Temporal GNN','Event graphs','Sequences']],
-    ['05','Behavioural Representation Learning','Auditing whether visual, wavelet, tabular and sequence representations capture meaningful behaviour or exploit dataset shortcuts.',['Representations','Faithfulness','Cross-version']],
-    ['06','Quantum & Neuro-Symbolic Learning','Exploring hybrid quantum-classical models and symbolic constraints for compact, explainable and verifiable security intelligence.',['Quantum ML','Rules','Verification']]
+    ['shield','Trustworthy Insider Threat Detection','User-level risk prediction, early warning, cross-dataset generalisation and false-positive control.',['User risk','Early warning','Generalisation']],
+    ['target','Calibration & Uncertainty','Assessing whether confidence estimates are dependable enough for high-stakes security decisions.',['Calibration','Uncertainty','Reliability']],
+    ['graph','Causal Behaviour Analysis','Testing genuine behavioural drivers using interventions, counterfactual reasoning and robustness checks.',['Causal AI','Counterfactuals','Robustness']],
+    ['graph','Temporal & Graph Intelligence','Modelling users, devices, files and events as dynamic relational structures and sequences.',['Temporal GNN','Event graphs','Sequences']],
+    ['spark','Behavioural Representation Learning','Auditing tabular, sequence, visual and time-frequency representations for meaningful behavioural signal.',['Representation','Faithfulness','Cross-version']],
+    ['research','Quantum & Neuro-Symbolic Learning','Hybrid quantum-classical, rule-augmented and formally constrained learning for dependable AI.',['Quantum ML','Rules','Verification']]
   ];
-  document.getElementById('researchGrid').innerHTML=research.map(r=>`<article class="researchCard reveal"><div class="rIcon">${r[0]}</div><h3>${r[1]}</h3><p>${r[2]}</p><div class="tags">${r[3].map(t=>`<span class="tiny">${t}</span>`).join('')}</div></article>`).join('');
+  document.getElementById('researchCards').innerHTML=research.map((r,i)=>`<article class="researchCard"><div class="rTop"><div class="rIcon">${icon(r[0])}</div><span class="rNum">0${i+1}</span></div><h3>${r[1]}</h3><p>${r[2]}</p><div class="tags">${r[3].map(t=>`<span class="tag">${t}</span>`).join('')}</div></article>`).join('');
 
-  const first=(S.journals||[])[0];
-  document.getElementById('pubFeature').innerHTML=`<article class="panel pubHero"><span class="label">Selected journal article</span><h3>${esc(first?.title||'Research publications')}</h3><p>${esc(first?.venue||'')}</p>${first?.doi?`<a href="https://doi.org/${esc(first.doi)}" target="_blank" rel="noopener">View DOI ↗</a>`:''}</article><div class="pubStats"><div class="panel pubMini"><b>${(S.journals||[]).length}</b><span>Journal articles listed</span></div><div class="panel pubMini"><b>${(S.conferences||[]).length}</b><span>Conference papers listed</span></div><div class="panel pubMini"><b>${(S.reviewJournals||[]).length}</b><span>Journal reviewer roles</span></div><div class="panel pubMini"><b>${(S.reviewConfs||[]).length}</b><span>Conference service roles</span></div></div>`;
-  const renderPubs=key=>{const arr=S[key]||[];document.getElementById('pubList').innerHTML=arr.map(x=>`<article class="pubItem"><div class="pubId">${esc(x.id)}</div><div><div class="pubTitle">${x.doi?`<a href="https://doi.org/${esc(x.doi)}" target="_blank" rel="noopener">${esc(x.title)}</a>`:esc(x.title)}</div><div class="pubVenue">${esc(x.venue)}</div></div><span class="pubMeta">${esc(x.meta)}</span></article>`).join('')};renderPubs('journals');
-  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');renderPubs(b.dataset.pub)}));
+  // Publications
+  const first=(S.journals||[])[0];document.getElementById('pubTop').innerHTML=`<article class="panel featuredPub reveal"><span class="label">Selected journal article</span><h3>${esc(first?.title||'Research publications')}</h3><p>${esc(first?.venue||'')}</p>${first?.doi?`<a href="https://doi.org/${esc(first.doi)}" target="_blank" rel="noopener">View DOI ${icon('external')}</a>`:''}</article><div class="pubMetrics"><div class="panel pubMetric"><strong>${(S.journals||[]).length}</strong><span>Journal articles listed</span></div><div class="panel pubMetric"><strong>${(S.conferences||[]).length}</strong><span>Conference papers listed</span></div><div class="panel pubMetric"><strong>${(S.reviewJournals||[]).length}</strong><span>Journal reviewer roles</span></div><div class="panel pubMetric"><strong>${(S.reviewConfs||[]).length}</strong><span>Conference service roles</span></div></div>`;
+  const renderPubs=key=>{const arr=S[key]||[];document.getElementById('pubList').innerHTML=arr.map(x=>`<article class="pubItem"><div class="pubId">${esc(x.id)}</div><div><div class="pubTitle">${x.doi?`<a href="https://doi.org/${esc(x.doi)}" target="_blank" rel="noopener">${esc(x.title)}</a>`:esc(x.title)}</div><div class="pubVenue">${esc(x.venue)}</div></div><span class="pubMeta">${esc(x.meta)}</span></article>`).join('')};renderPubs('journals');document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');renderPubs(b.dataset.pub)}));
 
-  document.getElementById('courseGrid').innerHTML=(S.courses||[]).map(c=>`<article class="panel courseCard reveal"><div class="courseTop"><span class="courseCode">${esc(c.code)}</span><span class="term">${esc(c.term)}</span></div><h3>${esc(c.name)}</h3><p>${esc(c.note)}</p><div class="materials">${(c.materials||[]).map(m=>m.url?`<a class="material" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.label)} ↗</a>`:`<span class="material">${esc(m.label)} · soon</span>`).join('')}</div></article>`).join('');
+  // Achievements separated into academic / research / leadership
+  const awards=S.awards||[];const academic=awards.filter(x=>/Gold Medal|Pratibha|GATE|UGC-NET/i.test(x.name));const researchA=awards.filter(x=>/Best Paper/i.test(x.name));const leadership=awards.filter(x=>/volleyball|Captain/i.test(x.name));
+  const achCats=[['medal','Academic distinctions',academic],['trophy','Research recognition',researchA],['users','Leadership & sports',leadership]];
+  document.getElementById('achievementGrid').innerHTML=achCats.map((c,ci)=>`<article class="panel achCategory"><div class="achHead"><div class="achIcon">${icon(c[0])}</div><h3>${c[1]}</h3></div><div class="achList">${c[2].map((x,i)=>`<div class="achItem ${(ci===0&&i<2)?'goldAccent':''}"><b>${esc(x.name)}</b><span>${esc(x.meta)}</span></div>`).join('')}</div></article>`).join('');
 
-  const ann=(S.announcements||[]).find(a=>a.open)||(S.announcements||[])[0];
-  document.getElementById('oppPitch').innerHTML=`<div class="kicker" style="color:var(--teal2)">${esc(ann?.kind||'Research')}</div><h3>${esc(ann?.title||'Student research opportunities')}</h3><p>Work on a focused research question in trustworthy AI, cybersecurity or emerging intelligent systems. Projects emphasize literature grounding, reproducible experiments, rigorous evaluation and research writing.</p><a class="btn primary" href="mailto:${esc('ambairam.sivakrishna@alliance.edu.in')}?subject=${encodeURIComponent('Research Internship Application – [Research Area] – [Your Name]')}">Apply by email →</a>`;
-  const probs=[
-    ['Trustworthy insider threat detection','User-level risk, early warning, cross-dataset generalisation'],
-    ['Explainable & calibrated security AI','Confidence, uncertainty and explanation faithfulness'],
-    ['Causal analysis of user behaviour','Interventions, counterfactuals and robust causal signals'],
-    ['Temporal & graph-based detection','Dynamic user–device–resource interaction models'],
-    ['Behavioural representation audits','Sequence, image, wavelet and event-field representations'],
-    ['Quantum / neuro-symbolic security AI','Quantum kernels, hybrid models and symbolic constraints']
-  ];
-  document.getElementById('problemGrid').innerHTML=probs.map((x,i)=>`<div class="problem"><b>${String(i+1).padStart(2,'0')} · ${x[0]}</b><span>${x[1]}</span></div>`).join('');
+  // Teaching
+  const principles=[['book','Concept first','Build foundations before abstraction.'],['code','Practice & implementation','Use examples, labs and computational exercises.'],['research','Research connection','Connect course ideas to current research problems.']];document.getElementById('teachPrinciples').innerHTML=principles.map(x=>`<div class="teachPrinciple"><div class="ic">${icon(x[0])}</div><b>${x[1]}</b><span>${x[2]}</span></div>`).join('');
+  document.getElementById('courseGrid').innerHTML=(S.courses||[]).map(c=>`<article class="panel courseCard"><div class="courseTop"><span class="courseCode">${esc(c.code)}</span><span class="term">${esc(c.term)}</span></div><h3>${esc(c.name)}</h3><p>${esc(c.note)}</p><div class="materials">${(c.materials||[]).map(m=>m.url?`<a class="material" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.label)} ↗</a>`:`<span class="material">${esc(m.label)}</span>`).join('')}</div></article>`).join('');
 
-  document.getElementById('experienceTimeline').innerHTML=(S.teaching||[]).map(x=>`<div class="timeItem"><h3>${esc(x.role)}</h3><div class="where">${esc(x.org)}</div><div class="when">${esc(x.when)}</div><p>${esc(x.detail)}</p></div>`).join('');
-  document.getElementById('educationTimeline').innerHTML=(S.education||[]).slice(0,3).map(x=>`<div class="timeItem"><h3>${esc(x.deg)}</h3><div class="where">${esc(x.inst)}</div><div class="when">${esc(x.year)} · ${esc(x.score)}</div></div>`).join('');
+  // Opportunities
+  const ann=(S.announcements||[]).find(a=>a.open)||(S.announcements||[])[0];const email=p.email||'ambairam.sivakrishna@alliance.edu.in';document.getElementById('oppPitch').innerHTML=`<div class="kicker">${esc(ann?.kind||'Internship')}</div><h3>${esc(ann?.title||'Research Internship Opportunities')}</h3><p>Focused mentorship for Undergraduate and Master’s students interested in research-oriented work in trustworthy AI, behavioural cybersecurity, causal reasoning, graph learning and quantum machine learning.</p><div class="oppMeta"><span class="oppChip">UG & Master’s students</span><span class="oppChip">Problem-specific</span><span class="oppChip">Research-oriented</span>${ann?.deadline?`<span class="oppChip">Current deadline · ${esc(ann.deadline)}</span>`:''}</div><a class="btn secondary" href="mailto:${esc(email)}?subject=${encodeURIComponent('Research Internship Application – [Research Area] – [Your Name]')}">${icon('mail')} Apply by email</a>`;
+  const probs=[['Trustworthy insider threat detection','User-level risk, early warning and generalisation'],['Explainable & calibrated security AI','Confidence, uncertainty and explanation faithfulness'],['Causal analysis of user behaviour','Interventions, counterfactuals and robust causal signals'],['Temporal & graph-based detection','Dynamic user–device–resource interaction models'],['Behavioural representation audits','Sequence, image, wavelet and event-field representations'],['Quantum / neuro-symbolic security AI','Quantum kernels, hybrid models and symbolic constraints']];document.getElementById('problemGrid').innerHTML=probs.map((x,i)=>`<div class="problem"><b>${String(i+1).padStart(2,'0')} · ${x[0]}</b><span>${x[1]}</span></div>`).join('');
 
-  const services=[...(S.reviewJournals||[]).slice(0,6),...(S.reviewConfs||[]).slice(0,4),...(S.memberships||[]).slice(0,3)];
-  document.getElementById('serviceList').innerHTML=services.map(x=>`<li><b>${esc(x.name)}</b><span>${esc(x.meta)}</span></li>`).join('');
-  document.getElementById('awardGrid').innerHTML=(S.awards||[]).slice(0,8).map(x=>`<div class="award"><b>${esc(x.name)}</b><span>${esc(x.meta)}</span></div>`).join('');
+  // Experience and leadership
+  const instLogo=x=>/Alliance University/i.test(x.org)?'assets/alliance-university.png':/NIT Tiruchirappalli/i.test(x.org)?'assets/nit-trichy.png':/IIIT Tiruchirappalli/i.test(x.org)?'assets/iiit-trichy.png':'';document.getElementById('experienceTimeline').innerHTML=(S.teaching||[]).map(x=>{const lg=instLogo(x);return `<div class="timeItem ${lg?'withLogo':''}">${lg?`<div class="timeLogo"><img src="${lg}" alt="institution logo"></div>`:''}<div class="timeBody"><h3>${esc(x.role)}</h3><div class="where">${esc(x.org)}</div><div class="when">${esc(x.when)}</div><p>${esc(x.detail)}</p></div></div>`}).join('');
+  document.getElementById('leadershipList').innerHTML=(S.admin||[]).map(x=>`<div class="leadershipItem"><div class="ic">${icon('users')}</div><span>${esc(x)}</span></div>`).join('');
 
-  const email='ambairam.sivakrishna@alliance.edu.in'; document.getElementById('emailBtn').href=`mailto:${email}`;
-  const contacts=[['Email',email],['Google Scholar',p.scholar],['ORCID',p.orcid?`https://orcid.org/${p.orcid}`:''],['LinkedIn',p.linkedin],['GitHub',p.github]].filter(x=>x[1]);
-  document.getElementById('contactLinks').innerHTML=contacts.map(([n,u])=>{const href=n==='Email'?`mailto:${u}`:u;return `<a href="${esc(href)}" ${n==='Email'?'':'target="_blank" rel="noopener"'}><span>${esc(n)}</span><b>${n==='Email'?esc(u):'Open ↗'}</b></a>`}).join('');
-  document.getElementById('copyright').textContent=`© ${new Date().getFullYear()} ${p.name||''}. Academic & research website.`;
+  // Service
+  const services=[...(S.reviewJournals||[]).slice(0,5),...(S.reviewConfs||[]).slice(0,4)];document.getElementById('serviceList').innerHTML=services.map(x=>`<li><b>${esc(x.name)}</b><span>${esc(x.meta)}</span></li>`).join('');document.getElementById('membershipRow').innerHTML=(S.memberships||[]).map(x=>`<div class="memberChip">${icon('check')} ${esc(x.name)}</div>`).join('');document.getElementById('fdpList').innerHTML=(S.fdpDelivered||[]).map(x=>`<div class="fdpItem"><b>${esc(x.name)}</b><span>${esc(x.meta)}</span></div>`).join('');
 
-  // Theme
-  const root=document.documentElement, modeBtn=document.getElementById('modeBtn');
-  const saved=localStorage.getItem('ams-mode'); if(saved)root.dataset.mode=saved;
-  const paintMode=()=>modeBtn.innerHTML=root.dataset.mode==='dark'?icon('sun'):icon('moon'); paintMode();
-  modeBtn.addEventListener('click',()=>{root.dataset.mode=root.dataset.mode==='dark'?'light':'dark';localStorage.setItem('ams-mode',root.dataset.mode);paintMode()});
-  // Mobile navigation
-  const menuBtn=document.getElementById('menuBtn'), mobile=document.getElementById('mobileNav');menuBtn.innerHTML=icon('menu');
-  const setMenu=open=>{mobile.classList.toggle('open',open);menuBtn.innerHTML=icon(open?'close':'menu');document.body.classList.toggle('no-scroll',open)};
-  menuBtn.addEventListener('click',()=>setMenu(!mobile.classList.contains('open')));mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
-  // Active nav and reveal
-  const navA=[...document.querySelectorAll('.navlinks a')];
-  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){navA.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-30% 0px -60%'});document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
-  const reveal=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');reveal.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+  // Contact
+  document.getElementById('emailBtn').href=`mailto:${email}`;document.getElementById('emailBtn').innerHTML=`${icon('mail')} Send email`;document.getElementById('contactCv').innerHTML=`${icon('cv')} Download CV`;
+  const contacts=[['Email',email,'mail'],['Google Scholar',p.scholar,'school'],['ORCID',p.orcid?`https://orcid.org/${p.orcid}`:'','link'],['LinkedIn',p.linkedin,'external'],['GitHub',p.github,'code']].filter(x=>x[1]);document.getElementById('contactLinks').innerHTML=contacts.map(([n,u,i])=>{const href=n==='Email'?`mailto:${u}`:u;return `<a class="contactLink" href="${esc(href)}" ${n==='Email'?'':'target="_blank" rel="noopener"'}><span class="left"><span class="ic">${icon(i)}</span><span><b>${esc(n)}</b><span>${n==='Email'?esc(u):'Academic profile / external link'}</span></span></span>${icon('external')}</a>`}).join('');
+  document.getElementById('copyright').textContent=`© ${new Date().getFullYear()} ${p.name||'Dr. Ambairam Muthu Sivakrishna'}. Academic & research website.`;
+
+  // Theme selector
+  const root=document.documentElement,swatches=[...document.querySelectorAll('.swatch')];const saved=localStorage.getItem('ams-theme');if(saved&&['sapphire','maroon','teal'].includes(saved))root.dataset.theme=saved;const syncTheme=()=>swatches.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===root.dataset.theme)));syncTheme();swatches.forEach(b=>b.addEventListener('click',()=>{root.dataset.theme=b.dataset.theme;localStorage.setItem('ams-theme',b.dataset.theme);syncTheme()}));
+
+  // Mobile menu
+  const menu=document.getElementById('mobileNav'),menuBtn=document.getElementById('menuBtn');const setMenu=open=>{menu.classList.toggle('open',open);document.body.classList.toggle('menu-open',open);menuBtn.innerHTML=icon(open?'close':'menu');menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu')};menuBtn.addEventListener('click',()=>setMenu(!menu.classList.contains('open')));menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+
+  // Scroll progress, active navigation and reveal
+  const progress=document.getElementById('scrollProgress');const onScroll=()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h>0?scrollY/h*100:0)+'%'};addEventListener('scroll',onScroll,{passive:true});onScroll();
+  const navA=[...document.querySelectorAll('.navlinks a')];const sectionObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)navA.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-28% 0px -62%'});document.querySelectorAll('main section[id]').forEach(s=>sectionObserver.observe(s));
+  const revealObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revealObs.unobserve(e.target)}}),{threshold:.07});document.querySelectorAll('.reveal,.stagger').forEach(el=>revealObs.observe(el));
+
+  // Counter animation
+  const countObs=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,target=parseInt(el.dataset.count,10);if(!Number.isFinite(target)){el.textContent=el.dataset.count;return}let start=0,duration=800,t0=null;const tick=t=>{if(!t0)t0=t;const q=Math.min(1,(t-t0)/duration);el.textContent=Math.floor(target*(1-Math.pow(1-q,3)));if(q<1)requestAnimationFrame(tick);else el.textContent=target};requestAnimationFrame(tick);countObs.unobserve(el)}),{threshold:.6});document.querySelectorAll('[data-count]').forEach(el=>countObs.observe(el));
+
+  // Very subtle photo parallax on pointer devices
+  const stage=document.getElementById('photoStage'),card=document.getElementById('photoCard');if(matchMedia('(pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches){stage.addEventListener('pointermove',e=>{const r=stage.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateY(${x*5}deg) rotateX(${-y*4}deg) translateY(-2px)`});stage.addEventListener('pointerleave',()=>card.style.transform='')}
 })();
-</script>
-<script type="application/ld+json" id="schema"></script>
-<script>
-const q=window.SITE?.profile||{};document.getElementById('schema').textContent=JSON.stringify({"@context":"https://schema.org","@type":"Person","name":q.name,"jobTitle":q.title,"affiliation":{"@type":"Organization","name":q.org},"url":location.href,"sameAs":[q.scholar,q.linkedin,q.github,q.orcid?`https://orcid.org/${q.orcid}`:null].filter(Boolean),"knowsAbout":window.SITE?.interests||[]});
 </script>
 </body>
 </html>
