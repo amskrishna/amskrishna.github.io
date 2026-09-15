@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Content editor — keep this file private</title>
+<title>Website content editor</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-[data-theme="indigo"]{--brand:#2F3D8F;--tint:#EEF0FA}
+[data-theme="sapphire"]{--brand:#2F3D8F;--tint:#EEF0FA}
 [data-theme="forest"]{--brand:#1F5D45;--tint:#EAF3EE}
-[data-theme="plum"]{--brand:#6B2D5B;--tint:#F5EDF3}
+[data-theme="maroon"]{--brand:#6B2D5B;--tint:#F5EDF3}
 [data-theme="slate"]{--brand:#374357;--tint:#EEF0F4}
 [data-theme="ember"]{--brand:#9C3A22;--tint:#FAEEE9}
 [data-theme="teal"]{--brand:#125E6B;--tint:#E8F2F4}
@@ -53,9 +53,10 @@ button:hover{background:var(--tint)}
 #out{position:fixed;bottom:0;left:0;right:0;background:var(--brand);color:#fff;padding:13px 26px;display:flex;gap:14px;align-items:center;font-size:.86rem;z-index:30}
 #out button{background:#fff;color:var(--brand);border:none;font-weight:600}
 #out span{flex:1}
+@media(max-width:640px){.row,.row3,.mat-row{grid-template-columns:1fr}header,main{padding:16px}#out{position:static}.warn{margin:16px}.tabs{padding:16px}main{padding-bottom:24px}}
 </style>
 </head>
-<body data-theme="indigo">
+<body data-theme="sapphire">
 
 <header>
   <h1>Content editor</h1>
@@ -78,8 +79,8 @@ button:hover{background:var(--tint)}
 <script src="data.js"></script>
 <script>
 let D = JSON.parse(JSON.stringify(window.SITE));
-document.body.dataset.theme = D.theme || "indigo";
-const THEMES = {indigo:"#2F3D8F",forest:"#1F5D45",plum:"#6B2D5B",slate:"#374357",ember:"#9C3A22",teal:"#125E6B"};
+document.body.dataset.theme = D.theme || "sapphire";
+const THEMES = {sapphire:"#2F3D8F",maroon:"#6B2D3B",teal:"#125E6B"};
 const $ = s => document.querySelector(s);
 const esc = s => String(s??"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
@@ -136,7 +137,7 @@ const PANES = {
     <h3>Colour theme</h3>
     <div class="dots">${Object.entries(THEMES).map(([k,c])=>
       `<button class="dot${D.theme===k?" on":""}" style="background:${c}" onclick="D.theme='${k}';document.body.dataset.theme='${k}';render()" title="${k}"></button>`).join("")}</div>
-    <p class="hint">This sets the default. Visitors can still switch themes from the sidebar.</p>
+    <p class="hint">This sets the default. Visitors can still switch themes from the website header.</p>
   </div>
   <div class="card">
     <h3>Headline numbers</h3>
@@ -144,7 +145,7 @@ const PANES = {
   </div>
   <div class="card">
     <h3>Research interests</h3>
-    ${fld({get v(){return D.interests.join("\\n")},set v(x){D.interests=x.split("\\n").filter(Boolean)}},"v","One per line","area")}
+    ${fld({get v(){return D.interests.join("\n")},set v(x){D.interests=x.split("\n").filter(Boolean)}},"v","One per line","area")}
   </div>`,
 
 "Announcements": () => D.announcements.map((a,i)=>`
@@ -158,7 +159,7 @@ const PANES = {
   </div>`).join("") +
   `<button class="add" onclick='addTo("announcements",${JSON.stringify(JSON.stringify({kind:"Internship",title:"",date:new Date().toISOString().slice(0,10),deadline:"",open:true,body:"",link:""}))})'>+ Add an announcement</button>`,
 
-"Blog": () => D.posts.map((b,i)=>`
+"Blog (stored only)": () => D.posts.map((b,i)=>`
   <div class="card">
     ${head("Post "+(i+1),"posts",i)}
     ${fld(b,"title","Title")}
@@ -174,7 +175,7 @@ const PANES = {
     ${head("Course "+(i+1),"courses",i)}
     <div class="row">${fld(c,"code","Course code")}${fld(c,"term","Institution and term")}</div>
     ${fld(c,"name","Course name")}
-    ${fld(c,"note","One-line description")}
+    ${fld(c,"note","Course description","area")}
     <label>Materials</label>
     ${(c.materials||[]).map((m,j)=>`<div class="mat-row">
       ${fld(m,"label","Label")}
@@ -200,7 +201,7 @@ const PANES = {
   <div class="card"><h3>Conference papers</h3>
   ${D.conferences.map((c,i)=>`<div style="padding:14px 0;border-bottom:1px solid var(--rule)">
     ${head("","conferences",i)}
-    ${fld(c,"id","Reference (C1, C2…)")}
+    ${fld(c,"id","Reference (C1, C2…)")}${fld(c,"doi","DOI")}
     ${fld(c,"title","Title")}
     <div class="row">${fld(c,"venue","Conference and venue")}${fld(c,"meta","Status")}</div>
   </div>`).join("")}
@@ -219,7 +220,7 @@ const PANES = {
   <button class="add" style="margin-top:14px" onclick='addTo("teaching",${JSON.stringify(JSON.stringify({role:"",org:"",when:"",detail:""}))})'>+ Add a position</button>
   </div>
   <div class="card"><h3>Supervision and administration</h3>
-  ${fld({get v(){return D.admin.join("\\n")},set v(x){D.admin=x.split("\\n").filter(Boolean)}},"v","One per line","area")}
+  ${fld({get v(){return D.admin.join("\n")},set v(x){D.admin=x.split("\n").filter(Boolean)}},"v","One per line","area")}
   </div>
   <div class="card"><h3>Education</h3>
   ${D.education.map((e,i)=>`<div style="padding:12px 0;border-bottom:1px solid var(--rule)">
@@ -272,6 +273,23 @@ const PANES = {
 }
 };
 
+
+// These sections used to be hard-coded in index.html.
+const extraSections = {
+  researchCards: ['Research directions', ['Icon (shield, target, graph, spark, research)', 'Title', 'Description', 'Tags']],
+  teachingPrinciples: ['Teaching principles', ['Icon (book, code, research)', 'Title', 'Description']],
+  researchProblems: ['Research problems', ['Title', 'Description']],
+  affiliations: ['Affiliations', ['Institution', 'Description', 'Logo path']]
+};
+PANES['More website content'] = () => Object.entries(extraSections).map(([key,[title,labels]]) =>
+  '<div class="card"><h3>'+title+'</h3>' + D[key].map((row,i) =>
+    '<div class="card">'+head(title+' '+(i+1),key,i)+labels.map((label,j)=>{
+      if(Array.isArray(row[j])) return fld({get value(){return row[j].join('\n')},set value(v){row[j]=v.split('\n').map(x=>x.trim()).filter(Boolean)}},'value',label+' (one per line)','area');
+      return fld(row,j,label,j===2&&key==='researchCards'?'area':'text');
+    }).join('')+'</div>'
+  ).join('')+'<button class="add" onclick="addExtra(&quot;'+key+'&quot;)">+ Add item</button></div>'
+).join('');
+window.addExtra = key => { D[key].push(key==='researchCards'?['research','','',[]]:extraSections[key][1].map(()=>''));render(); };
 /* ---------- render ---------- */
 let cur = "Profile";
 function render(){
@@ -303,11 +321,13 @@ function save(){
   URL.revokeObjectURL(a.href);
 }
 function preview(){
-  const w = window.open("","_blank");
-  fetch("index.html").then(r=>r.text()).then(h=>{
-    w.document.write(h.replace('<script src="data.js"><\/script>', "<script>window.SITE="+JSON.stringify(D)+"<\/script>"));
+  const w = window.open("", "_blank");
+  if (!w) { alert("Allow popups to preview, or download data.js and open index.html."); return; }
+  fetch("index.html").then(r=>{if(!r.ok)throw new Error('Preview unavailable');return r.text()}).then(h=>{
+    const serialized=JSON.stringify(D).replace(/</g, "\\u003c");
+    w.document.write(h.replace('<script src="data.js"><\/script>',()=>'<script>window.SITE='+serialized+';<\/script>'));
     w.document.close();
-  }).catch(()=>{ w.close(); alert("Preview needs the site served over http. Open the folder with a local server, or just download data.js and check the live site."); });
+  }).catch(()=>{w.close();alert("For an offline preview: download data.js, replace it in this folder, then open index.html. The Preview button needs an HTTP server.");});
 }
 window.save = save; window.preview = preview; window.D = D;
 render();

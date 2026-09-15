@@ -1,6 +1,4 @@
-// Website content for Dr. Ambairam Muthu Sivakrishna
-// Edit with admin.html or directly in this file.
-
+// Website content. Open admin.html in this folder to edit and download this file.
 window.SITE = {
   "theme": "sapphire",
   "profile": {
@@ -436,5 +434,127 @@ window.SITE = {
       "meta": "Assistant Professor, CSE, IIITDM Kancheepuram",
       "email": "preeth@iiitdm.ac.in"
     }
+  ],
+  "researchCards": [
+    [
+      "shield",
+      "Trustworthy Insider Threat Detection",
+      "User-level risk prediction, early warning, cross-dataset generalisation and false-positive control.",
+      [
+        "User risk",
+        "Early warning",
+        "Generalisation"
+      ]
+    ],
+    [
+      "target",
+      "Calibration & Uncertainty",
+      "Assessing whether confidence estimates are dependable enough for high-stakes security decisions.",
+      [
+        "Calibration",
+        "Uncertainty",
+        "Reliability"
+      ]
+    ],
+    [
+      "graph",
+      "Causal Behaviour Analysis",
+      "Testing genuine behavioural drivers using interventions, counterfactual reasoning and robustness checks.",
+      [
+        "Causal AI",
+        "Counterfactuals",
+        "Robustness"
+      ]
+    ],
+    [
+      "graph",
+      "Temporal & Graph Intelligence",
+      "Modelling users, devices, files and events as dynamic relational structures and sequences.",
+      [
+        "Temporal GNN",
+        "Event graphs",
+        "Sequences"
+      ]
+    ],
+    [
+      "spark",
+      "Behavioural Representation Learning",
+      "Auditing tabular, sequence, visual and time-frequency representations for meaningful behavioural signal.",
+      [
+        "Representation",
+        "Faithfulness",
+        "Cross-version"
+      ]
+    ],
+    [
+      "research",
+      "Quantum & Neuro-Symbolic Learning",
+      "Hybrid quantum-classical, rule-augmented and formally constrained learning for dependable AI.",
+      [
+        "Quantum ML",
+        "Rules",
+        "Verification"
+      ]
+    ]
+  ],
+  "teachingPrinciples": [
+    [
+      "book",
+      "Concept first",
+      "Build foundations before abstraction."
+    ],
+    [
+      "code",
+      "Practice & implementation",
+      "Use examples, labs and computational exercises."
+    ],
+    [
+      "research",
+      "Research connection",
+      "Connect course ideas to current research problems."
+    ]
+  ],
+  "researchProblems": [
+    [
+      "Trustworthy insider threat detection",
+      "User-level risk, early warning and generalisation"
+    ],
+    [
+      "Explainable & calibrated security AI",
+      "Confidence, uncertainty and explanation faithfulness"
+    ],
+    [
+      "Causal analysis of user behaviour",
+      "Interventions, counterfactuals and robust causal signals"
+    ],
+    [
+      "Temporal & graph-based detection",
+      "Dynamic user–device–resource interaction models"
+    ],
+    [
+      "Behavioural representation audits",
+      "Sequence, image, wavelet and event-field representations"
+    ],
+    [
+      "Quantum / neuro-symbolic security AI",
+      "Quantum kernels, hybrid models and symbolic constraints"
+    ]
+  ],
+  "affiliations": [
+    [
+      "Alliance University",
+      "Current faculty appointment",
+      "assets/alliance-university.png"
+    ],
+    [
+      "NIT Tiruchirappalli",
+      "Ph.D. · Computer Science & Engineering",
+      "assets/nit-trichy.png"
+    ],
+    [
+      "IIIT Tiruchirappalli",
+      "M.Tech. · Software Engineering",
+      "assets/iiit-trichy.png"
+    ]
   ]
 };
