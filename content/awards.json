@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "name": "Institute Gold Medal",
+      "meta": "M.Tech Software Engineering, IIIT Tiruchirappalli"
+    },
+    {
+      "name": "University Gold Medal",
+      "meta": "First rank in B.Tech IT, JNTU Anantapur"
+    },
+    {
+      "name": "Pratibha Award",
+      "meta": "Government of Andhra Pradesh, for academic excellence"
+    },
+    {
+      "name": "Best Paper Award",
+      "meta": "ICRTITA 2022, for AUBIT"
+    },
+    {
+      "name": "GATE qualified",
+      "meta": "Computer Science & IT, 2015"
+    },
+    {
+      "name": "UGC-NET qualified",
+      "meta": "Computer Science & Applications, 2018 and 2020"
+    },
+    {
+      "name": "Silver medallist, volleyball",
+      "meta": "All India Inter-NIT Sports Meet, NIT Warangal, 2025"
+    },
+    {
+      "name": "Bronze medallist, volleyball",
+      "meta": "Sportsfete, NIT Tiruchirappalli, 2023 and 2024"
+    },
+    {
+      "name": "Captain",
+      "meta": "UG and PG institute volleyball teams"
+    }
+  ]
+}

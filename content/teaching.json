@@ -1,0 +1,47 @@
+{
+  "intro": "My teaching emphasizes conceptual clarity, worked examples and practical problem solving. The courses below were taught at Alliance University in 2026.",
+  "courses": [
+    {
+      "code": "CS-CNS",
+      "name": "Cryptography and Network Security",
+      "term": "Alliance University · 2026",
+      "note": "Cryptography and Network Security introduces the fundamental principles and techniques used to protect information and communication systems. The course covers classical and modern cryptographic techniques, symmetric and asymmetric encryption, key exchange, hash functions, message authentication, digital signatures, authentication protocols, and network security mechanisms. Students also study common security threats, attacks, and practical defence strategies, with emphasis on understanding how cryptographic mechanisms are applied to ensure confidentiality, integrity, authentication, and secure communication in modern computing environments.",
+      "materials": [
+        {
+          "label": "Symmetric Encryption",
+          "url": "https://alliancebschool-my.sharepoint.com/:b:/g/personal/ambairam_sivakrishna_alliance_edu_in/IQDm-rHm8LmTSpzoWO9tChCmARqLx0qB98EszAQXgnD-yl4?e=NmwtJP"
+        },
+        {
+          "label": "Modular Arithmetic",
+          "url": "https://alliancebschool-my.sharepoint.com/:b:/g/personal/ambairam_sivakrishna_alliance_edu_in/IQD5toHGVVMPTrgyfAc0BEojAVB2FC6tZ818U57eXUV36C8?e=waPfVG"
+        }
+      ]
+    },
+    {
+      "code": "CS-DM",
+      "name": "Discrete Mathematics",
+      "term": "Alliance University · 2026",
+      "note": "Discrete Mathematics provides the mathematical foundations required for computer science and computational problem solving. The course covers propositional and predicate logic, proof techniques, sets, relations, functions, combinatorics, recurrence relations, graph theory, trees, and related discrete structures. Emphasis is placed on logical reasoning, mathematical modelling, and problem-solving techniques that support the study of algorithms, data structures, automata, databases, networks, and theoretical computer science.",
+      "materials": [
+        {
+          "label": "Lecture Materials",
+          "url": "https://alliancebschool-my.sharepoint.com/:f:/g/personal/ambairam_sivakrishna_alliance_edu_in/IgBR6TWkgMOcTp5mZiyHIiWmAXorbKJFLazyGmWVMWOL8eE?e=v1eWNQ"
+        }
+      ]
+    }
+  ],
+  "principles": [
+    {
+      "title": "Concept first",
+      "description": "Build foundations before abstraction."
+    },
+    {
+      "title": "Practice & implementation",
+      "description": "Use examples, labs and computational exercises."
+    },
+    {
+      "title": "Research connection",
+      "description": "Connect course ideas to current research problems."
+    }
+  ]
+}

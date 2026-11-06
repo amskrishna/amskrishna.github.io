@@ -1,0 +1,19 @@
+{
+  "name": "Dr. Ambairam Muthu Sivakrishna",
+  "title": "Assistant Professor (Grade II)",
+  "dept": "Department of Information Technology",
+  "org": "National Institute of Technology Karnataka, Surathkal",
+  "photo": "assets/profile.webp",
+  "headline": "Trustworthy AI & Cybersecurity · Machine Unlearning · Formal Verification",
+  "bio": "Dr. Ambairam Muthu Sivakrishna is an Assistant Professor (Grade II) in the Department of Information Technology at the National Institute of Technology Karnataka, Surathkal. He completed his Ph.D. in Computer Science and Engineering at the National Institute of Technology Tiruchirappalli in March 2026, with a coursework CGPA of 9.5. He holds an M.Tech. in Software Engineering from IIIT Tiruchirappalli and a B.Tech. in Information Technology from MITS Madanapalle, affiliated to JNTU Anantapur. He received the Institute Gold Medal in M.Tech. and the University Gold Medal and First Rank in B.Tech.\n\nHis research interests include Trustworthy AI and Cybersecurity, theoretical analysis of neural networks, machine unlearning for secure AI, formal specification and verification systems, and neuro-symbolic and quantum-inspired learning models. His research applies these ideas to insider threat detection and behavioural cybersecurity. He previously served as an Assistant Professor at Alliance University and as Temporary Faculty at IIIT Tiruchirappalli.",
+  "email": "ambairam@nitk.edu.in",
+  "phone": "+91 97915 41949",
+  "orcid": "0000-0002-0984-9890",
+  "cv": "Dr_Ambairam_CV.pdf",
+  "scholar": "https://scholar.google.com/citations?user=QtKd_xEAAAAJ&hl=en",
+  "linkedin": "https://www.linkedin.com/in/dr-ambairam-muthu-sivakrishna-6b8306104/",
+  "github": "https://github.com/amskrishna",
+  "personalEmail": "amskrishna240@gmail.com",
+  "logo": "assets/nitk-logo.jpg",
+  "footer": "Department of Information Technology · NITK Surathkal"
+}

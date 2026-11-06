@@ -1,0 +1,72 @@
+{
+  "journals": [
+    {
+      "name": "Engineering Applications of Artificial Intelligence",
+      "meta": "Elsevier · SCIE · Q1 · IF 9.0"
+    },
+    {
+      "name": "BioData Mining",
+      "meta": "Springer Nature · SCIE · Q1 · IF 6.5"
+    },
+    {
+      "name": "Scientific Reports",
+      "meta": "Springer Nature · SCIE · Q1 · IF 3.9"
+    },
+    {
+      "name": "International Journal of Machine Learning and Cybernetics",
+      "meta": "Springer Nature · SCIE · Q2 · IF 3.4"
+    },
+    {
+      "name": "Discover Computing",
+      "meta": "Springer Nature · SCIE · Q2 · IF 1.9"
+    },
+    {
+      "name": "Discover Artificial Intelligence",
+      "meta": "Springer Nature · Scopus"
+    },
+    {
+      "name": "Multimedia Tools and Applications",
+      "meta": "Springer Nature · Scopus"
+    },
+    {
+      "name": "Journal of Umm Al-Qura University for Engineering and Architecture",
+      "meta": "Springer Nature · Scopus"
+    }
+  ],
+  "conferences": [
+    {
+      "name": "ICAIMS 2026",
+      "meta": "IEEE Adaptive Intelligence, Modeling and Simulation · Universiti Malaysia Sabah"
+    },
+    {
+      "name": "RECCAP 2026",
+      "meta": "Electronics, Communication, Computing, Automation and Power · IIT Palakkad"
+    },
+    {
+      "name": "CICT 2025",
+      "meta": "Information and Communication Technology · IIITDM Kancheepuram"
+    },
+    {
+      "name": "SPELL 2025",
+      "meta": "Speech and Language Technologies for Low-Resource Languages · IIIT Kottayam · technical committee member"
+    },
+    {
+      "name": "ICETCS 2024",
+      "meta": "Emerging Technologies in Computer Science · IEEE Bangalore Section"
+    }
+  ],
+  "memberships": [
+    {
+      "name": "IEEE",
+      "meta": "ID 98196084 · PAMI, Quantum Technical Community, Security & Privacy, Software Engineering societies"
+    },
+    {
+      "name": "ACM",
+      "meta": "ID 3333784"
+    },
+    {
+      "name": "Computer Society of India",
+      "meta": "ID 7111250006"
+    }
+  ]
+}

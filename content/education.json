@@ -1,0 +1,35 @@
+{
+  "intro": "Academic qualifications and distinctions. The Ph.D. CGPA below refers to doctoral coursework.",
+  "qualifications": [
+    {
+      "deg": "Ph.D., Computer Science & Engineering",
+      "inst": "NIT Tiruchirappalli",
+      "score": "9.5",
+      "year": "Mar 2026"
+    },
+    {
+      "deg": "M.Tech., Software Engineering",
+      "inst": "IIIT Tiruchirappalli",
+      "score": "9.24",
+      "year": "2017"
+    },
+    {
+      "deg": "B.Tech., Information Technology",
+      "inst": "MITS Madanapalle, JNTU Anantapur",
+      "score": "79.92%",
+      "year": "2015"
+    },
+    {
+      "deg": "Class XII (MPC)",
+      "inst": "Narayana Junior College",
+      "score": "93.8%",
+      "year": "2008"
+    },
+    {
+      "deg": "Class X",
+      "inst": "Royal English Medium High School",
+      "score": "89.16%",
+      "year": "2006"
+    }
+  ]
+}

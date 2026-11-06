@@ -1,0 +1,28 @@
+{
+  "appointments": [
+    {
+      "role": "Assistant Professor (Grade II)",
+      "org": "Department of Information Technology, National Institute of Technology Karnataka, Surathkal",
+      "when": "November 2026 – Present",
+      "detail": "Teaching and research in Information Technology."
+    },
+    {
+      "role": "Assistant Professor",
+      "org": "School of Advanced Computing, Alliance University, Bengaluru",
+      "when": "June 2026 – October 2026",
+      "detail": "Cryptography and Network Security · Discrete Mathematics · Generative AI"
+    },
+    {
+      "role": "HTRA-MHRD",
+      "org": "Computer Science & Engineering, NIT Tiruchirappalli",
+      "when": "2022–2025",
+      "detail": "Artificial Intelligence · Software Engineering · Software Project Management"
+    },
+    {
+      "role": "Temporary Faculty",
+      "org": "Computer Science & Engineering, IIIT Tiruchirappalli",
+      "when": "2017–2019",
+      "detail": "Programming with C · Software Engineering · Software Project Management · Randomized Algorithms · Cloud Computing"
+    }
+  ]
+}

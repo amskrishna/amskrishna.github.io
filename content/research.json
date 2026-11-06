@@ -1,0 +1,30 @@
+{
+  "intro": "My research focuses on secure and dependable intelligent systems. The following interests connect learning foundations, system assurance and applications in cybersecurity.",
+  "areas": [
+    {
+      "title": "Trustworthy AI & Cybersecurity",
+      "description": "My work examines how AI systems can support security decisions that are reliable, interpretable and useful in practice. Insider threat detection and behavioural analytics provide an application setting for studying how models respond to changing user activity and uncertain evidence.\n\nThis direction connects predictive performance with the quality of the decisions a model supports, including false alarms, generalisation and the interpretation of model outputs.",
+      "notes": "How can security models remain useful when user behaviour changes?\nHow can confidence estimates and explanations support the review of alerts?"
+    },
+    {
+      "title": "Theoretical Analysis of Neural Networks",
+      "description": "This research interest concerns the foundations and behaviour of neural learning systems. It involves examining the relationship between model structure, learned representations and the behaviour of a model when its inputs or operating conditions change.\n\nThe aim is to connect empirical observations with clear assumptions and analytical reasoning, supporting a better understanding of when neural models can be relied upon.",
+      "notes": "Which properties of a model help explain its behaviour?\nHow can theoretical analysis inform the design and evaluation of learning systems?"
+    },
+    {
+      "title": "Machine Unlearning for Secure AI",
+      "description": "Machine unlearning studies how the influence of selected training information can be removed from an already trained model. My interest is in understanding this process in the context of secure AI and dependable model behaviour.\n\nRelevant questions include how to evaluate whether removal has been effective, how retained knowledge is affected, and how the resulting model compares with a model retrained without the selected information.",
+      "notes": "How can the effect of unlearning be evaluated?\nHow can removal effectiveness be balanced with retained model utility?"
+    },
+    {
+      "title": "Formal Specification & Verification Systems",
+      "description": "Formal specification provides a precise way to express the behaviour expected from a system. Verification examines whether that behaviour satisfies the stated requirements under explicit assumptions.\n\nMy interest is in how these ideas can support dependable computational and AI systems, particularly where clearly defined properties and careful reasoning about system behaviour are important.",
+      "notes": "Which requirements can be expressed as verifiable properties?\nHow can verification complement empirical evaluation?"
+    },
+    {
+      "title": "Neuro-Symbolic & Quantum-Inspired Learning Models",
+      "description": "This direction brings together neural learning, symbolic knowledge and quantum-inspired approaches. Neuro-symbolic models connect learned representations with explicit rules or reasoning, while quantum-inspired and hybrid models offer alternative ways to represent and process information.\n\nMy interests include how these approaches can be evaluated for dependable learning and security analytics, with attention to their assumptions, interpretability and practical usefulness.",
+      "notes": "How can symbolic knowledge guide or constrain learned behaviour?\nWhen do hybrid or quantum-inspired representations improve a learning task?"
+    }
+  ]
+}

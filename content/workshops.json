@@ -1,0 +1,54 @@
+{
+  "delivered": [
+    {
+      "name": "ML & DL Demystified: A Hands-on, Theory-Driven Workshop",
+      "meta": "NIT Tiruchirappalli, April 2024 · organizer and resource person"
+    },
+    {
+      "name": "Winter Seminar Series on Deep Learning Algorithms and Implementation",
+      "meta": "SRM Institute of Science & Technology, December 2023 · resource person"
+    },
+    {
+      "name": "Deep Learning Principles and Applications for DRDO Scientists",
+      "meta": "NIT Tiruchirappalli, December 2022 · organizer and resource person"
+    }
+  ],
+  "attended": [
+    {
+      "name": "Joint Faculty Development Programme on Quantum Computing",
+      "meta": "Electronics & ICT Academy, IIT Roorkee · 19 June–22 July 2026 · participant"
+    },
+    {
+      "name": "Programming with Java",
+      "meta": "Amazon via Coursera, July 2026 · 97%"
+    },
+    {
+      "name": "QT-10 Solid State Physics for Quantum Technologies",
+      "meta": "Electronics & ICT Academies, May 2026 · 40 hours · excellent"
+    },
+    {
+      "name": "QT-09 Engineering Foundations of Quantum Technologies",
+      "meta": "Electronics & ICT Academies, April–May 2026 · 44 hours · excellent"
+    },
+    {
+      "name": "AI, ML and Blockchain for FinTech Cyber Security",
+      "meta": "IIT Ropar, March 2026"
+    },
+    {
+      "name": "Generative AI",
+      "meta": "IBM SkillsBuild, December 2025"
+    },
+    {
+      "name": "Quantum Computing with Machine Learning & AI",
+      "meta": "IIT Madras, April 2025"
+    },
+    {
+      "name": "Bio-inspired Optimization Algorithms using MATLAB",
+      "meta": "IEEE Computer Society, NIT Tiruchirappalli, January 2022"
+    },
+    {
+      "name": "Detecting Deceit Information from Brain Activity",
+      "meta": "IEEE Computer Society, NIT Tiruchirappalli, June 2021"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "intro": "Journal articles and conference papers. The status of each conference record is indicated below.",
+  "journals": [
+    {
+      "id": "J1",
+      "title": "An Adaptive Insider Threat Detection Framework Using Causal Analysis and Liquid Neural Networks",
+      "venue": "Security and Privacy, 9(1), 2026",
+      "meta": "ESCI,WoS · IF 2.9",
+      "doi": "10.1002/spy2.70157"
+    },
+    {
+      "id": "J2",
+      "title": "An Efficient Insider Threat Detection Framework Using Bayesian-Optimized XGBoost",
+      "venue": "Security and Privacy, 8(6), 2025",
+      "meta": "ESCI, WoS· IF 2.9",
+      "doi": "10.1002/spy2.70122"
+    },
+    {
+      "id": "J3",
+      "title": "Cyber Insights: Exploring Image-Based and Vector-Based Feature Representations in Insider Threat Detection",
+      "venue": "International Journal of Data Science and Analytics, Vol. 21, Article 13, 2025",
+      "meta": "ESCI & Scopus · IF 2.9 · Q1",
+      "doi": "10.1007/s41060-025-00960-3"
+    },
+    {
+      "id": "J4",
+      "title": "An Efficient Pattern-Based Approach for Insider Threat Classification Using Image-Based Feature Representation",
+      "venue": "Journal of Information Security and Applications, 73, 103434, 2023",
+      "meta": "SCIE · IF 4.4 · Q1",
+      "doi": "10.1016/j.jisa.2023.103434"
+    }
+  ],
+  "conferences": [
+    {
+      "id": "C1",
+      "title": "TRUST-IT: Trustworthy User-Level Security Learning for Insider Threat Detection",
+      "venue": "QASC 2026 - Chicago State University & Grambling State University, USA · Springer",
+      "meta": "Presented",
+      "doi": ""
+    },
+    {
+      "id": "C2",
+      "title": "Insider Threat Detection: A Comprehensive Review of Evolving Detection Techniques, Datasets, and Challenges",
+      "venue": "AITA 2026 - IBS Bangalore",
+      "meta": "Accepted & presented",
+      "doi": ""
+    },
+    {
+      "id": "C3",
+      "title": "QUANT-IT: Quantum Embeddings with NGBoost for Insider Threat Detection",
+      "venue": "IEEE CICT 2025 - IIITDM Kancheepuram",
+      "meta": "Published",
+      "doi": ""
+    },
+    {
+      "id": "C4",
+      "title": "Temporal Quantum Neural Networks for Insider Threat Detection",
+      "venue": "IEEE RAIT 2025 - IIT Dhanbad",
+      "meta": "Published",
+      "doi": ""
+    },
+    {
+      "id": "C5",
+      "title": "Insider Threat Detection on CERT Data Using Pre-trained ResNet",
+      "venue": "IEEE GCITC 2024 - REVA University",
+      "meta": "Published",
+      "doi": ""
+    },
+    {
+      "id": "C6",
+      "title": "AUBIT: An Adaptive User Behaviour Based Insider Threat Detection Technique Using LSTM-Autoencoder",
+      "venue": "ICRTITA 2022 - Vel Tech University",
+      "meta": "Published · Best Paper Award",
+      "doi": ""
+    }
+  ]
+}
