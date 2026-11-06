@@ -1,10 +1,9 @@
 {
-  "intro": "My research focuses on secure and dependable intelligent systems. The following interests connect learning foundations, system assurance and applications in cybersecurity.",
+  "intro": "My research focuses on Secure and dependable intelligent systems. The following interests connect learning foundations, system assurance and applications in cybersecurity.",
   "areas": [
     {
       "title": "Trustworthy AI & Cybersecurity",
-      "description": "My work examines how AI systems can support security decisions that are reliable, interpretable and useful in practice. Insider threat detection and behavioural analytics provide an application setting for studying how models respond to changing user activity and uncertain evidence.\n\nThis direction connects predictive performance with the quality of the decisions a model supports, including false alarms, generalisation and the interpretation of model outputs.",
-      "notes": "How can security models remain useful when user behaviour changes?\nHow can confidence estimates and explanations support the review of alerts?"
+      "description": "My work examines how AI systems can support security decisions that are reliable, interpretable and useful in practice. Insider threat detection and behavioural analytics provide an application setting for studying how models respond to changing user activity and uncertain evidence.\n\nThis direction connects predictive performance with the quality of the decisions a model supports, including false alarms, generalisation and the interpretation of model outputs."
     },
     {
       "title": "Theoretical Analysis of Neural Networks",
