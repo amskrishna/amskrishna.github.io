@@ -1,0 +1,364 @@
+media:
+  input: assets
+  output: /assets
+content:
+- name: profile
+  label: Profile & contact
+  type: file
+  path: content/profile.json
+  format: json
+  fields:
+  - name: name
+    label: Name
+    type: string
+    required: true
+  - name: title
+    label: Title
+    type: string
+  - name: dept
+    label: Department
+    type: string
+    required: true
+  - name: org
+    label: Institution
+    type: string
+    required: true
+  - name: photo
+    label: Photo
+    type: image
+  - name: headline
+    label: Headline
+    type: string
+  - name: bio
+    label: Bio
+    type: text
+  - name: email
+    label: Email
+    type: string
+    required: true
+  - name: phone
+    label: Phone
+    type: string
+  - name: orcid
+    label: Orcid
+    type: string
+  - name: cv
+    label: CV document
+    type: file
+    required: true
+  - name: scholar
+    label: Scholar
+    type: string
+  - name: linkedin
+    label: Linkedin
+    type: string
+  - name: github
+    label: Github
+    type: string
+  - name: personalEmail
+    label: Personalemail
+    type: string
+  - name: logo
+    label: Logo
+    type: image
+    required: true
+  - name: footer
+    label: Footer
+    type: text
+- name: news
+  label: News
+  type: file
+  path: content/news.json
+  format: json
+  fields:
+  - name: items
+    label: Items
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: date
+      label: Date
+      type: string
+    - name: title
+      label: Title
+      type: string
+    - name: body
+      label: Body
+      type: text
+    - name: url
+      label: Url
+      type: string
+- name: research
+  label: Research
+  type: file
+  path: content/research.json
+  format: json
+  fields:
+  - name: intro
+    label: Intro
+    type: text
+  - name: areas
+    label: Areas
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+    - name: description
+      label: Description
+      type: text
+- name: publications
+  label: Publications
+  type: file
+  path: content/publications.json
+  format: json
+  fields:
+  - name: intro
+    label: Intro
+    type: text
+  - name: journals
+    label: Journals
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: id
+      label: Id
+      type: string
+    - name: title
+      label: Title
+      type: string
+    - name: venue
+      label: Venue
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+    - name: doi
+      label: Doi
+      type: string
+  - name: conferences
+    label: Conferences
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: id
+      label: Id
+      type: string
+    - name: title
+      label: Title
+      type: string
+    - name: venue
+      label: Venue
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+    - name: doi
+      label: Doi
+      type: string
+- name: experience
+  label: Appointments, education & awards
+  type: file
+  path: content/experience.json
+  format: json
+  fields:
+  - name: appointments
+    label: Appointments
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: role
+      label: Role
+      type: string
+    - name: org
+      label: Institution
+      type: string
+    - name: when
+      label: Dates
+      type: string
+    - name: detail
+      label: Detail
+      type: text
+  - name: education
+    label: Education
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: deg
+      label: Degree
+      type: string
+    - name: inst
+      label: Institution
+      type: string
+    - name: score
+      label: Score
+      type: string
+    - name: year
+      label: Year
+      type: string
+  - name: responsibilities
+    label: Responsibilities
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: text
+      label: Text
+      type: text
+  - name: awards
+    label: Awards
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+- name: service
+  label: Service & development
+  type: file
+  path: content/service.json
+  format: json
+  fields:
+  - name: journals
+    label: Journals
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+  - name: conferences
+    label: Conferences
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+  - name: memberships
+    label: Memberships
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+  - name: delivered
+    label: Delivered
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+  - name: attended
+    label: Attended
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+- name: opportunities
+  label: Opportunities
+  type: file
+  path: content/opportunities.json
+  format: json
+  fields:
+  - name: title
+    label: Title
+    type: string
+  - name: body
+    label: Body
+    type: text
+  - name: open
+    label: Open
+    type: boolean
+  - name: deadline
+    label: Deadline
+    type: string
+  - name: applicationEmail
+    label: Applicationemail
+    type: string
+- name: teaching
+  label: Teaching
+  type: file
+  path: content/teaching.json
+  format: json
+  fields:
+  - name: intro
+    label: Intro
+    type: text
+  - name: courses
+    label: Courses
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: code
+      label: Code
+      type: string
+    - name: name
+      label: Name
+      type: string
+    - name: term
+      label: Term
+      type: string
+    - name: note
+      label: Note
+      type: text
+    - name: materials
+      label: Materials
+      type: object
+      list:
+        collapsible: true
+      fields:
+      - name: label
+        label: Label
+        type: string
+      - name: url
+        label: Url
+        type: string
+  - name: principles
+    label: Principles
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+    - name: description
+      label: Description
+      type: text

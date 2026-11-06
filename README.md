@@ -1,5 +1,9 @@
-# Academic website
+# Faculty website — formal academic edition
 
-Static GitHub Pages profile of Dr. Ambairam Muthu Sivakrishna, Assistant Professor (Grade II), Department of Information Technology, NITK Surathkal.
+Dr. Ambairam Muthu Sivakrishna · Department of Information Technology · NITK Surathkal.
 
-Upload this folder’s contents to the repository root. No build step required. Edit data.js or use admin.html for content updates. See UPDATE-NOTES.md for changes and publishing instructions. The NITK text badge is not an official institute logo.
+Read SETUP.md for the initial GitHub Pages upload and Pages CMS connection. Open admin.html for a short dashboard guide.
+
+The website uses plain HTML, CSS and JavaScript and requires no build step. Content is stored in content/*.json and editable through the included Pages CMS configuration. On the public site it is fetched on each visit; local file previews use the bundled content snapshot.
+
+Validated: JavaScript syntax, JSON and CMS schema consistency, local file links, exact CV copies, browser rendering, research and appointment navigation, publication category switching and search, and loading content from the CMS-managed JSON files. The authenticated CMS connection and a live GitHub Pages deployment require repository authorization and were not performed.
