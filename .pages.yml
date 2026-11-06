@@ -66,11 +66,17 @@ content:
     label: Footer
     type: text
 - name: news
-  label: News
+  label: Home announcements
   type: file
   path: content/news.json
   format: json
   fields:
+  - name: heading
+    label: Frame heading
+    type: string
+  - name: intro
+    label: Introductory note
+    type: text
   - name: items
     label: Items
     type: object
@@ -89,6 +95,10 @@ content:
     - name: url
       label: Url
       type: string
+    - name: visible
+      label: Show on homepage
+      type: boolean
+      default: true
 - name: research
   label: Research
   type: file
@@ -109,6 +119,9 @@ content:
       type: string
     - name: description
       label: Description
+      type: text
+    - name: notes
+      label: Research questions (one per line)
       type: text
 - name: publications
   label: Publications
@@ -162,7 +175,7 @@ content:
       label: Doi
       type: string
 - name: experience
-  label: Appointments, education & awards
+  label: Experience
   type: file
   path: content/experience.json
   format: json
@@ -185,8 +198,17 @@ content:
     - name: detail
       label: Detail
       type: text
-  - name: education
-    label: Education
+- name: education
+  label: Education
+  type: file
+  path: content/education.json
+  format: json
+  fields:
+  - name: intro
+    label: Introduction
+    type: text
+  - name: qualifications
+    label: Qualifications
     type: object
     list:
       collapsible: true
@@ -203,114 +225,6 @@ content:
     - name: year
       label: Year
       type: string
-  - name: responsibilities
-    label: Responsibilities
-    type: object
-    list:
-      collapsible: true
-    fields:
-    - name: text
-      label: Text
-      type: text
-  - name: awards
-    label: Awards
-    type: object
-    list:
-      collapsible: true
-    fields:
-    - name: name
-      label: Name
-      type: string
-    - name: meta
-      label: Publication / event details
-      type: string
-- name: service
-  label: Service & development
-  type: file
-  path: content/service.json
-  format: json
-  fields:
-  - name: journals
-    label: Journals
-    type: object
-    list:
-      collapsible: true
-    fields:
-    - name: name
-      label: Name
-      type: string
-    - name: meta
-      label: Publication / event details
-      type: string
-  - name: conferences
-    label: Conferences
-    type: object
-    list:
-      collapsible: true
-    fields:
-    - name: name
-      label: Name
-      type: string
-    - name: meta
-      label: Publication / event details
-      type: string
-  - name: memberships
-    label: Memberships
-    type: object
-    list:
-      collapsible: true
-    fields:
-    - name: name
-      label: Name
-      type: string
-    - name: meta
-      label: Publication / event details
-      type: string
-  - name: delivered
-    label: Delivered
-    type: object
-    list:
-      collapsible: true
-    fields:
-    - name: name
-      label: Name
-      type: string
-    - name: meta
-      label: Publication / event details
-      type: string
-  - name: attended
-    label: Attended
-    type: object
-    list:
-      collapsible: true
-    fields:
-    - name: name
-      label: Name
-      type: string
-    - name: meta
-      label: Publication / event details
-      type: string
-- name: opportunities
-  label: Opportunities
-  type: file
-  path: content/opportunities.json
-  format: json
-  fields:
-  - name: title
-    label: Title
-    type: string
-  - name: body
-    label: Body
-    type: text
-  - name: open
-    label: Open
-    type: boolean
-  - name: deadline
-    label: Deadline
-    type: string
-  - name: applicationEmail
-    label: Applicationemail
-    type: string
 - name: teaching
   label: Teaching
   type: file
@@ -362,3 +276,129 @@ content:
     - name: description
       label: Description
       type: text
+- name: awards
+  label: Awards
+  type: file
+  path: content/awards.json
+  format: json
+  fields:
+  - name: items
+    label: Awards
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+- name: service
+  label: Professional service
+  type: file
+  path: content/service.json
+  format: json
+  fields:
+  - name: journals
+    label: Journals
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+  - name: conferences
+    label: Conferences
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+  - name: memberships
+    label: Memberships
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+- name: workshops
+  label: Workshops & faculty development
+  type: file
+  path: content/workshops.json
+  format: json
+  fields:
+  - name: delivered
+    label: Delivered
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+  - name: attended
+    label: Attended
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: meta
+      label: Publication / event details
+      type: string
+- name: leadership
+  label: Administrative responsibilities
+  type: file
+  path: content/leadership.json
+  format: json
+  fields:
+  - name: items
+    label: Responsibilities
+    type: object
+    list:
+      collapsible: true
+    fields:
+    - name: text
+      label: Text
+      type: text
+- name: opportunities
+  label: Opportunities
+  type: file
+  path: content/opportunities.json
+  format: json
+  fields:
+  - name: title
+    label: Title
+    type: string
+  - name: body
+    label: Body
+    type: text
+  - name: open
+    label: Open
+    type: boolean
+  - name: deadline
+    label: Deadline
+    type: string
+  - name: applicationEmail
+    label: Applicationemail
+    type: string

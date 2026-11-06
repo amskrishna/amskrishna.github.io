@@ -43,3 +43,11 @@ Opening index.html directly uses bundled fallback content because browsers restr
 ## Reference and design
 
 The layout uses an institutional masthead, simple text navigation, justified paragraphs, compact profile portrait and formal publication lists. The supplied NITK logo is preserved without distortion. No decorative image galleries, animated counters, gradients or promotional cards are used. HALE Lab at NITK was consulted as a structural reference; the text and identity remain the user's own.
+
+## Section and announcement update
+
+Navigation now follows Home → Research → Publications → Experience → Education → Teaching → Awards → Service → Workshops → Responsibilities → Contact. Education, Experience, Awards, Workshops and Administrative Responsibilities have separate pages and CMS forms. Upload the full updated content/ folder, including the new education.json file, and replace .pages.yml alongside the HTML, CSS and JavaScript files.
+
+In Pages CMS, select Home announcements to change the frame heading and introductory note, add dated announcements, and turn Show on homepage on or off. Items sort newest first. With multiple visible announcements, Previous and Next controls appear. With one item, it remains visible without unnecessary controls. Long announcement text scrolls within the frame. No automatic movement interrupts reading.
+
+Research entries support longer descriptions, blank lines between paragraphs, and an expandable Research questions note (one question per line). The descriptive text expresses research interests and questions, not claimed experimental results.
