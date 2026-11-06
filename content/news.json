@@ -1,13 +1,18 @@
 {
+  "heading": "Announcements",
+  "intro": "Academic & Research updates",
   "items": [
     {
-      "date": "2026-11-06",
+      "date": "05-11-2026",
       "title": "Joined NITK Surathkal",
-      "body": "Joined the Department of Information Technology as Assistant Professor (Grade II).",
-      "url": "",
+      "body": "I have joined the Department of Information Technology at the National Institute of Technology Karnataka, Surathkal, as an Assistant Professor (Grade II). I look forward to contributing to teaching, research and student mentorship, and collaborating with colleagues at NITK.",
+      "visible": true
+    },
+    {
+      "date": "06-11-2026",
+      "title": "Research Collaborations",
+      "body": "I welcome research collaborations with faculty members, researchers, students and industry professionals in Trustworthy AI and Cybersecurity, theoretical analysis of neural networks, machine unlearning for secure AI, formal specification and verification systems, and neuro-symbolic and quantum-inspired learning.\n\nPotential collaborations may include joint research, project proposals, student projects and applications in insider threat detection and behavioural cybersecurity.\n\nIf your interests align with these areas, please contact me at ambairam@nitk.edu.in with a brief introduction and your proposed research direction.",
       "visible": true
     }
-  ],
-  "heading": "Announcements & updates",
-  "intro": "Academic news and research updates."
+  ]
 }
