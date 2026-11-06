@@ -3,7 +3,8 @@
   "areas": [
     {
       "title": "Trustworthy AI & Cybersecurity",
-      "description": "My work examines how AI systems can support security decisions that are reliable, interpretable and useful in practice. Insider threat detection and behavioural analytics provide an application setting for studying how models respond to changing user activity and uncertain evidence.\n\nThis direction connects predictive performance with the quality of the decisions a model supports, including false alarms, generalisation and the interpretation of model outputs."
+      "description": "My work examines how AI systems can support security decisions that are reliable, interpretable and useful in practice. Insider threat detection and behavioural analytics provide an application setting for studying how models respond to changing user activity and uncertain evidence.\n\nThis direction connects predictive performance with the quality of the decisions a model supports, including false alarms, generalisation and the interpretation of model outputs.",
+      "notes": "How can security models remain useful when user behaviour changes?\nHow can confidence estimates and explanations support the review of alerts?"
     },
     {
       "title": "Theoretical Analysis of Neural Networks",
@@ -21,9 +22,9 @@
       "notes": "Which requirements can be expressed as verifiable properties?\nHow can verification complement empirical evaluation?"
     },
     {
-      "title": "Neuro-Symbolic & Quantum-Inspired Learning Models",
-      "description": "This direction brings together neural learning, symbolic knowledge and quantum-inspired approaches. Neuro-symbolic models connect learned representations with explicit rules or reasoning, while quantum-inspired and hybrid models offer alternative ways to represent and process information.\n\nMy interests include how these approaches can be evaluated for dependable learning and security analytics, with attention to their assumptions, interpretability and practical usefulness.",
-      "notes": "How can symbolic knowledge guide or constrain learned behaviour?\nWhen do hybrid or quantum-inspired representations improve a learning task?"
+      "title": "Neuro-Symbolic Models",
+      "description": "Neuro-symbolic models combine the ability of neural networks to learn from data with the explicit knowledge and reasoning provided by symbolic systems. This approach allows domain knowledge, logical rules and constraints to guide learning and support the interpretation of model decisions.\n\nMy research interest lies in exploring how these models can improve the reliability, interpretability and consistency of AI systems, particularly in cybersecurity and insider threat detection. Potential directions include incorporating security rules into behavioural learning models, identifying inconsistencies between predictions and domain knowledge, and developing explanations that connect observed behaviour with explicit reasoning.",
+      "notes": "How can symbolic knowledge guide or constrain learned behaviour?\nWhen do hybrid representations improve a learning task?"
     }
   ]
 }
