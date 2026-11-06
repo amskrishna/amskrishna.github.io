@@ -1,5 +1,5 @@
 {
-  "intro": "Journal articles and conference papers. The status of each conference record is indicated below.",
+  "intro": "My publications explore learning methods for insider threat detection and behavioural cybersecurity, including causal analysis, neural networks, feature representations and quantum learning. Journal articles and conference papers are listed below, with publication details, status and links where available.",
   "journals": [
     {
       "id": "J1",
@@ -35,43 +35,37 @@
       "id": "C1",
       "title": "TRUST-IT: Trustworthy User-Level Security Learning for Insider Threat Detection",
       "venue": "QASC 2026 - Chicago State University & Grambling State University, USA · Springer",
-      "meta": "Presented",
-      "doi": ""
+      "meta": "Presented"
     },
     {
       "id": "C2",
       "title": "Insider Threat Detection: A Comprehensive Review of Evolving Detection Techniques, Datasets, and Challenges",
       "venue": "AITA 2026 - IBS Bangalore",
-      "meta": "Accepted & presented",
-      "doi": ""
+      "meta": "Accepted & presented"
     },
     {
       "id": "C3",
       "title": "QUANT-IT: Quantum Embeddings with NGBoost for Insider Threat Detection",
       "venue": "IEEE CICT 2025 - IIITDM Kancheepuram",
-      "meta": "Published",
-      "doi": ""
+      "meta": "Published"
     },
     {
       "id": "C4",
       "title": "Temporal Quantum Neural Networks for Insider Threat Detection",
       "venue": "IEEE RAIT 2025 - IIT Dhanbad",
-      "meta": "Published",
-      "doi": ""
+      "meta": "Published"
     },
     {
       "id": "C5",
       "title": "Insider Threat Detection on CERT Data Using Pre-trained ResNet",
       "venue": "IEEE GCITC 2024 - REVA University",
-      "meta": "Published",
-      "doi": ""
+      "meta": "Published"
     },
     {
       "id": "C6",
       "title": "AUBIT: An Adaptive User Behaviour Based Insider Threat Detection Technique Using LSTM-Autoencoder",
       "venue": "ICRTITA 2022 - Vel Tech University",
-      "meta": "Published · Best Paper Award",
-      "doi": ""
+      "meta": "Published · Best Paper Award"
     }
   ]
 }
