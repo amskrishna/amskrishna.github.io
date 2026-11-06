@@ -40,4 +40,4 @@ data.js is the content file. Edit text inside quotation marks while preserving c
 
 ## Validation
 
-JavaScript syntax, all editor section templates, adding research content, content-file export and exact CV file matching were checked. Browser visual verification was unavailable because local browser access was blocked in this environment.
+JavaScript syntax, local asset references and byte-for-byte CV replacement checked. Browser visual review could not run because the environment blocked Chromium startup.

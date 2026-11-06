@@ -6,7 +6,7 @@
   map.querySelector('h3').textContent='Explore my research';
   map.querySelector('p').textContent='Select a research direction to explore its focus and related work.';
   controls.replaceChildren();controls.className='researchControls';controls.setAttribute('role','tablist');controls.setAttribute('aria-label','Research directions');controls.setAttribute('aria-orientation','vertical');
-  const related=[S.journals.slice(0,2),[],S.journals.slice(0,1),[],S.journals.slice(2,4),S.conferences.filter(p=>/quantum/i.test(p.title))];
+  const related=[S.journals,[],[],[],S.conferences.filter(p=>/quantum/i.test(p.title))];
   const buttons=cards.map((card,i)=>{
     card.id='research-panel-'+i;card.setAttribute('role','tabpanel');card.setAttribute('aria-labelledby','research-control-'+i);card.tabIndex=0;
     const button=document.createElement('button');button.id='research-control-'+i;button.type='button';button.setAttribute('role','tab');button.setAttribute('aria-controls',card.id);button.textContent=String(i+1).padStart(2,'0')+'  '+card.querySelector('h3').textContent;controls.append(button);

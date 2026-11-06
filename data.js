@@ -1,21 +1,22 @@
-// Website content. Open admin.html in this folder to edit and download this file.
+// Website content. Open admin.html to edit and download this file.
 window.SITE = {
-  "theme": "sapphire",
+  "theme": "maroon",
   "profile": {
     "name": "Dr. Ambairam Muthu Sivakrishna",
-    "title": "Assistant Professor",
-    "dept": "School of Advanced Computing",
-    "org": "Alliance University, Bengaluru",
+    "title": "Assistant Professor (Grade II)",
+    "dept": "Department of Information Technology",
+    "org": "National Institute of Technology Karnataka, Surathkal",
     "photo": "assets/profile.webp",
-    "headline": "Researcher in Trustworthy AI, Cybersecurity, Causal Intelligence & Quantum Machine Learning",
-    "bio": "Dr. Sivakrishna Ambairam is an Assistant Professor in the Department of Computer Science and Engineering at Alliance University, Bengaluru. He received his Ph.D. in Computer Science and Engineering from the National Institute of Technology Tiruchirappalli (NIT Trichy), with a CGPA of 9.5. He is a Gold Medalist in both his B.Tech and M.Tech programs. His research interests include Trustworthy Artificial Intelligence, Insider Threat Detection, Cybersecurity, Causal AI, Quantum Machine Learning, and Graph-Based Learning. His research focuses on developing reliable, explainable, and security-aware AI systems for real-world applications. He has published research in reputed journals and international conferences and is actively involved in teaching, research, peer review, and academic service.",
-    "email": "ambairam.sivakrishna@alliance.edu.in",
+    "headline": "Trustworthy AI & Cybersecurity · Machine Unlearning · Formal Verification",
+    "bio": "Dr. Ambairam Muthu Sivakrishna is an Assistant Professor (Grade II) in the Department of Information Technology at the National Institute of Technology Karnataka, Surathkal. He completed his Ph.D. in Computer Science and Engineering at the National Institute of Technology Tiruchirappalli in March 2026, with a coursework CGPA of 9.5. He holds an M.Tech. in Software Engineering from IIIT Tiruchirappalli and a B.Tech. in Information Technology from MITS Madanapalle, affiliated to JNTU Anantapur. He received the Institute Gold Medal in M.Tech. and the University Gold Medal and First Rank in B.Tech. His research interests include Trustworthy AI and Cybersecurity, theoretical analysis of neural networks, machine unlearning for secure AI, formal specification and verification systems, and neuro-symbolic and quantum-inspired learning models. His research applies these ideas to insider threat detection and behavioural cybersecurity. He previously served as an Assistant Professor at Alliance University and as Temporary Faculty at IIIT Tiruchirappalli.",
+    "email": "ambairam@nitk.edu.in",
     "phone": "+91 97915 41949",
     "orcid": "0000-0002-0984-9890",
     "cv": "Dr_Ambairam_CV.pdf",
     "scholar": "https://scholar.google.com/citations?user=QtKd_xEAAAAJ&hl=en",
     "linkedin": "https://www.linkedin.com/in/dr-ambairam-muthu-sivakrishna-6b8306104/",
-    "github": "https://github.com/amskrishna"
+    "github": "https://github.com/amskrishna",
+    "personalEmail": "amskrishna240@gmail.com"
   },
   "stats": [
     {
@@ -36,12 +37,11 @@ window.SITE = {
     }
   ],
   "interests": [
-    "Confidential Computing",
-    "Trustworthy AI",
+    "Trustworthy AI & Cybersecurity",
     "Theoretical Analysis of Neural Networks",
-    "Robust & Causality-Driven AI",
-    "Formal Specification & Verification of AI",
-    "Neuro-Symbolic & Quantum-Inspired Learning"
+    "Machine Unlearning for Secure AI",
+    "Formal Specification & Verification Systems",
+    "Neuro-Symbolic & Quantum-Inspired Learning Models"
   ],
   "announcements": [
     {
@@ -49,8 +49,8 @@ window.SITE = {
       "title": "Research Internship Opportunities",
       "date": "2026-09-01",
       "deadline": "2026-10-15",
-      "open": true,
-      "body": "I am inviting applications from motivated Undergraduate and Master’s students who are interested in working on focused research problems in Trustworthy Artificial Intelligence, Cybersecurity, Insider Threat Detection, Causal AI, Graph Learning, and Quantum Machine Learning.\n\nThe internships will primarily involve research problems connected to my ongoing work in AI-driven behavioural cybersecurity and trustworthy decision-making systems.\n\nCurrent Research Problems\n1. Trustworthy Insider Threat Detection\n2. Explainable and Calibrated AI for Cybersecurity\n3. Causal Analysis of User Behaviour\n4. Temporal and Graph-Based Insider Threat Detection\n5. Behavioural Representation Learning for Cybersecurity\n6. Quantum and Quantum-Inspired Machine Learning\n7. Neuro-Symbolic and Rule-Augmented Security AI\n\nWho Can Apply?\n\nStudents pursuing B.Tech/B.E., M.Tech/M.E., M.Sc., MCA, or equivalent programmes in Computer Science, AI, Data Science, Cybersecurity, Information Technology, Mathematics, or related disciplines may apply.\n\nStudents should preferably have basic knowledge of:\n\nPython\nMachine Learning\nData Analysis\nProbability and Statistics\n\nKnowledge of PyTorch, TensorFlow, Graph Neural Networks, cybersecurity, Qiskit, or causal inference will be useful for specific projects but is not mandatory.\n\nExpected Research Activities\n\nDepending on the selected problem, interns may work on:\n\nLiterature review and identification of research gaps\nDataset preparation and behavioural feature engineering\nImplementation of baseline and proposed models\nExperimental evaluation and ablation studies\nExplainability, calibration, causal, or robustness analysis\nResearch documentation and scientific writing\n\nStudents who make substantial research contributions may also have an opportunity to contribute to research papers, datasets, software implementations, or technical reports, subject to the quality and originality of the work.\n\nPreferred Students\n\nI am particularly looking for students who are interested in research rather than only project completion, and who can consistently work on a clearly defined problem.\n\nStudents considering higher studies, research careers, M.Tech/Ph.D. programmes, or AI and cybersecurity R&D are particularly encouraged to apply.\n\nHow to Apply\n\nInterested students may send email to ambairam.sivakrishna@alliance.edu.in with:\n\nCV/Resume\nAcademic details\nTechnical skills\nGitHub/portfolio link, if available\nPreferred research problem from the above list\nA short paragraph explaining their interest and relevant background\n\nEmail Subject: Research Internship Application – [Research Area] – [Your Name]\n\nApplications will be considered based on research interest, technical background, availability, and alignment with ongoing research problems.",
+      "open": false,
+      "body": "I am inviting applications from motivated Undergraduate and Master’s students who are interested in working on focused research problems in Trustworthy Artificial Intelligence, Cybersecurity, Insider Threat Detection, Causal AI, Graph Learning, and Quantum Machine Learning.\n\nThe internships will primarily involve research problems connected to my ongoing work in AI-driven behavioural cybersecurity and trustworthy decision-making systems.\n\nCurrent Research Problems\n1. Trustworthy Insider Threat Detection\n2. Explainable and Calibrated AI for Cybersecurity\n3. Causal Analysis of User Behaviour\n4. Temporal and Graph-Based Insider Threat Detection\n5. Behavioural Representation Learning for Cybersecurity\n6. Quantum and Quantum-Inspired Machine Learning\n7. Neuro-Symbolic and Rule-Augmented Security AI\n\nWho Can Apply?\n\nStudents pursuing B.Tech/B.E., M.Tech/M.E., M.Sc., MCA, or equivalent programmes in Computer Science, AI, Data Science, Cybersecurity, Information Technology, Mathematics, or related disciplines may apply.\n\nStudents should preferably have basic knowledge of:\n\nPython\nMachine Learning\nData Analysis\nProbability and Statistics\n\nKnowledge of PyTorch, TensorFlow, Graph Neural Networks, cybersecurity, Qiskit, or causal inference will be useful for specific projects but is not mandatory.\n\nExpected Research Activities\n\nDepending on the selected problem, interns may work on:\n\nLiterature review and identification of research gaps\nDataset preparation and behavioural feature engineering\nImplementation of baseline and proposed models\nExperimental evaluation and ablation studies\nExplainability, calibration, causal, or robustness analysis\nResearch documentation and scientific writing\n\nStudents who make substantial research contributions may also have an opportunity to contribute to research papers, datasets, software implementations, or technical reports, subject to the quality and originality of the work.\n\nPreferred Students\n\nI am particularly looking for students who are interested in research rather than only project completion, and who can consistently work on a clearly defined problem.\n\nStudents considering higher studies, research careers, M.Tech/Ph.D. programmes, or AI and cybersecurity R&D are particularly encouraged to apply.\n\nHow to Apply\n\nInterested students may send email to ambairam@nitk.edu.in with:\n\nCV/Resume\nAcademic details\nTechnical skills\nGitHub/portfolio link, if available\nPreferred research problem from the above list\nA short paragraph explaining their interest and relevant background\n\nEmail Subject: Research Internship Application – [Research Area] – [Your Name]\n\nApplications will be considered based on research interest, technical background, availability, and alignment with ongoing research problems.",
       "link": ""
     }
   ],
@@ -115,13 +115,13 @@ window.SITE = {
       "doi": "10.1016/j.jisa.2023.103434"
     }
   ],
-  "journalsNote": "Six further manuscripts under review at Q1/Q2 SCIE and ESCI indexed journals.",
+  "journalsNote": "",
   "conferences": [
     {
       "id": "C1",
       "title": "TRUST-IT: Trustworthy User-Level Security Learning for Insider Threat Detection",
       "venue": "QASC 2026 - Chicago State University & Grambling State University, USA · Springer",
-      "meta": "Accepted",
+      "meta": "Presented",
       "doi": ""
     },
     {
@@ -160,12 +160,18 @@ window.SITE = {
       "doi": ""
     }
   ],
-  "conferencesNote": "Five further manuscripts under review at Scopus indexed international conferences.",
+  "conferencesNote": "",
   "teaching": [
+    {
+      "role": "Assistant Professor (Grade II)",
+      "org": "Department of Information Technology, National Institute of Technology Karnataka, Surathkal",
+      "when": "November 2026 – Present",
+      "detail": "Teaching and research in Information Technology."
+    },
     {
       "role": "Assistant Professor",
       "org": "School of Advanced Computing, Alliance University, Bengaluru",
-      "when": "June 2026 - Present",
+      "when": "June 2026 – October 2026",
       "detail": "Cryptography and Network Security · Discrete Mathematics · Generative AI"
     },
     {
@@ -348,6 +354,10 @@ window.SITE = {
   ],
   "fdpAttended": [
     {
+      "name": "Joint Faculty Development Programme on Quantum Computing",
+      "meta": "Electronics & ICT Academy, IIT Roorkee · 19 June–22 July 2026 · participant"
+    },
+    {
       "name": "Programming with Java",
       "meta": "Amazon via Coursera, July 2026 · 97%"
     },
@@ -438,62 +448,52 @@ window.SITE = {
   "researchCards": [
     [
       "shield",
-      "Trustworthy Insider Threat Detection",
-      "User-level risk prediction, early warning, cross-dataset generalisation and false-positive control.",
+      "Trustworthy AI & Cybersecurity",
+      "Building reliable and interpretable AI systems for security applications, including insider threat detection and behavioural analytics.",
       [
-        "User risk",
-        "Early warning",
-        "Generalisation"
+        "Trustworthy AI",
+        "Cybersecurity",
+        "Insider threats"
+      ]
+    ],
+    [
+      "graph",
+      "Theoretical Analysis of Neural Networks",
+      "Investigating the foundations and behaviour of neural networks to better understand intelligent learning systems.",
+      [
+        "Neural networks",
+        "Theory",
+        "Learning behaviour"
       ]
     ],
     [
       "target",
-      "Calibration & Uncertainty",
-      "Assessing whether confidence estimates are dependable enough for high-stakes security decisions.",
+      "Machine Unlearning for Secure AI",
+      "Exploring how learned information can be removed from AI models while preserving useful capabilities and supporting security goals.",
       [
-        "Calibration",
-        "Uncertainty",
-        "Reliability"
+        "Machine unlearning",
+        "Secure AI",
+        "Model behaviour"
       ]
     ],
     [
-      "graph",
-      "Causal Behaviour Analysis",
-      "Testing genuine behavioural drivers using interventions, counterfactual reasoning and robustness checks.",
+      "code",
+      "Formal Specification & Verification Systems",
+      "Exploring precise system specifications and verification methods for dependable computational systems.",
       [
-        "Causal AI",
-        "Counterfactuals",
-        "Robustness"
-      ]
-    ],
-    [
-      "graph",
-      "Temporal & Graph Intelligence",
-      "Modelling users, devices, files and events as dynamic relational structures and sequences.",
-      [
-        "Temporal GNN",
-        "Event graphs",
-        "Sequences"
-      ]
-    ],
-    [
-      "spark",
-      "Behavioural Representation Learning",
-      "Auditing tabular, sequence, visual and time-frequency representations for meaningful behavioural signal.",
-      [
-        "Representation",
-        "Faithfulness",
-        "Cross-version"
+        "Specification",
+        "Verification",
+        "Dependability"
       ]
     ],
     [
       "research",
-      "Quantum & Neuro-Symbolic Learning",
-      "Hybrid quantum-classical, rule-augmented and formally constrained learning for dependable AI.",
+      "Neuro-Symbolic & Quantum-Inspired Learning Models",
+      "Combining neural learning with symbolic reasoning and investigating quantum-inspired approaches to intelligent systems.",
       [
-        "Quantum ML",
-        "Rules",
-        "Verification"
+        "Neuro-symbolic AI",
+        "Quantum-inspired learning",
+        "Hybrid models"
       ]
     ]
   ],
@@ -516,35 +516,31 @@ window.SITE = {
   ],
   "researchProblems": [
     [
-      "Trustworthy insider threat detection",
-      "User-level risk, early warning and generalisation"
+      "Trustworthy AI & Cybersecurity",
+      "Building reliable and interpretable AI systems for security applications, including insider threat detection and behavioural analytics."
     ],
     [
-      "Explainable & calibrated security AI",
-      "Confidence, uncertainty and explanation faithfulness"
+      "Theoretical Analysis of Neural Networks",
+      "Investigating the foundations and behaviour of neural networks to better understand intelligent learning systems."
     ],
     [
-      "Causal analysis of user behaviour",
-      "Interventions, counterfactuals and robust causal signals"
+      "Machine Unlearning for Secure AI",
+      "Exploring how learned information can be removed from AI models while preserving useful capabilities and supporting security goals."
     ],
     [
-      "Temporal & graph-based detection",
-      "Dynamic user–device–resource interaction models"
+      "Formal Specification & Verification Systems",
+      "Exploring precise system specifications and verification methods for dependable computational systems."
     ],
     [
-      "Behavioural representation audits",
-      "Sequence, image, wavelet and event-field representations"
-    ],
-    [
-      "Quantum / neuro-symbolic security AI",
-      "Quantum kernels, hybrid models and symbolic constraints"
+      "Neuro-Symbolic & Quantum-Inspired Learning Models",
+      "Combining neural learning with symbolic reasoning and investigating quantum-inspired approaches to intelligent systems."
     ]
   ],
   "affiliations": [
     [
-      "Alliance University",
-      "Current faculty appointment",
-      "assets/alliance-university.png"
+      "NIT Karnataka, Surathkal",
+      "Current faculty appointment · Information Technology",
+      "assets/nitk-mark.svg"
     ],
     [
       "NIT Tiruchirappalli",
@@ -555,6 +551,11 @@ window.SITE = {
       "IIIT Tiruchirappalli",
       "M.Tech. · Software Engineering",
       "assets/iiit-trichy.png"
+    ],
+    [
+      "Alliance University",
+      "Previous faculty appointment · June–October 2026",
+      "assets/alliance-university.png"
     ]
   ]
 };
