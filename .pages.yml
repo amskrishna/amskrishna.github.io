@@ -8,6 +8,10 @@ content:
   path: content/profile.json
   format: json
   fields:
+  - name: ga4MeasurementId
+    label: Google Analytics Measurement ID
+    type: string
+    description: Enter your GA4 web stream ID (G-XXXXXXXXXX) to enable visitor statistics.
   - name: name
     label: Name
     type: string

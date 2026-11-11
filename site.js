@@ -83,12 +83,26 @@ return html}
 function render(page,focus=false){stopAnnouncements();current=nav.includes(page)?page:'home';header();document.querySelector('.masthead').classList.toggle('section-masthead',current!=='home');main.innerHTML=body(current);if(current==='home')bindAnnouncements();document.title=`${title[current]} | ${C.profile.name} | NITK Surathkal`;document.querySelectorAll('#nav-links a').forEach(a=>{const active=new URL(a.href).searchParams.get('page')===current;if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});if(current==='publications'){publicationList();document.getElementById('pub-search').addEventListener('input',e=>{query=e.target.value;publicationList()});document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>{pubCategory=b.dataset.category;publicationList()}))}if(focus){main.focus();window.scrollTo(0,0)}}
 document.getElementById('nav-links').addEventListener('click',e=>{const a=e.target.closest('a');if(!a||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();const p=new URL(a.href).searchParams.get('page');history.pushState({},'',a.href);render(p,true)});window.addEventListener('popstate',()=>render(new URLSearchParams(location.search).get('page')||'home'));
 render(new URLSearchParams(location.search).get('page')||'home');
+function startAnalytics(value) {
+  const id = String(value || '').trim().toUpperCase();
+  if (location.hostname !== 'amskrishna.github.io' || !/^G-[A-Z0-9]+$/.test(id)) return;
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', id);
+  const tag = document.createElement('script');
+  tag.async = true;
+  tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+  document.head.appendChild(tag);
+}
 // Read CMS-managed files on every visit. Bundled content keeps local/offline previews usable.
 if (location.protocol !== 'file:') {
   Promise.allSettled(Object.keys(C).map(async key => {
     const response = await fetch(`content/${key}.json`, {cache:'no-store'});
     if (!response.ok) throw new Error('Content unavailable');
-    return [key, await response.json()];
+    const data = await response.json();
+    if (key === 'profile') startAnalytics(data.ga4MeasurementId);
+    return [key, data];
   })).then(results => {
     const updates = results.filter(result => result.status === 'fulfilled').map(result => result.value);
     C = {...C, ...Object.fromEntries(updates)};

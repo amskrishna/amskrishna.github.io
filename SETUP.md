@@ -11,3 +11,9 @@ Open Pages CMS and select amskrishna/amskrishna.github.io and the branch that pu
 Choose Opportunities → Open roles and add an item. Enter a title and any applicable project details, eligibility, deadline, or application link. Enable Show on website and save. To withdraw the listing, disable Show on website and save.
 
 CMS saves update JSON files in the repository. The public site reads them on each visit. If an edit is missing, confirm that the CMS and Pages use the same branch and that its latest deployment succeeded. Opening index.html directly from this ZIP shows the bundled snapshot.
+
+# Enable visitor statistics
+
+For an existing installation of the clean website, upload site.js and .pages.yml to the repository root and commit them. In Pages CMS, open Profile & contact, enter the Measurement ID from your Google Analytics 4 web stream and save. The public website loads the tag after that change deploys. Leave the field empty to disable collection.
+
+In the web stream's Enhanced measurement settings, enable page views on browser history changes to measure section navigation. Open your public website, visit Research and Publications, then check the Realtime report in Google Analytics. Use page title or page path with query string to distinguish sections.
